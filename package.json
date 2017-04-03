@@ -1,0 +1,21 @@
+{
+  "name": "leagueofcomicgeeks",
+  "version": "1.0.0",
+  "description": "Unofficial Node.js library for interacting with League of Comic Geeks",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "comic",
+    "league of comic geeks"
+  ],
+  "author": "Alistair Brown <npm@alistairjcbrown.com>",
+  "license": "MIT",
+  "dependencies": {
+    "bluebird": "^3.5.0",
+    "cheerio": "^0.22.0",
+    "lodash": "^4.17.4",
+    "request": "^2.81.0"
+  }
+}
