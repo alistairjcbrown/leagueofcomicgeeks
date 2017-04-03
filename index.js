@@ -1,19 +1,21 @@
 var login = require('./src/login');
 var wishList = require('./src/wish-list');
 var readList = require('./src/read-list');
+var collection = require('./src/collection');
 
 /*
- * - Wish list
+ * X Wish list
+ * X Read list
+ * X Collection
+ * -- Ability to drill down in lists (eg. what titles in x series have I read?)
  * - Pull list (add one, add all)
- * - Read list
- * - Collection
- * - Single approach to dealing with lists
- * - Ability to drill down in lists (eg. what titles in x series have I read?)
+ * - New Comics
+ * - Searching
  */
 
 
 login('alistairjcbrown', '<password>', function () {
-  readList.get(function () {
+  collection.get(function () {
     console.log("read list", arguments);
   });
 });

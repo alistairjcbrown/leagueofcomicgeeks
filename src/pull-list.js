@@ -1,21 +1,21 @@
 var accessList = require('./utils/access-list');
 
-var listId = 5;
+var listId = 1;
 
-var getReadList = function (userId, callback) {
+var getPullList = function (userId, callback) {
   return accessList.get(listId, userId, callback);
 };
 
-var addToReadList = function (comicId, callback) {
+var addToPullList = function (comicId, callback) {
   return accessList.add(comicId, listId, callback);
 };
 
-var removeFromReadList = function (comicId, callback) {
+var removeFromPullList = function (comicId, callback) {
   return accessList.remove(comicId, listId, callback);
 };
 
 module.exports = {
-  get: getReadList,
-  add: addToReadList,
-  remove: removeFromReadList
+  get: getPullList,
+  add: addToPullList,
+  remove: removeFromPullList
 };
