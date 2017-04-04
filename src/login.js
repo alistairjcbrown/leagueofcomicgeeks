@@ -1,9 +1,10 @@
 var _ = require('lodash');
-var request = require('request');
 var cheerio = require('cheerio');
+var request = require('./utils/request');
 var authentication = require('./utils/authentication');
+var config = require('../config');
 
-var url = 'http://leagueofcomicgeeks.com/login';
+var url = config.rootUrl + '/login';
 
 var convertObjectStringToObject = function (objectString) {
   var sanitisedObjectString = _.trim(objectString.trim(), '{}')
@@ -26,7 +27,7 @@ module.exports = function (username, password, callback) {
     password: password
   };
 
-  request.post({ url: url, form: credentials, jar: authentication.cookieJar, followAllRedirects: true }, function (error, response, body) {
+  request.post({ url: url, form: credentials, followAllRedirects: true }, function (error, response, body) {
     if (error) {
       return callback(error);
     }

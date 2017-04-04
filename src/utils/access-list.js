@@ -1,14 +1,15 @@
 var _ = require('lodash');
-var request = require('request');
 var cheerio = require('cheerio');
 var queryString = require('query-string');
+var request = require('./request');
 var authentication = require('./authentication');
+var config = require('../../config');
 
-var url = 'http://leagueofcomicgeeks.com/comic/my_list_move';
+var myListUrl = config.rootUrl + '/comic/my_list_move';
+var getComicsUrl = config.rootUrl + '/comic/get_comics';
 
 var modifyList = function (comicId, listId, actionId, failureMessage, callback) {
-  var user = authentication.get()
-  if (!_.isObject(user) || _.isNull(user)) {
+  if (!authentication.isAuthenticated()) {
     return callback(new Error('Not authenticated'));
   }
 
@@ -18,7 +19,7 @@ var modifyList = function (comicId, listId, actionId, failureMessage, callback) 
     action_id: actionId
   };
 
-  request.post({ url: url, form: data, jar: authentication.cookieJar }, function (error, response, body) {
+  request.post({ url: myListUrl, form: data }, function (error, response, body) {
     if (error) {
       return callback(error);
     }
@@ -43,8 +44,9 @@ var getList = function (userId, listId, parameters, callback) {
     view: 'list',
     order: 'alpha-asc'
   }, parameters));
-  var url = 'http://leagueofcomicgeeks.com/comic/get_comics?' + urlParameters;
-  request.get({ url: url, jar: authentication.cookieJar }, function (error, response, body) {
+
+  var url = getComicsUrl + '?' + urlParameters;
+  request.get(url, function (error, response, body) {
     if (error) {
       return callback(error);
     }
