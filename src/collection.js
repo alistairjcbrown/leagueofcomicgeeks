@@ -3,7 +3,7 @@ var accessList = require('./utils/access-list');
 var listId = 2;
 
 var getCollection = function (userId, callback) {
-  return accessList.get(listId, userId, callback);
+  return accessList.get(userId, listId, {}, callback);
 };
 
 var addToCollection = function (comicId, callback) {

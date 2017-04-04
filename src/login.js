@@ -53,7 +53,7 @@ module.exports = function (username, password, callback) {
 
     authentication.set(userDetails.id, userDetails.name, userDetails.email)
 
-    callback(null);
+    callback(null, userDetails.id);
   });
 
 };

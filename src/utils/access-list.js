@@ -1,6 +1,7 @@
 var _ = require('lodash');
 var request = require('request');
 var cheerio = require('cheerio');
+var queryString = require('query-string');
 var authentication = require('./authentication');
 
 var url = 'http://leagueofcomicgeeks.com/comic/my_list_move';
@@ -34,17 +35,15 @@ var modifyList = function (comicId, listId, actionId, failureMessage, callback) 
   });
 };
 
-var getList = function (listId, userId, callback) {
-  if (_.isFunction(userId) && _.isUndefined(callback)) {
-    var user = authentication.get()
-    if (!_.isObject(user) || _.isNull(user)) {
-      return callback(new Error('Not authenticated'));
-    }
-    callback = userId;
-    userId = user.id;
-  }
-
-  var url = 'http://leagueofcomicgeeks.com/comic/get_comics?addons=1&list=' + listId + '&list_option=series&user_id=' + userId + '&view=list&order=alpha-asc'
+var getList = function (userId, listId, parameters, callback) {
+  var urlParameters = queryString.stringify(_.extend({
+    list: listId,
+    list_option: 'series',
+    user_id: userId,
+    view: 'list',
+    order: 'alpha-asc'
+  }, parameters));
+  var url = 'http://leagueofcomicgeeks.com/comic/get_comics?' + urlParameters;
   request.get({ url: url, jar: authentication.cookieJar }, function (error, response, body) {
     if (error) {
       return callback(error);

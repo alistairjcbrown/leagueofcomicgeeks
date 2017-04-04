@@ -2,8 +2,11 @@ var accessList = require('./utils/access-list');
 
 var listId = 1;
 
-var getPullList = function (userId, callback) {
-  return accessList.get(listId, userId, callback);
+var getPullList = function (userId, date, callback) {
+  return accessList.get(userId, listId, {
+    date_type: 'week',
+    date: date
+  }, callback);
 };
 
 var addToPullList = function (comicId, callback) {
