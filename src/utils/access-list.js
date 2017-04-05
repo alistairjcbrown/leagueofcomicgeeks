@@ -1,8 +1,8 @@
 var _ = require('lodash');
-var cheerio = require('cheerio');
 var queryString = require('query-string');
 var request = require('./request');
 var authentication = require('./authentication');
+var extractDataFrom = require('./extract-data-from');
 var config = require('../../config');
 
 var myListUrl = config.rootUrl + '/comic/my_list_move';
@@ -36,12 +36,18 @@ var modifyList = function (comicId, listId, actionId, failureMessage, callback) 
   });
 };
 
-var getList = function (userId, listId, parameters, callback) {
+var getList = function (userId, listId, parameters, options, callback) {
+  var viewType = {
+    issue: 'list',
+    series: 'thumbs'
+  };
+
+  var type = options.type || config.defaultType;
   var urlParameters = queryString.stringify(_.extend({
     list: listId,
-    list_option: 'series',
+    list_option: type,
     user_id: userId,
-    view: 'thumbs',
+    view: viewType[type] || 'thumbs',
     order: 'alpha-asc'
   }, parameters));
 
@@ -66,25 +72,8 @@ var getList = function (userId, listId, parameters, callback) {
       return callback(new Error('Unknown response format'));
     }
 
-    var $ = cheerio.load(responseJson.list);
-    var wishList = $('li').map(function () {
-      var $name = $(this).find('.name a');
-      var cover = $(this).find('.cover img').attr('data-original');
-      var count = parseInt($(this).find('.details').text().trim(), 10);
-      var series = $(this).find('.series').text().trim();
-      var publisher = $(this).find('.publisher').text().trim();
-
-      return {
-        id: $name.attr('data-id'),
-        name: $name.text().trim(),
-        cover: cover,
-        count: count,
-        series: series,
-        publisher: publisher
-      };
-    }).get();
-
-    callback(null, wishList);
+    var list = extractDataFrom(responseJson, options);
+    callback(null, list);
   });
 };
 

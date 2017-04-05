@@ -2,12 +2,13 @@ var accessList = require('./utils/access-list');
 
 var listId = 'releases';
 
-var getNewComics = function (userId, date, callback) {
-  return accessList.get(userId, listId, {
+var getNewComics = function (userId, date, options, callback) {
+  var parameters = {
     date_type: 'week',
     date: date,
     order: 'pulls'
-  }, callback);
+  };
+  return accessList.get(userId, listId, parameters, options, callback);
 };
 
 module.exports = {

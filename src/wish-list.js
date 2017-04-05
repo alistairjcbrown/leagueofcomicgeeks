@@ -2,8 +2,9 @@ var accessList = require('./utils/access-list');
 
 var listId = 3;
 
-var getWishList = function (userId, callback) {
-  return accessList.get(userId, listId, {}, callback);
+var getWishList = function (userId, options, callback) {
+  var parameters = {};
+  return accessList.get(userId, listId, parameters, options, callback);
 };
 
 var addToWishList = function (comicId, callback) {

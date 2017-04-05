@@ -2,10 +2,9 @@ var accessList = require('./utils/access-list');
 
 var listId = 'search';
 
-var getSearchResults = function (userId, query, callback) {
-  return accessList.get(userId, listId, {
-    title: query
-  }, callback);
+var getSearchResults = function (userId, query, options, callback) {
+  var parameters = { title: query };
+  return accessList.get(userId, listId, parameters, options, callback);
 };
 
 module.exports = {
