@@ -41,7 +41,7 @@ var getList = function (userId, listId, parameters, callback) {
     list: listId,
     list_option: 'series',
     user_id: userId,
-    view: 'list',
+    view: 'thumbs',
     order: 'alpha-asc'
   }, parameters));
 
