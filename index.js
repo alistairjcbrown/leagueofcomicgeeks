@@ -5,6 +5,7 @@ var readList = require('./src/read-list');
 var collection = require('./src/collection');
 var pullList = require('./src/pull-list');
 var newComics = require('./src/new-comics');
+var searchResults = require('./src/search-results');
 
 /*
  * X Wish list
@@ -12,13 +13,21 @@ var newComics = require('./src/new-comics');
  * X Collection
  * X Pull list
  * X Load auth details in
- * - New Comics
+ * X New Comics
+ * X Searching
  *
  * - All lists above are series based, can we get comic based too?
- * - Searching
- * - Ability to drill down in lists (eg. what titles in x series have I read?)
- * - Can only pull when not out, can only add to wish, read, collection when out -- how to enforce?
- * - bluk actions on series level
+ * --- Ability to drill down in lists (eg. what titles in x series have I read?)
+ *
+ * - Bulk actions on series level
+ *
+ * Tests
+ *  - Unit tests
+ *  - Integration tests
+ * Tooling
+ *  - Linting
+ *  - Documentation
+ *  - Publish module
  */
 
 var authentication = require('./src/utils/authentication');
@@ -29,7 +38,7 @@ var authentication = require('./src/utils/authentication');
   //   console.log(authentication.cookieJar.getCookieString('http://leagueofcomicgeeks.com'));
   // });
 
-  newComics.get('', '2017-04-05', function () {
-    console.log("new comics", arguments);
+  searchResults.get('', 'Roscoe', function () {
+    console.log("search results", arguments);
   });
 // });
