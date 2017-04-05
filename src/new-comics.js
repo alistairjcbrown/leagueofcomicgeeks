@@ -1,4 +1,4 @@
-var accessList = require('./utils/access-list');
+var accessList = require('./utils/list-access');
 var validateDate = require('./utils/validate-date');
 
 var listId = 'releases';

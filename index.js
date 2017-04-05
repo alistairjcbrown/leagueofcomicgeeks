@@ -19,6 +19,7 @@ var searchResults = require('./src/search-results');
  * X Standardise dates - how they're accepted, internal usage, data normalisation
  *
  * - Bulk actions on series level
+ * - Filters for collection, new comics, etc.
  *
  * Tests
  *  - Unit tests
@@ -28,8 +29,6 @@ var searchResults = require('./src/search-results');
  *  - Documentation
  *  - Publish module
  */
-
-var authentication = require('./src/utils/authentication');
 
 login('alistairjcbrown', '<password>', function (err, userId) {
   wishList.get(userId, {}, function (err, wishlist) {
