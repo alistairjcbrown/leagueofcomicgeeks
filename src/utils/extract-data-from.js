@@ -1,5 +1,14 @@
+var _ = require('lodash');
 var cheerio = require('cheerio');
+var moment = require('moment');
 var config = require('../../config');
+
+var convertToISO8601Date = function (dateString) {
+  if (_.isEmpty(dateString)) return '';
+  var date = moment(dateString, 'MMM Do, YYYY');
+  if (!date.isValid()) return '';
+  return date.format('YYYY-MM-DD');
+};
 
 var seriesExtractor = function (response) {
   var $ = cheerio.load(response.list);
@@ -34,7 +43,7 @@ var issueExtractor = function (response) {
 
     var comicDetails = $(this).find('.comic-details').text().split('·');
     var publisher = (comicDetails[0] || '').trim();
-    var releaseDate = (comicDetails[1] || '').trim(); // TODO - convert to standard, moment?
+    var releaseDate = convertToISO8601Date((comicDetails[1] || '').trim());
     var price = (comicDetails[2] || '').trim();
 
     var $description = $(this).find('.comic-description p');

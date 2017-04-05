@@ -1,13 +1,11 @@
 var _ = require('lodash');
 var request = require('request');
 var cookie = require('cookie');
+var moment = require('moment');
 var config = require('../../config');
 
 var cookieJar = request.jar();
 var user = null;
-
-var oneDayInMs = 86400000;
-var thirtyDaysInMs = (30 * 86400000);
 
 var getSession = function () {
   var cookieString = cookieJar.getCookieString(config.rootUrl);
@@ -30,7 +28,7 @@ module.exports = {
   },
 
   destroy: function () {
-    var yesterday = new Date(Date.now() - oneDayInMs);;
+    var yesterday = moment().subtract(1, 'day').toDate();
     setSession('', yesterday, 0);
     user = null;
   },
@@ -49,9 +47,9 @@ module.exports = {
     };
 
     if (_.isString(session)) {
-      var inThirtyDays = new Date(Date.now() + thirtyDaysInMs);
-      var age = thirtyDaysInMs / 1000;
-      setSession(session, inThirtyDays, age);
+      var inThirtyDays = moment().add(30, 'days').toDate();
+      var thirtyDaysInSeconds = 2592000;
+      setSession(session, inThirtyDays, thirtyDaysInSeconds);
     }
 
     return true;

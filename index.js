@@ -16,8 +16,8 @@ var searchResults = require('./src/search-results');
  * X New Comics
  * X Searching
  * X All lists above are series based, can we get comic based too?
+ * X Standardise dates - how they're accepted, internal usage, data normalisation
  *
- * - Standardise dates - how they're accepted, internal usage, data normalisation
  * - Bulk actions on series level
  *
  * Tests
@@ -34,7 +34,7 @@ var authentication = require('./src/utils/authentication');
 login('alistairjcbrown', '<password>', function (err, userId) {
   wishList.get(userId, {}, function (err, wishlist) {
     console.log("Wish list", arguments);
-    pullList.get(userId, '05/17/2017', { type: 'issue' }, function (err, pullList) {
+    pullList.get(userId, '2017-03-22', { type: 'issue' }, function (err, pullList) {
       console.log("pull list", arguments);
       // wishList.add(pullList[0].id, function () {
       //   console.log("Wishlist add", arguments);

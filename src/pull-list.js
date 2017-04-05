@@ -1,4 +1,5 @@
 var accessList = require('./utils/access-list');
+var validateDate = require('./utils/validate-date');
 
 var listId = 1;
 
@@ -7,6 +8,9 @@ var getPullList = function (userId, date, options, callback) {
     date_type: 'week',
     date: date
   };
+
+  if (!validateDate(date)) return callback(new Error('Invalid date value provided'));
+
   return accessList.get(userId, listId, parameters, options, callback);
 };
 
