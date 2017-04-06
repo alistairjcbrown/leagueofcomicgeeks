@@ -1,7 +1,8 @@
 var _ = require('lodash');
 var accessList = require('./utils/list-access');
-var validateDate = require('./utils/validate-date');
 var accessListBulk = require('./utils/list-access-bulk');
+var optionalOptions = require('./utils/optional-options');
+var validateDate = require('./utils/validate-date');
 var types = require('./utils/types');
 
 var listId = 1;
@@ -44,7 +45,7 @@ var removeFromPullList = function (resourceId, options, callback) {
 };
 
 module.exports = {
-  get: getPullList,
-  add: addToPullList,
-  remove: removeFromPullList
+  get: optionalOptions(getPullList),
+  add: optionalOptions(addToPullList),
+  remove: optionalOptions(removeFromPullList)
 };

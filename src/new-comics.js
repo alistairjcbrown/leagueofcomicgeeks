@@ -1,4 +1,5 @@
 var accessList = require('./utils/list-access');
+var optionalOptions = require('./utils/optional-options');
 var validateDate = require('./utils/validate-date');
 
 var listId = 'releases';
@@ -18,5 +19,5 @@ var getNewComics = function (userId, date, options, callback) {
 };
 
 module.exports = {
-  get: getNewComics,
+  get: optionalOptions(getNewComics),
 };

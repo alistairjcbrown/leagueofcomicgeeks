@@ -1,5 +1,6 @@
 var accessList = require('./list-access');
 var accessListBulk = require('./list-access-bulk');
+var optionalOptions = require('./optional-options');
 var types = require('./types');
 
 var getList = function (type) {
@@ -21,8 +22,8 @@ module.exports = function (listId) {
   };
 
   return {
-    get: getReadList,
-    add: addToReadList,
-    remove: removeFromReadList
+    get: optionalOptions(getReadList),
+    add: optionalOptions(addToReadList),
+    remove: optionalOptions(removeFromReadList)
   };
 };

@@ -18,9 +18,9 @@ var types = require('./src/utils/types');
  * X Searching
  * X All lists above are series based, can we get comic based too?
  * X Standardise dates - how they're accepted, internal usage, data normalisation
+ * X Bulk actions on series level
+ * X Optional options - default type to 'issue'
  *
- * - Bulk actions on series level
- * - Optional options - default type to 'issue'
  * - Filters for collection, new comics, etc.
  *
  * Tests
@@ -33,7 +33,7 @@ var types = require('./src/utils/types');
  */
 
 login('lofcg_test', '<password>', function (err, userId) {
-  pullList.remove(121150, { type: types.SERIES }, function () {
+  pullList.get(userId, '2017-04-12', function () {
     console.log("Added to pull list", arguments);
   });
   // wishList.get(userId, {}, function (err, wishlist) {
