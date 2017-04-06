@@ -1,5 +1,8 @@
+var _ = require('lodash');
 var accessList = require('./utils/list-access');
 var validateDate = require('./utils/validate-date');
+var accessListBulk = require('./utils/list-access-bulk');
+var types = require('./utils/types');
 
 var listId = 1;
 
@@ -16,12 +19,28 @@ var getPullList = function (userId, date, options, callback) {
   return accessList.get(userId, listId, parameters, options, callback);
 };
 
-var addToPullList = function (comicId, options, callback) {
-  return accessList.add(comicId, listId, callback);
+var addToPullList = function (resourceId, options, callback) {
+  if (options.type === types.ISSUE) {
+    return accessList.add(resourceId, listId, callback);
+  }
+
+  var failureMessage = 'Unable to subscribe to series';
+  var isSuccessResponse = function (body) {
+    return _.includes(body, ' subscribed ');
+  };
+  return accessListBulk.modify(resourceId, listId, 'subscribe', isSuccessResponse, failureMessage, callback);
 };
 
-var removeFromPullList = function (comicId, options, callback) {
-  return accessList.remove(comicId, listId, callback);
+var removeFromPullList = function (resourceId, options, callback) {
+  if (options.type === types.ISSUE) {
+    return accessList.remove(resourceId, listId, callback);
+  }
+
+  var failureMessage = 'Unable to unsubscribe from series';
+  var isSuccessResponse = function (body) {
+    return _.includes(body, ' unsubscribed ');
+  };
+  return accessListBulk.modify(resourceId, listId, 'unsubscribe', isSuccessResponse, failureMessage, callback);
 };
 
 module.exports = {

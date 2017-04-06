@@ -33,8 +33,8 @@ var types = require('./src/utils/types');
  */
 
 login('lofcg_test', '<password>', function (err, userId) {
-  readList.remove(121150, { type: types.SERIES }, function () {
-    console.log("Added to read list", arguments);
+  pullList.remove(121150, { type: types.SERIES }, function () {
+    console.log("Added to pull list", arguments);
   });
   // wishList.get(userId, {}, function (err, wishlist) {
   //   console.log("Wish list", arguments);

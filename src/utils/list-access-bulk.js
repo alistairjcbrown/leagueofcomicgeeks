@@ -6,8 +6,11 @@ var extractDataFrom = require('./extract-data-from');
 var config = require('../../config');
 
 var myListUrl = config.rootUrl + '/comic/my_list_bulk';
+var defaultIsSuccessful = function (body) {
+  return !_.isNaN(parseInt(body, 10));
+};
 
-var modifyList = function (seriesId, listId, actionId, failureMessage, callback) {
+var modifyList = function (seriesId, listId, actionId, isSuccessful, failureMessage, callback) {
   if (!authentication.isAuthenticated()) {
     return callback(new Error('Not authenticated'));
   }
@@ -23,7 +26,7 @@ var modifyList = function (seriesId, listId, actionId, failureMessage, callback)
       return callback(error);
     }
 
-    if (_.isNaN(parseInt(body, 10))) {
+    if (!isSuccessful(body)) {
       return callback(new Error(failureMessage));
     }
 
@@ -38,16 +41,17 @@ var modifyList = function (seriesId, listId, actionId, failureMessage, callback)
 var addToList = function (seriesId, listId, callback) {
   var actionId = 'add';
   var failureMessage = 'Unable to add series to list';
-  return modifyList(seriesId, listId, actionId, failureMessage, callback);
+  return modifyList(seriesId, listId, actionId, defaultIsSuccessful, failureMessage, callback);
 };
 
 var removeFromList = function (seriesId, listId, callback) {
   var actionId = 'remove';
   var failureMessage = 'Unable to remove series from list';
-  return modifyList(seriesId, listId, actionId, failureMessage, callback);
+  return modifyList(seriesId, listId, actionId, defaultIsSuccessful, failureMessage, callback);
 };
 
 module.exports = {
   add: addToList,
-  remove: removeFromList
+  remove: removeFromList,
+  modify: modifyList
 };
