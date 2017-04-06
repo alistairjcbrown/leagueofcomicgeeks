@@ -1,3 +1,4 @@
+var types = require('./src/utils/types');
 var protocol = 'http://';
 var domain = 'leagueofcomicgeeks.com';
 
@@ -6,5 +7,5 @@ module.exports = {
   domain: domain,
   rootUrl: protocol + '' + domain,
   sessionKey: 'ci_session',
-  defaultType: 'series'
+  defaultType: types.SERIES
 };
