@@ -3,6 +3,7 @@ var queryString = require('query-string');
 var request = require('./request');
 var authentication = require('./authentication');
 var extractDataFrom = require('./extract-data-from');
+var getPublisherIds = require('./get-publisher-ids');
 var config = require('../../config');
 
 var myListUrl = config.rootUrl + '/comic/my_list_move';
@@ -43,15 +44,17 @@ var getList = function (userId, listId, parameters, options, callback) {
   };
 
   var type = options.type || config.defaultType;
-  var urlParameters = queryString.stringify(_.extend({
+  var urlParameters = _.extend({
     list: listId,
     list_option: type,
     user_id: userId,
     view: viewType[type] || 'thumbs',
-    order: 'alpha-asc'
-  }, parameters));
+    order: 'alpha-asc',
+    publisher: getPublisherIds(options.publishers)
+  }, parameters);
+  var urlParameterString = queryString.stringify(urlParameters, { arrayFormat: 'bracket' });
 
-  var url = getComicsUrl + '?' + urlParameters;
+  var url = getComicsUrl + '?' + urlParameterString;
   request.get(url, function (error, response, body) {
     if (error) {
       return callback(error);

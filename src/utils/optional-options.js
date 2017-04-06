@@ -14,6 +14,10 @@ module.exports = function (wrappedFunction) {
       args.splice(argsCount-1, 0, defaultedOptions);
     }
 
+    if (_.isObject(penultimateArg) && _.isFunction(lastArg) && _.isUndefined(penultimateArg.type)) {
+      penultimateArg.type = types.ISSUE;
+    }
+
     return wrappedFunction.apply(null, args);
   };
 }

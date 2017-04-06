@@ -20,8 +20,9 @@ var types = require('./src/utils/types');
  * X Standardise dates - how they're accepted, internal usage, data normalisation
  * X Bulk actions on series level
  * X Optional options - default type to 'issue'
+ * X Filters for collection, new comics, etc.
  *
- * - Filters for collection, new comics, etc.
+ * - Expose interface from this file
  *
  * Tests
  *  - Unit tests
@@ -30,10 +31,12 @@ var types = require('./src/utils/types');
  *  - Linting
  *  - Documentation
  *  - Publish module
+ *
+ * - Can we dynamically load the publishers list in / update it periodically?
  */
 
 login('lofcg_test', '<password>', function (err, userId) {
-  pullList.get(userId, '2017-04-12', function () {
+  pullList.get(userId, '2017-04-12', { publishers: ['Dark Horse Comics', 'Marvel Comics'] }, function () {
     console.log("Added to pull list", arguments);
   });
   // wishList.get(userId, {}, function (err, wishlist) {
