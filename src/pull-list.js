@@ -9,7 +9,9 @@ var getPullList = function (userId, date, options, callback) {
     date: date
   };
 
-  if (!validateDate(date)) return callback(new Error('Invalid date value provided'));
+  if (!validateDate(date)) {
+    return callback(new Error('Invalid date value provided'));
+  }
 
   return accessList.get(userId, listId, parameters, options, callback);
 };

@@ -2,24 +2,10 @@ var _ = require('lodash');
 var cheerio = require('cheerio');
 var request = require('./utils/request');
 var authentication = require('./utils/authentication');
+var convertObjectStringToObject = require('./utils/convert-object-string-to-object');
 var config = require('../config');
 
 var url = config.rootUrl + '/login';
-
-var convertObjectStringToObject = function (objectString) {
-  var sanitisedObjectString = _.trim(objectString.trim(), '{}')
-    .trim()
-    .replace(/'/g, '"')
-    .replace(/\s/g, '')
-    .replace(/,$/, '')
-    .replace(/([^:,]+):/g, '"$1":');
-
-  try {
-    return JSON.parse('{' + sanitisedObjectString + '}');
-  } catch(e) {
-    return null;
-  }
-}
 
 module.exports = function (username, password, callback) {
   const credentials = {

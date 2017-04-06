@@ -10,7 +10,9 @@ var getNewComics = function (userId, date, options, callback) {
     order: 'pulls'
   };
 
-  if (!validateDate(date)) return callback(new Error('Invalid date value provided'));
+  if (!validateDate(date)) {
+    return callback(new Error('Invalid date value provided'));
+  }
 
   return accessList.get(userId, listId, parameters, options, callback);
 };
