@@ -16,11 +16,11 @@ var getPullList = function (userId, date, options, callback) {
   return accessList.get(userId, listId, parameters, options, callback);
 };
 
-var addToPullList = function (comicId, callback) {
+var addToPullList = function (comicId, options, callback) {
   return accessList.add(comicId, listId, callback);
 };
 
-var removeFromPullList = function (comicId, callback) {
+var removeFromPullList = function (comicId, options, callback) {
   return accessList.remove(comicId, listId, callback);
 };
 

@@ -20,6 +20,7 @@ var types = require('./src/utils/types');
  * X Standardise dates - how they're accepted, internal usage, data normalisation
  *
  * - Bulk actions on series level
+ * - Optional options - default type to 'issue'
  * - Filters for collection, new comics, etc.
  *
  * Tests
@@ -32,8 +33,8 @@ var types = require('./src/utils/types');
  */
 
 login('lofcg_test', '<password>', function (err, userId) {
-  collection.remove(129544, { type: types.SERIES }, function () {
-    console.log("Added to collection", arguments);
+  readList.remove(121150, { type: types.SERIES }, function () {
+    console.log("Added to read list", arguments);
   });
   // wishList.get(userId, {}, function (err, wishlist) {
   //   console.log("Wish list", arguments);
