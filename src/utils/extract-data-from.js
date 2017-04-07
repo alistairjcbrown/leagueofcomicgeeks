@@ -23,7 +23,7 @@ var seriesExtractor = function (response) {
     return {
       id: $name.attr('data-id'),
       name: $name.text().trim(),
-      cover: cover,
+      cover: config.rootUrl + cover,
       publisher: publisher,
       count: count,
       series: series
@@ -53,7 +53,7 @@ var issueExtractor = function (response) {
     return {
       id: id,
       name: name,
-      cover: cover,
+      cover: config.rootUrl + cover,
       publisher: publisher,
       description: description,
       releaseDate: releaseDate,
