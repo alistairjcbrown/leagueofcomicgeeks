@@ -26,8 +26,8 @@ module.exports = function () {
     require('./new-comics')(lofcbg);
     require('./search-results')(lofcbg);
     require('./collection')(lofcbg);
-    // require('./pull-list')(lofcbg);
-    // require('./wish-list')(lofcbg);
-    // require('./read-list')(lofcbg);
+    require('./pull-list')(lofcbg);
+    require('./wish-list')(lofcbg);
+    require('./read-list')(lofcbg);
   });
 };
