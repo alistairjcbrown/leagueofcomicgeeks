@@ -23,11 +23,11 @@ module.exports = function () {
       });
     });
 
-    require('../not-logged-in/new-comics')(lofcbg);
-    require('../not-logged-in/search-results')(lofcbg);
-    // require('./collection')();
-    // require('./pull-list')();
-    // require('./wish-list')();
-    // require('./read-list')();
+    require('./new-comics')(lofcbg);
+    require('./search-results')(lofcbg);
+    require('./collection')(lofcbg);
+    // require('./pull-list')(lofcbg);
+    // require('./wish-list')(lofcbg);
+    // require('./read-list')(lofcbg);
   });
 };

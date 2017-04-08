@@ -2,7 +2,7 @@ var _ = require('lodash');
 var allSeries20170104 = require('./test-data/all-series-2017-01-04');
 var filteredSeries20170104 = require('./test-data/filtered-series-2017-01-04');
 
-module.exports = function (lofcbg) {
+module.exports = function (lofcbg, newComicsDate) {
   describe('get series list', function () {
     it('should provide no new comic series', function (done) {
       lofcbg.newComics.get(undefined, '2017-01-01', { type: lofcbg.types.SERIES }, function (err, newComics) {
@@ -14,7 +14,7 @@ module.exports = function (lofcbg) {
     });
 
     it('should provide a list of new comic series', function (done) {
-      lofcbg.newComics.get(undefined, '2017-01-04', { type: lofcbg.types.SERIES }, function (err, newComics) {
+      lofcbg.newComics.get(undefined, newComicsDate, { type: lofcbg.types.SERIES }, function (err, newComics) {
         expect(err).toBeNull();
         expect(newComics.length).toBe(139);
         expect(newComics).toEqual(allSeries20170104);
@@ -26,7 +26,7 @@ module.exports = function (lofcbg) {
     });
 
     it('should provide a filtered list of new comic series', function (done) {
-      lofcbg.newComics.get(undefined, '2017-01-04', { type: lofcbg.types.SERIES, publishers: ['Image Comics'] }, function (err, newComics) {
+      lofcbg.newComics.get(undefined, newComicsDate, { type: lofcbg.types.SERIES, publishers: ['Image Comics'] }, function (err, newComics) {
         expect(err).toBeNull();
         expect(newComics.length).toBe(8);
         expect(newComics).toEqual(filteredSeries20170104);
