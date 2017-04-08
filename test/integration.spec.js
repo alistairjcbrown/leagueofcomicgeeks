@@ -25,7 +25,9 @@ describe('Integration tests', function () {
   //
   // Logged in
   // - confirm authenticaiton details
-  // - Need to update this, so hold off on integration tests
+  // Export authentication details
+  // Destroy authentication and confirm item can't be added to collection
+  // Load in authentication details and confirm item can be added to collection; then remove item
   //
   // - add series to collection
   // - add issue to collection
@@ -42,9 +44,7 @@ describe('Integration tests', function () {
   // - remove series issues from pull list
   //
   // Confirm account is empty again
-  // Export authentication details
-  // Destroy authentication and confirm item can't be added to collection
-  // Load in authentication details and confirm item can be added to collection; then remove item
+
 
   require('./not-logged-in')();
 });

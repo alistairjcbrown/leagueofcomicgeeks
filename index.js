@@ -1,6 +1,6 @@
 module.exports = {
   types: require('./src/utils/types'),
-  login: require('./src/login'),
+  session: require('./src/session'),
   searchResults: require('./src/search-results'),
   newComics: require('./src/new-comics'),
   collection: require('./src/collection'),
