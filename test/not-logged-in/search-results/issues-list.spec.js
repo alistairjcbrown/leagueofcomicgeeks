@@ -1,9 +1,8 @@
 var _ = require('lodash');
-var lofcbg = require('../../../');
 var allIssuesBlackMagic = require('./test-data/all-issues-black-magic');
 var filteredIssuesBlackMagic = require('./test-data/filtered-issues-black-magic');
 
-module.exports = function (searchTerm) {
+module.exports = function (lofcbg, searchTerm) {
   describe('get issues list', function () {
     it('should provide no results for unknown search term', function (done) {
       lofcbg.searchResults.get(undefined, 'foobarbaz', function (err, searchResults) {

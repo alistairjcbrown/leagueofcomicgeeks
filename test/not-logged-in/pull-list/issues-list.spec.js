@@ -1,9 +1,8 @@
 var _ = require('lodash');
-var lofcbg = require('../../../');
 var allIssuesPullList = require('./test-data/all-issues-pull-list');
 var filteredIssuesPullList = require('./test-data/filtered-issues-pull-list');
 
-module.exports = function (pullListDate) {
+module.exports = function (lofcbg, pullListDate) {
   describe('get issues list', function () {
     it('should provide no comics in pull list with an invalid user id', function (done) {
       lofcbg.pullList.get('foo', pullListDate, function (err, pullList) {

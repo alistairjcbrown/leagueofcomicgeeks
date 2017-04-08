@@ -1,9 +1,8 @@
 var _ = require('lodash');
-var lofcbg = require('../../../');
 var allIssues20170104 = require('./test-data/all-issues-2017-01-04');
 var filteredIssues20170104 = require('./test-data/filtered-issues-2017-01-04');
 
-module.exports = function () {
+module.exports = function (lofcbg) {
   describe('get issues list', function () {
     it('should provide no new comic', function (done) {
       lofcbg.newComics.get(undefined, '2017-01-01', function (err, newComics) {

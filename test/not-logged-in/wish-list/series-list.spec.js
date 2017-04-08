@@ -1,9 +1,8 @@
 var _ = require('lodash');
-var lofcbg = require('../../../');
 var allSeriesWishList = require('./test-data/all-series-wish-list');
 var filteredSeriesWishList = require('./test-data/filtered-series-wish-list');
 
-module.exports = function () {
+module.exports = function (lofcbg) {
   describe('get series list', function () {
     it('should provide no comics in wish list with an invalid user id', function (done) {
       lofcbg.wishList.get('foo', { type: lofcbg.types.SERIES }, function (err, wishList) {

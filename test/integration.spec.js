@@ -1,4 +1,3 @@
-var lofcbg = require('../');
 var customMatchers = require('./utils/custom-matchers');
 
 global.editableUserId = 57714; // lofcg_test
@@ -30,7 +29,7 @@ describe('Integration tests', function () {
   // X Destroy authentication and confirm item can't be added to collection
   // X Load in authentication details and confirm item can be added to collection; then remove item
   //
-  // - Copy tests for pure read only modules and run under logged in to confirm no issues with being authenticated
+  // X Copy tests for pure read only modules and run under logged in to confirm no issues with being authenticated
   //
   // - add series to collection
   // - add issue to collection
@@ -48,7 +47,7 @@ describe('Integration tests', function () {
   //
   // Confirm account is empty again
 
-
   require('./not-logged-in')();
   require('./authentication')();
+  require('./logged-in')();
 });

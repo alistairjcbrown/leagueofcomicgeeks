@@ -1,9 +1,8 @@
 var _ = require('lodash');
-var lofcbg = require('../../../');
 var allIssuesCollection = require('./test-data/all-issues-collection');
 var filteredIssuesCollection = require('./test-data/filtered-issues-collection');
 
-module.exports = function () {
+module.exports = function (lofcbg) {
   describe('get issues list', function () {
     it('should provide no comics in collection with an invalid user id', function (done) {
       lofcbg.collection.get('foo', function (err, collection) {

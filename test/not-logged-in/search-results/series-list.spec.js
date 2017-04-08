@@ -1,9 +1,8 @@
 var _ = require('lodash');
-var lofcbg = require('../../../');
 var allSeriesBlackMagic = require('./test-data/all-series-black-magic');
 var filteredSeriesBlackMagic = require('./test-data/filtered-series-black-magic');
 
-module.exports = function (searchTerm) {
+module.exports = function (lofcbg, searchTerm) {
   describe('get series list', function () {
     it('should provide no results for unknown search term', function (done) {
       lofcbg.searchResults.get(undefined, 'foobarbaz', { type: lofcbg.types.SERIES }, function (err, searchResults) {

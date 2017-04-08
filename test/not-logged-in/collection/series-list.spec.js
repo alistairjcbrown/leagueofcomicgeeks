@@ -1,9 +1,8 @@
 var _ = require('lodash');
-var lofcbg = require('../../../');
 var allSeriesCollection = require('./test-data/all-series-collection');
 var filteredSeriesCollection = require('./test-data/filtered-series-collection');
 
-module.exports = function () {
+module.exports = function (lofcbg) {
   describe('get series list', function () {
     it('should provide no comics in collection with an invalid user id', function (done) {
       lofcbg.collection.get('foo', { type: lofcbg.types.SERIES }, function (err, collection) {

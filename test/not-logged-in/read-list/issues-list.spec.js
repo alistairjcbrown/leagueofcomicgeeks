@@ -1,9 +1,8 @@
 var _ = require('lodash');
-var lofcbg = require('../../../');
 var allIssuesReadList = require('./test-data/all-issues-read-list');
 var filteredIssuesReadList = require('./test-data/filtered-issues-read-list');
 
-module.exports = function () {
+module.exports = function (lofcbg) {
   describe('get issues list', function () {
     it('should provide no comics in read list with an invalid user id', function (done) {
       lofcbg.readList.get('foo', function (err, readList) {

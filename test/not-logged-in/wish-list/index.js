@@ -1,6 +1,6 @@
-module.exports = function () {
+module.exports = function (lofcbg) {
   describe('Wish List', function () {
-    require('./issues-list.spec')();
-    require('./series-list.spec')();
+    require('./issues-list.spec')(lofcbg);
+    require('./series-list.spec')(lofcbg);
   });
 };
