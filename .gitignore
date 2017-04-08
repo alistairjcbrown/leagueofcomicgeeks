@@ -35,3 +35,10 @@ jspm_packages
 
 # Optional REPL history
 .node_repl_history
+
+# Ignore Mac DS_Store files
+.DS_Store
+*.DS_Store
+
+# Test config files
+.test_config.json

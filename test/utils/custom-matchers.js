@@ -2,6 +2,7 @@ var _ = require('lodash');
 var moment = require('moment');
 var expectedIssueKeys = ['id', 'name', 'cover', 'publisher', 'description', 'releaseDate', 'price'];
 var expectedSeriesKeys = ['id', 'name', 'cover', 'publisher', 'count', 'series'];
+var expectedSessionKeys = ['id', 'username', 'email', 'session'];
 
 var createFailure = function (message) {
   return { pass: false, message: message };
@@ -24,7 +25,7 @@ var isDate = function (value) {
 };
 
 module.exports = {
-  toBeAComicIssue: function(util, customEqualityTesters) {
+  toBeAComicIssue: function(util) {
     return {
       compare: function(actual) {
         if (_.difference(_.keys(actual), expectedIssueKeys).length > 0) {
@@ -44,7 +45,7 @@ module.exports = {
     };
   },
 
-  toBeAComicSeries: function(util, customEqualityTesters) {
+  toBeAComicSeries: function(util) {
     return {
       compare: function(actual) {
         if (_.difference(_.keys(actual), expectedSeriesKeys).length > 0) {
@@ -57,6 +58,25 @@ module.exports = {
         if (!isNonEmptyString(actual.publisher)) return createFailure('Invalid publisher in comic series object');
         if (!isPositiveNumber(actual.count)) return createFailure('Invalid count in comic series object');
         if (_.isUndefined(actual.series)) return createFailure('Invalid series in comic series object');
+
+        return { pass: true };
+      }
+    };
+  },
+
+  toBeASessionObject: function(util) {
+    return {
+      compare: function(actual, expected) {
+        if (_.difference(_.keys(actual), expectedSessionKeys).length > 0) {
+          return createFailure('Unexpected keys in session object');
+        }
+
+        if (actual.id !== expected.id) return createFailure('Unexpected id in session object');
+        if (actual.username !== expected.username) return createFailure('Unexpected username in session object');
+        if (!isNonEmptyString(actual.email)) return createFailure('Invalid email in session object');
+        if (!isNonEmptyString(actual.session) || actual.session.length < 500) {
+          return createFailure('Invalid session in session object');
+        }
 
         return { pass: true };
       }

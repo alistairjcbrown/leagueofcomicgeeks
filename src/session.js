@@ -10,11 +10,11 @@ var loginUrl = config.rootUrl + '/login';
 var logoutUrl = config.rootUrl + '/logout';
 var protectedUrl = config.rootUrl + '/comics/submit-new-series';
 
-var getSession = function (cookieString) {
+var getSessionFromCookie = function (cookieString) {
   return cookie.parse(cookieString)[config.sessionKey];
 };
 
-var create = function (username, password, callback) {
+var createSession = function (username, password, callback) {
   const credentials = {
     username: username,
     password: password
@@ -51,7 +51,7 @@ var create = function (username, password, callback) {
   });
 };
 
-var validate = function (callback) {
+var validateSession = function (callback) {
   request.get({ url: protectedUrl, followRedirect: false }, function (error, response, body) {
     if (error) {
       return callback(error);
@@ -77,7 +77,7 @@ var validate = function (callback) {
   });
 };
 
-var destroy = function (callback) {
+var destroySession = function (callback) {
   request.get({ url: logoutUrl, followAllRedirects: true }, function (error, response, body) {
     if (error) {
       return callback(error);
@@ -87,9 +87,9 @@ var destroy = function (callback) {
 
     var isEmptyRedirect = (response && response.statusCode === 302 && response.headers.location === '');
     var sessionCookie = _.find(response.headers['set-cookie'], function (cookieString) {
-      return _.isString(getSession(cookieString));
+      return _.isString(getSessionFromCookie(cookieString));
     });
-    var sessionReset = (_.isString(sessionCookie) && getSession(sessionCookie) === 'a:0:{}');
+    var sessionReset = (_.isString(sessionCookie) && getSessionFromCookie(sessionCookie) === 'a:0:{}');
 
     if (isEmptyRedirect && sessionReset) {
       return callback(null);
@@ -99,8 +99,23 @@ var destroy = function (callback) {
   });
 };
 
+var getSession = function (callback) {
+  _.defer(function () {
+    callback(null, authentication.get());
+  });
+};
+
+var setSession = function (authDetails, callback) {
+  _.defer(function () {
+    var sessionSet = authentication.set(authDetails.id, authDetails.username, authDetails.email, authDetails.session);
+    callback(null, sessionSet);
+  });
+};
+
 module.exports = {
-  create: create,
-  validate: validate,
-  destroy: destroy
+  create: createSession,
+  validate: validateSession,
+  destroy: destroySession,
+  get: getSession,
+  set: setSession
 };

@@ -9,8 +9,8 @@ Unofficial node.js library for interacting with League of Comic Geeks
 
  - Tests
    - [ ] Integration tests
-   - [ ] Unit tests
    - [ ] Update read-only integration tests to use a specificly set up test account, and confirm response content
+   - [ ] Unit tests
 
  - Tooling
    - [ ] Linting

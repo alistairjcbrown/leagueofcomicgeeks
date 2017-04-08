@@ -1,6 +1,8 @@
 var lofcbg = require('../');
 var customMatchers = require('./utils/custom-matchers');
 
+global.editableUserId = 57714; // lofcg_test
+// TODO: Create a read only user account with activity to replace the two below
 global.testUserId = 26853; // alistairjcbrown
 global.testUserId2 = 42590; // undeadquinn
 global.testComicId = 2881147; // Rogue One #1
@@ -23,11 +25,13 @@ describe('Integration tests', function () {
   //
   // *** don't forget error states
   //
-  // Logged in
-  // - confirm authenticaiton details
-  // Export authentication details
-  // Destroy authentication and confirm item can't be added to collection
-  // Load in authentication details and confirm item can be added to collection; then remove item
+  // X Logged in
+  // X - confirm authenticaiton details
+  // X Export authentication details
+  // X Destroy authentication and confirm item can't be added to collection
+  // X Load in authentication details and confirm item can be added to collection; then remove item
+  //
+  // - Copy tests for pure read only modules and run under logged in to confirm no issues with being authenticated
   //
   // - add series to collection
   // - add issue to collection
@@ -47,4 +51,5 @@ describe('Integration tests', function () {
 
 
   require('./not-logged-in')();
+  require('./authentication')();
 });
