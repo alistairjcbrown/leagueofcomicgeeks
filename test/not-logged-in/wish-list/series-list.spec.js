@@ -1,5 +1,7 @@
 var _ = require('lodash');
 var lofcbg = require('../../../');
+var allSeriesWishList = require('./test-data/all-series-wish-list');
+var filteredSeriesWishList = require('./test-data/filtered-series-wish-list');
 
 module.exports = function () {
   describe('get series list', function () {
@@ -13,9 +15,10 @@ module.exports = function () {
     });
 
     it('should provide a list of comics from a users wish list', function (done) {
-      lofcbg.wishList.get(testUserId2, { type: lofcbg.types.SERIES }, function (err, wishList) {
+      lofcbg.wishList.get(readonlyUserId, { type: lofcbg.types.SERIES }, function (err, wishList) {
         expect(err).toBeNull();
-        expect(wishList.length).toBeGreaterThan(0);
+        expect(wishList.length).toBe(4);
+        expect(wishList).toEqual(allSeriesWishList);
         _.each(wishList, function (comic) {
           expect(comic).toBeAComicSeries();
         });
@@ -24,9 +27,10 @@ module.exports = function () {
     });
 
     it('should provide a filtered list of comics from a users wish list', function (done) {
-      lofcbg.wishList.get(testUserId2, { type: lofcbg.types.SERIES, publishers: ['Image Comics'] }, function (err, wishList) {
+      lofcbg.wishList.get(readonlyUserId, { type: lofcbg.types.SERIES, publishers: ['Image Comics'] }, function (err, wishList) {
         expect(err).toBeNull();
-        expect(wishList.length).toBeGreaterThan(0);
+        expect(wishList.length).toBe(2);
+        expect(wishList).toEqual(filteredSeriesWishList);
         _.each(wishList, function (comic) {
           expect(comic).toBeAComicSeries();
         });

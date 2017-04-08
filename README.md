@@ -9,12 +9,13 @@ Unofficial node.js library for interacting with League of Comic Geeks
 
  - Tests
    - [ ] Integration tests
-   - [ ] Update read-only integration tests to use a specificly set up test account, and confirm response content
+   - [X] Update read-only integration tests to use a specificly set up test account, and confirm response content
    - [ ] Unit tests
 
  - Tooling
    - [ ] Linting
    - [ ] Documentation
+   - [ ] Additional examples
    - [ ] Publish module
 
  - Can we dynamically load the publishers list in / update it periodically?

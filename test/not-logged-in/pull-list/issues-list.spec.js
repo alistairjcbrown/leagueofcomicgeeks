@@ -1,10 +1,12 @@
 var _ = require('lodash');
 var lofcbg = require('../../../');
+var allIssuesPullList = require('./test-data/all-issues-pull-list');
+var filteredIssuesPullList = require('./test-data/filtered-issues-pull-list');
 
-module.exports = function () {
+module.exports = function (pullListDate) {
   describe('get issues list', function () {
     it('should provide no comics in pull list with an invalid user id', function (done) {
-      lofcbg.pullList.get('foo', '2017-01-18', function (err, pullList) {
+      lofcbg.pullList.get('foo', pullListDate, function (err, pullList) {
         expect(err).toBeNull();
         expect(pullList.length).toBe(0);
         expect(pullList).toEqual([]);
@@ -13,9 +15,10 @@ module.exports = function () {
     });
 
     it('should provide a list of comics from a users pull list', function (done) {
-      lofcbg.pullList.get(testUserId, '2017-01-18', function (err, pullList) {
+      lofcbg.pullList.get(readonlyUserId, pullListDate, function (err, pullList) {
         expect(err).toBeNull();
-        expect(pullList.length).toBeGreaterThan(0);
+        expect(pullList.length).toBe(2);
+        expect(pullList).toEqual(allIssuesPullList);
         _.each(pullList, function (comic) {
           expect(comic).toBeAComicIssue();
         });
@@ -24,9 +27,10 @@ module.exports = function () {
     });
 
     it('should provide a filtered list of comics from a users pull list', function (done) {
-      lofcbg.pullList.get(testUserId, '2017-01-18', { publishers: ['Dynamite'] }, function (err, pullList) {
+      lofcbg.pullList.get(readonlyUserId, pullListDate, { publishers: ['Image Comics'] }, function (err, pullList) {
         expect(err).toBeNull();
-        expect(pullList.length).toBeGreaterThan(0);
+        expect(pullList.length).toBe(1);
+        expect(pullList).toEqual(filteredIssuesPullList);
         _.each(pullList, function (comic) {
           expect(comic).toBeAComicIssue();
         });
@@ -35,7 +39,7 @@ module.exports = function () {
     });
 
     it('should return an error when provided with an invalid date', function (done) {
-      lofcbg.pullList.get(testUserId, 'foo', function (err) {
+      lofcbg.pullList.get(readonlyUserId, 'foo', function (err) {
         expect(err).toEqual(jasmine.any(Error));
         expect(err.message).toEqual('Invalid date value provided');
         done();

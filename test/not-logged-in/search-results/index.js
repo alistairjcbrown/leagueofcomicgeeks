@@ -1,6 +1,7 @@
 module.exports = function () {
   describe('Search Results', function () {
-    require('./issues-list.spec')();
-    require('./series-list.spec')();
+    var searchTerm = 'Black Magic';
+    require('./issues-list.spec')(searchTerm);
+    require('./series-list.spec')(searchTerm);
   });
 };

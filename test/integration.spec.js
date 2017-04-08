@@ -2,10 +2,9 @@ var lofcbg = require('../');
 var customMatchers = require('./utils/custom-matchers');
 
 global.editableUserId = 57714; // lofcg_test
-// TODO: Create a read only user account with activity to replace the two below
-global.testUserId = 26853; // alistairjcbrown
-global.testUserId2 = 42590; // undeadquinn
+global.readonlyUserId = 57833; // lofcg_readonly
 global.testComicId = 2881147; // Rogue One #1
+
 jasmine.getEnv().defaultTimeoutInterval = 20000;
 
 describe('Integration tests', function () {

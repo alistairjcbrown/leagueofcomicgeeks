@@ -1,5 +1,7 @@
 var _ = require('lodash');
 var lofcbg = require('../../../');
+var allIssuesCollection = require('./test-data/all-issues-collection');
+var filteredIssuesCollection = require('./test-data/filtered-issues-collection');
 
 module.exports = function () {
   describe('get issues list', function () {
@@ -13,9 +15,10 @@ module.exports = function () {
     });
 
     it('should provide a list of comics from a users collection', function (done) {
-      lofcbg.collection.get(testUserId, function (err, collection) {
+      lofcbg.collection.get(readonlyUserId, function (err, collection) {
         expect(err).toBeNull();
-        expect(collection.length).toBeGreaterThan(0);
+        expect(collection.length).toBe(86);
+        expect(collection).toEqual(allIssuesCollection);
         _.each(collection, function (comic) {
           expect(comic).toBeAComicIssue();
         });
@@ -24,9 +27,10 @@ module.exports = function () {
     });
 
     it('should provide a filtered list of comics from a users collection', function (done) {
-      lofcbg.collection.get(testUserId, { publishers: ['Image Comics'] }, function (err, collection) {
+      lofcbg.collection.get(readonlyUserId, { publishers: ['Image Comics'] }, function (err, collection) {
         expect(err).toBeNull();
-        expect(collection.length).toBeGreaterThan(0);
+        expect(collection.length).toBe(13);
+        expect(collection).toEqual(filteredIssuesCollection);
         _.each(collection, function (comic) {
           expect(comic).toBeAComicIssue();
         });

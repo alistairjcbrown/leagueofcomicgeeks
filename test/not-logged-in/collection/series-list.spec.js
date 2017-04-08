@@ -1,5 +1,7 @@
 var _ = require('lodash');
 var lofcbg = require('../../../');
+var allSeriesCollection = require('./test-data/all-series-collection');
+var filteredSeriesCollection = require('./test-data/filtered-series-collection');
 
 module.exports = function () {
   describe('get series list', function () {
@@ -13,9 +15,10 @@ module.exports = function () {
     });
 
     it('should provide a list of comics from a users collection', function (done) {
-      lofcbg.collection.get(testUserId, { type: lofcbg.types.SERIES }, function (err, collection) {
+      lofcbg.collection.get(readonlyUserId, { type: lofcbg.types.SERIES }, function (err, collection) {
         expect(err).toBeNull();
-        expect(collection.length).toBeGreaterThan(0);
+        expect(collection.length).toBe(3);
+        expect(collection).toEqual(allSeriesCollection);
         _.each(collection, function (comic) {
           expect(comic).toBeAComicSeries();
         });
@@ -24,9 +27,10 @@ module.exports = function () {
     });
 
     it('should provide a filtered list of comics from a users collection', function (done) {
-      lofcbg.collection.get(testUserId, { type: lofcbg.types.SERIES, publishers: ['Image Comics'] }, function (err, collection) {
+      lofcbg.collection.get(readonlyUserId, { type: lofcbg.types.SERIES, publishers: ['Image Comics'] }, function (err, collection) {
         expect(err).toBeNull();
-        expect(collection.length).toBeGreaterThan(0);
+        expect(collection.length).toBe(1);
+        expect(collection).toEqual(filteredSeriesCollection);
         _.each(collection, function (comic) {
           expect(comic).toBeAComicSeries();
         });
