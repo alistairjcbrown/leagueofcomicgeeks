@@ -8,7 +8,7 @@ Unofficial node.js library for interacting with League of Comic Geeks
    - [X] Use `/logout` to destroy the session, also destroying locally
 
  - Tests
-   - [ ] Integration tests
+   - [X] Integration tests
    - [X] Update read-only integration tests to use a specificly set up test account, and confirm response content
    - [ ] Unit tests
 

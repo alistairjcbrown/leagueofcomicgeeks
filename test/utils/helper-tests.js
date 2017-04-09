@@ -1,3 +1,5 @@
+var _ = require('lodash');
+
 var confirmEmptyFirst = function (resource, additionalArgs, tests) {
   return function () {
     describe('list is empty', function () {
@@ -28,14 +30,21 @@ var confirmEmptyFirst = function (resource, additionalArgs, tests) {
 };
 
 var testRemovingFromList = function (resource, resourceId, additionalArgs) {
-  var removeErr;
+  var removeAdditionalArgs = additionalArgs;
+  var getAdditionalArgs = additionalArgs;
 
+  if (_.isObject(additionalArgs) && !_.isArray(additionalArgs)) {
+    removeAdditionalArgs = additionalArgs.remove;
+    getAdditionalArgs = additionalArgs.get;
+  }
+
+  var removeErr;
   beforeAll(function (done) {
     var callback = function (err) {
       removeErr = err;
       done();
     };
-    var removeArgs = [resourceId].concat((additionalArgs || []), callback);
+    var removeArgs = [resourceId].concat((removeAdditionalArgs || []), callback);
     resource.remove.apply(resource, removeArgs);
   });
 
@@ -51,7 +60,7 @@ var testRemovingFromList = function (resource, resourceId, additionalArgs) {
         expect(value).toEqual([]);
         done();
       };
-      var getArgs = [editableUserId].concat((additionalArgs || []), callback);
+      var getArgs = [editableUserId].concat((getAdditionalArgs || []), callback);
       resource.get.apply(resource, getArgs);
     });
   });
