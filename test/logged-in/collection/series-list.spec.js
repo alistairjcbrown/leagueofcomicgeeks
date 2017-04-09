@@ -1,14 +1,15 @@
 var _ = require('lodash');
-var utils = require('./utils');
+var helpers = require('../../utils/helper-tests');
 var allSeriesCollection = require('./test-data/all-series-collection');
 
 module.exports = function (lofcbg) {
   var additionalArgs = [{ type: lofcbg.types.SERIES }];
+  var confirmEmptyFirst = _.partial(helpers.confirmEmptyFirst, lofcbg.wishList, additionalArgs);
 
   require('../../shared/collection/series-list.spec')(lofcbg);
 
   describe('add series to list', function () {
-    describe('when valid series id used', utils.confirmEmptyFirst(lofcbg, additionalArgs, function () {
+    describe('when valid series id used', confirmEmptyFirst(function () {
       var addErr;
 
       beforeAll(function (done) {
@@ -37,7 +38,7 @@ module.exports = function (lofcbg) {
       });
 
       describe('remove series from list', function () {
-        utils.testRemovingFromList(lofcbg, testSeriesId, additionalArgs);
+        helpers.testRemovingFromList(lofcbg.collection, testSeriesId, additionalArgs);
       });
     }));
 
@@ -53,8 +54,8 @@ module.exports = function (lofcbg) {
   });
 
   describe('remove series from list', function () {
-    describe('when removing series that isn\'t in collection', utils.confirmEmptyFirst(lofcbg, additionalArgs, function () {
-      utils.testRemovingFromList(lofcbg, testSeriesId, additionalArgs);
+    describe('when removing series that isn\'t in collection', confirmEmptyFirst(function () {
+      helpers.testRemovingFromList(lofcbg.collection, testSeriesId, additionalArgs);
     }));
 
     describe('when invalid series id used', function () {

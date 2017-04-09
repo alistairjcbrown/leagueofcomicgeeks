@@ -40,7 +40,8 @@ describe('Integration tests', function () {
   // X remove issue from collection
   // X remove series from collection
   //
-  // >> {repeat above for wish list and read list}
+  // X repeat above for wish list
+  // - repeat above for read list
   //
   // - add series to pull list
   // - add issue to pull list

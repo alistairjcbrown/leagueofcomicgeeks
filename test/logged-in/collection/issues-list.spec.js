@@ -1,14 +1,15 @@
 var _ = require('lodash');
-var utils = require('./utils');
+var helpers = require('../../utils/helper-tests');
 var allIssuesCollection = require('./test-data/all-issues-collection');
 
 module.exports = function (lofcbg) {
   var additionalArgs = [];
+  var confirmEmptyFirst = _.partial(helpers.confirmEmptyFirst, lofcbg.collection, additionalArgs);
 
   require('../../shared/collection/issues-list.spec')(lofcbg);
 
   describe('add issue to list', function () {
-    describe('when valid issue id used', utils.confirmEmptyFirst(lofcbg, additionalArgs, function () {
+    describe('when valid issue id used', confirmEmptyFirst(function () {
       var addErr;
 
       beforeAll(function (done) {
@@ -37,7 +38,7 @@ module.exports = function (lofcbg) {
       });
 
       describe('remove issue from list', function () {
-        utils.testRemovingFromList(lofcbg, testIssueId, additionalArgs);
+        helpers.testRemovingFromList(lofcbg.collection, testIssueId, additionalArgs);
       });
     }));
 
@@ -53,8 +54,8 @@ module.exports = function (lofcbg) {
   });
 
   describe('remove issue from list', function () {
-    describe('when removing issue that isn\'t in collection', utils.confirmEmptyFirst(lofcbg, additionalArgs, function () {
-      utils.testRemovingFromList(lofcbg, testIssueId, additionalArgs);
+    describe('when removing issue that isn\'t in collection', confirmEmptyFirst(function () {
+      helpers.testRemovingFromList(lofcbg.collection, testIssueId, additionalArgs);
     }));
 
     describe('when invalid issue id used', function () {

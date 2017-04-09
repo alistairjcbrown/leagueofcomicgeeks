@@ -1,16 +1,16 @@
-var confirmEmptyFirst = function (lofcbg, additionalArgs, tests) {
+var confirmEmptyFirst = function (resource, additionalArgs, tests) {
   return function () {
     describe('list is empty', function () {
-      var getErr, getCollection;
+      var getErr, getValue;
 
       beforeAll(function (done) {
-        var callback = function (err, collection) {
+        var callback = function (err, value) {
           getErr = err;
-          getCollection = collection;
+          getValue = value;
           done();
         }
         var getArgs = [editableUserId].concat((additionalArgs || []), callback);
-        lofcbg.collection.get.apply(lofcbg.collection, getArgs);
+        resource.get.apply(resource, getArgs);
       });
 
       it('should not return an error', function () {
@@ -18,8 +18,8 @@ var confirmEmptyFirst = function (lofcbg, additionalArgs, tests) {
       });
 
       it('should be empty list', function () {
-        expect(getCollection.length).toBe(0);
-        expect(getCollection).toEqual([]);
+        expect(getValue.length).toBe(0);
+        expect(getValue).toEqual([]);
       });
 
       tests();
@@ -27,7 +27,7 @@ var confirmEmptyFirst = function (lofcbg, additionalArgs, tests) {
   };
 };
 
-var testRemovingFromList = function (lofcbg, resourceId, additionalArgs) {
+var testRemovingFromList = function (resource, resourceId, additionalArgs) {
   var removeErr;
 
   beforeAll(function (done) {
@@ -36,7 +36,7 @@ var testRemovingFromList = function (lofcbg, resourceId, additionalArgs) {
       done();
     };
     var removeArgs = [resourceId].concat((additionalArgs || []), callback);
-    lofcbg.collection.remove.apply(lofcbg.collection, removeArgs);
+    resource.remove.apply(resource, removeArgs);
   });
 
   it('should not return an error', function () {
@@ -45,14 +45,14 @@ var testRemovingFromList = function (lofcbg, resourceId, additionalArgs) {
 
   describe('getting list', function () {
     it('should be empty', function (done) {
-      var callback = function (err, collection) {
+      var callback = function (err, value) {
         expect(err).toBeNull();
-        expect(collection.length).toBe(0);
-        expect(collection).toEqual([]);
+        expect(value.length).toBe(0);
+        expect(value).toEqual([]);
         done();
       };
       var getArgs = [editableUserId].concat((additionalArgs || []), callback);
-      lofcbg.collection.get.apply(lofcbg.collection, getArgs);
+      resource.get.apply(resource, getArgs);
     });
   });
 };
