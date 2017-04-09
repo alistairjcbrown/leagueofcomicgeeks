@@ -5,7 +5,7 @@ var authentication = require('./authentication');
 var extractDataFrom = require('./extract-data-from');
 var config = require('../../config');
 
-var myListUrl = config.rootUrl + '/comic/my_list_bulk';
+var myListUrl = '/comic/my_list_bulk';
 var defaultIsSuccessful = function (body) {
   return !_.isNaN(parseInt(body, 10));
 };
@@ -21,7 +21,7 @@ var modifyList = function (seriesId, listId, actionId, isSuccessful, failureMess
     action: actionId
   };
 
-  request.post({ url: myListUrl, form: data }, function (error, response, body) {
+  request.post({ uri: myListUrl, form: data }, function (error, response, body) {
     if (error) {
       return callback(error);
     }

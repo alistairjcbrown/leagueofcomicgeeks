@@ -6,9 +6,9 @@ var authentication = require('./utils/authentication');
 var convertObjectStringToObject = require('./utils/convert-object-string-to-object');
 var config = require('../config');
 
-var loginUrl = config.rootUrl + '/login';
-var logoutUrl = config.rootUrl + '/logout';
-var protectedUrl = config.rootUrl + '/comics/submit-new-series';
+var loginUrl = '/login';
+var logoutUrl = '/logout';
+var protectedUrl = '/comics/submit-new-series';
 
 var getSessionFromCookie = function (cookieString) {
   return cookie.parse(cookieString)[config.sessionKey];
@@ -20,7 +20,7 @@ var createSession = function (username, password, callback) {
     password: password
   };
 
-  request.post({ url: loginUrl, form: credentials, followAllRedirects: true }, function (error, response, body) {
+  request.post({ uri: loginUrl, form: credentials, followAllRedirects: true }, function (error, response, body) {
     if (error) {
       return callback(error);
     }
@@ -52,7 +52,7 @@ var createSession = function (username, password, callback) {
 };
 
 var validateSession = function (callback) {
-  request.get({ url: protectedUrl, followRedirect: false }, function (error, response, body) {
+  request.get({ uri: protectedUrl, followRedirect: false }, function (error, response, body) {
     if (error) {
       return callback(error);
     }
@@ -62,7 +62,7 @@ var validateSession = function (callback) {
     }
 
     if (response && response.statusCode === 302) {
-      if (response.headers.location === loginUrl) {
+      if (response.headers.location === config.rootUrl + loginUrl) {
         return callback(null, false);
       }
 
@@ -78,7 +78,7 @@ var validateSession = function (callback) {
 };
 
 var destroySession = function (callback) {
-  request.get({ url: logoutUrl, followAllRedirects: true }, function (error, response, body) {
+  request.get({ uri: logoutUrl, followAllRedirects: true }, function (error, response, body) {
     if (error) {
       return callback(error);
     }

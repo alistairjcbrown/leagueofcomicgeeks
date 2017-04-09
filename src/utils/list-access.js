@@ -6,8 +6,8 @@ var extractDataFrom = require('./extract-data-from');
 var getPublisherIds = require('./get-publisher-ids');
 var config = require('../../config');
 
-var myListUrl = config.rootUrl + '/comic/my_list_move';
-var getComicsUrl = config.rootUrl + '/comic/get_comics';
+var myListUrl = '/comic/my_list_move';
+var getComicsUrl = '/comic/get_comics';
 
 var modifyList = function (comicId, listId, actionId, failureMessage, callback) {
   if (!authentication.isAuthenticated()) {
@@ -20,7 +20,7 @@ var modifyList = function (comicId, listId, actionId, failureMessage, callback) 
     action_id: actionId
   };
 
-  request.post({ url: myListUrl, form: data }, function (error, response, body) {
+  request.post({ uri: myListUrl, form: data }, function (error, response, body) {
     if (error) {
       return callback(error);
     }

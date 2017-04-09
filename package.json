@@ -22,6 +22,7 @@
     "request": "^2.81.0"
   },
   "devDependencies": {
-    "jasmine": "^2.5.3"
+    "jasmine": "^2.5.3",
+    "sinon": "^2.1.0"
   }
 }

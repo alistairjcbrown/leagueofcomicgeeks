@@ -8,7 +8,7 @@ module.exports = function (lofcbg) {
 
   require('../../shared/read-list/series-list.spec')(lofcbg);
 
-  fdescribe('add series to list', function () {
+  describe('add series to list', function () {
     describe('when valid series id used', confirmEmptyFirst(function () {
       var addErr;
 
