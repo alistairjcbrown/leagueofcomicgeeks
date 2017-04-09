@@ -3,7 +3,7 @@ module.exports = function (lofcbg) {
 
   describe('add issue to list', function () {
     it('should return error when adding to read list without permission', function (done) {
-      lofcbg.readList.add(testComicId, function (err) {
+      lofcbg.readList.add(testIssueId, function (err) {
         expect(err).toEqual(jasmine.any(Error));
         expect(err.message).toEqual('Not authenticated');
         done();
@@ -13,7 +13,7 @@ module.exports = function (lofcbg) {
 
   describe('remove issue from list', function () {
     it('should return error when removing to read list without permission', function (done) {
-      lofcbg.readList.remove(testComicId, function (err) {
+      lofcbg.readList.remove(testIssueId, function (err) {
         expect(err).toEqual(jasmine.any(Error));
         expect(err.message).toEqual('Not authenticated');
         done();

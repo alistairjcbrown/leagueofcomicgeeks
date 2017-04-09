@@ -3,7 +3,7 @@ module.exports = function (lofcbg) {
 
   describe('add series to list', function () {
     it('should return error when adding to wish list without permission', function (done) {
-      lofcbg.wishList.add(testComicId, { type: lofcbg.types.SERIES }, function (err) {
+      lofcbg.wishList.add(testIssueId, { type: lofcbg.types.SERIES }, function (err) {
         expect(err).toEqual(jasmine.any(Error));
         expect(err.message).toEqual('Not authenticated');
         done();
@@ -13,7 +13,7 @@ module.exports = function (lofcbg) {
 
   describe('remove series from list', function () {
     it('should return error when removing to wish list without permission', function (done) {
-      lofcbg.wishList.remove(testComicId, { type: lofcbg.types.SERIES }, function (err) {
+      lofcbg.wishList.remove(testIssueId, { type: lofcbg.types.SERIES }, function (err) {
         expect(err).toEqual(jasmine.any(Error));
         expect(err.message).toEqual('Not authenticated');
         done();

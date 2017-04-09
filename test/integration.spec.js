@@ -2,9 +2,12 @@ var customMatchers = require('./utils/custom-matchers');
 
 global.editableUserId = 57714; // lofcg_test
 global.readonlyUserId = 57833; // lofcg_readonly
-global.testComicId = 2881147; // Rogue One #1
+global.testIssueId = 2881147; // Rogue One #1
+global.testSeriesId = 118035; // Star Wars: Lando
 
-jasmine.getEnv().defaultTimeoutInterval = 20000;
+var defaultTimeoutInterval = 20000;
+jasmine.DEFAULT_TIMEOUT_INTERVAL = defaultTimeoutInterval;
+jasmine.getEnv().defaultTimeoutInterval = defaultTimeoutInterval;
 
 describe('Integration tests', function () {
   beforeEach(function() {
@@ -31,12 +34,13 @@ describe('Integration tests', function () {
   //
   // X Copy tests for pure read only modules and run under logged in to confirm no issues with being authenticated
   //
-  // - add series to collection
-  // - add issue to collection
-  // - confirm by reading collection
-  // - remove issue from collection
-  // - remove series from collection
-  // {repeat above for wish list and read list}
+  // X add series to collection
+  // X add issue to collection
+  // X confirm by reading collection
+  // X remove issue from collection
+  // X remove series from collection
+  //
+  // >> {repeat above for wish list and read list}
   //
   // - add series to pull list
   // - add issue to pull list
