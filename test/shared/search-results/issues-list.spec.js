@@ -5,7 +5,7 @@ const filteredIssuesBlackMagic = require('./test-data/filtered-issues-black-magi
 module.exports = function (lofcg, searchTerm) {
   describe('get issues list', () => {
     it('should provide no results for unknown search term', (done) => {
-      lofcg.searchResults.get(undefined, 'foobarbaz', (err, searchResults) => {
+      lofcg.searchResults.get('foobarbaz', (err, searchResults) => {
         expect(err).toBeNull();
         expect(searchResults.length).toBe(0);
         expect(searchResults).toEqual([]);
@@ -14,7 +14,7 @@ module.exports = function (lofcg, searchTerm) {
     });
 
     it('should provide results for known search term', (done) => {
-      lofcg.searchResults.get(undefined, searchTerm, (err, searchResults) => {
+      lofcg.searchResults.get(searchTerm, (err, searchResults) => {
         expect(err).toBeNull();
         expect(searchResults.length).toBe(38);
         expect(searchResults).toEqual(allIssuesBlackMagic);
@@ -26,7 +26,7 @@ module.exports = function (lofcg, searchTerm) {
     });
 
     it('should provide a filtered list of new comics', (done) => {
-      lofcg.searchResults.get(undefined, searchTerm, { publishers: ['Image Comics'] }, (err, searchResults) => {
+      lofcg.searchResults.get(searchTerm, { publishers: ['Image Comics'] }, (err, searchResults) => {
         expect(err).toBeNull();
         expect(searchResults.length).toBe(15);
         expect(searchResults).toEqual(filteredIssuesBlackMagic);

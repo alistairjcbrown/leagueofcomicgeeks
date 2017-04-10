@@ -8,7 +8,7 @@ module.exports = function (lofcg, searchTerm) {
 
   describe('get series list', () => {
     it('should provide no results for unknown search term', (done) => {
-      lofcg.searchResults.get(undefined, 'foobarbaz', options, (err, searchResults) => {
+      lofcg.searchResults.get('foobarbaz', options, (err, searchResults) => {
         expect(err).toBeNull();
         expect(searchResults.length).toBe(0);
         expect(searchResults).toEqual([]);
@@ -17,7 +17,7 @@ module.exports = function (lofcg, searchTerm) {
     });
 
     it('should provide results for known search term', (done) => {
-      lofcg.searchResults.get(undefined, searchTerm, options, (err, searchResults) => {
+      lofcg.searchResults.get(searchTerm, options, (err, searchResults) => {
         expect(err).toBeNull();
         expect(searchResults.length).toBe(8);
         expect(searchResults).toEqual(allSeriesBlackMagic);
@@ -29,7 +29,7 @@ module.exports = function (lofcg, searchTerm) {
     });
 
     it('should provide a filtered list of new comics', (done) => {
-      lofcg.searchResults.get(undefined, searchTerm, filteredOptions, (err, searchResults) => {
+      lofcg.searchResults.get(searchTerm, filteredOptions, (err, searchResults) => {
         expect(err).toBeNull();
         expect(searchResults.length).toBe(2);
         expect(searchResults).toEqual(filteredSeriesBlackMagic);

@@ -3,9 +3,9 @@ const optionalOptions = require('./utils/optional-options');
 
 const listId = 'search';
 
-const getSearchResults = function (userId, query, options, callback) {
+const getSearchResults = function (query, options, callback) {
   const parameters = { title: query };
-  return accessList.get(userId, listId, parameters, options, callback);
+  return accessList.get(undefined, listId, parameters, options, callback);
 };
 
 module.exports = {

@@ -4,7 +4,7 @@ const validateDate = require('./utils/validate-date');
 
 const listId = 'releases';
 
-const getNewComics = function (userId, date, options, callback) {
+const getNewComics = function (date, options, callback) {
   const parameters = {
     date_type: 'week',
     date,
@@ -15,7 +15,7 @@ const getNewComics = function (userId, date, options, callback) {
     return callback(new Error('Invalid date value provided'));
   }
 
-  return accessList.get(userId, listId, parameters, options, callback);
+  return accessList.get(undefined, listId, parameters, options, callback);
 };
 
 module.exports = {
