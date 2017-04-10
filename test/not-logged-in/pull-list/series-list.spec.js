@@ -1,9 +1,9 @@
-module.exports = function (lofcbg, pullListDate) {
-  require('../../shared/pull-list/series-list.spec')(lofcbg, pullListDate);
+module.exports = function (lofcg, pullListDate) {
+  require('../../shared/pull-list/series-list.spec')(lofcg, pullListDate);
 
   describe('add series to list', function () {
     it('should return error when adding to pull list without permission', function (done) {
-      lofcbg.pullList.add(testIssueId, { type: lofcbg.types.SERIES }, function (err) {
+      lofcg.pullList.add(testIssueId, { type: lofcg.types.SERIES }, function (err) {
         expect(err).toEqual(jasmine.any(Error));
         expect(err.message).toEqual('Not authenticated');
         done();
@@ -13,7 +13,7 @@ module.exports = function (lofcbg, pullListDate) {
 
   describe('remove series from list', function () {
     it('should return error when removing to pull list without permission', function (done) {
-      lofcbg.pullList.remove(testIssueId, { type: lofcbg.types.SERIES }, function (err) {
+      lofcg.pullList.remove(testIssueId, { type: lofcg.types.SERIES }, function (err) {
         expect(err).toEqual(jasmine.any(Error));
         expect(err.message).toEqual('Not authenticated');
         done();

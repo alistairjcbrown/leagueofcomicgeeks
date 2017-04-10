@@ -1,9 +1,9 @@
-module.exports = function (lofcbg) {
-  require('../../shared/read-list/series-list.spec')(lofcbg);
+module.exports = function (lofcg) {
+  require('../../shared/read-list/series-list.spec')(lofcg);
 
   describe('add series to list', function () {
     it('should return error when adding to read list without permission', function (done) {
-      lofcbg.readList.add(testIssueId, { type: lofcbg.types.SERIES }, function (err) {
+      lofcg.readList.add(testIssueId, { type: lofcg.types.SERIES }, function (err) {
         expect(err).toEqual(jasmine.any(Error));
         expect(err.message).toEqual('Not authenticated');
         done();
@@ -13,7 +13,7 @@ module.exports = function (lofcbg) {
 
   describe('remove series from list', function () {
     it('should return error when removing to read list without permission', function (done) {
-      lofcbg.readList.remove(testIssueId, { type: lofcbg.types.SERIES }, function (err) {
+      lofcg.readList.remove(testIssueId, { type: lofcg.types.SERIES }, function (err) {
         expect(err).toEqual(jasmine.any(Error));
         expect(err.message).toEqual('Not authenticated');
         done();

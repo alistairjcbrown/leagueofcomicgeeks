@@ -1,9 +1,9 @@
-module.exports = function (lofcbg) {
-  require('../../shared/wish-list/issues-list.spec')(lofcbg);
+module.exports = function (lofcg) {
+  require('../../shared/wish-list/issues-list.spec')(lofcg);
 
   describe('add issue to list', function () {
     it('should return error when adding to wish list without permission', function (done) {
-      lofcbg.wishList.add(testIssueId, function (err) {
+      lofcg.wishList.add(testIssueId, function (err) {
         expect(err).toEqual(jasmine.any(Error));
         expect(err.message).toEqual('Not authenticated');
         done();
@@ -13,7 +13,7 @@ module.exports = function (lofcbg) {
 
   describe('remove issue from list', function () {
     it('should return error when removing to wish list without permission', function (done) {
-      lofcbg.wishList.remove(testIssueId, function (err) {
+      lofcg.wishList.remove(testIssueId, function (err) {
         expect(err).toEqual(jasmine.any(Error));
         expect(err.message).toEqual('Not authenticated');
         done();

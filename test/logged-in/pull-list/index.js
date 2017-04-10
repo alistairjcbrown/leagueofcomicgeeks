@@ -1,7 +1,7 @@
-module.exports = function (lofcbg) {
+module.exports = function (lofcg) {
   describe('Pull List', function () {
     var pullListDate = '2017-05-03';
-    require('./issues-list.spec')(lofcbg, pullListDate);
-    require('./series-list.spec')(lofcbg, pullListDate);
+    require('./issues-list.spec')(lofcg, pullListDate);
+    require('./series-list.spec')(lofcg, pullListDate);
   });
 };

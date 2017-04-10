@@ -1,10 +1,10 @@
-var lofcbg = require('../../');
+var lofcg = require('../../');
 var user = require('../utils/test-credentials');
 
 module.exports = function () {
   describe('Authentication', function () {
     afterAll(function (done) {
-      lofcbg.session.destroy(function () {
+      lofcg.session.destroy(function () {
         done();
       });
     });
@@ -13,7 +13,7 @@ module.exports = function () {
       var getErr, getAuthentication;
 
       beforeAll(function (done) {
-        lofcbg.session.get(function (err, authentication) {
+        lofcg.session.get(function (err, authentication) {
           getErr = err;
           getAuthentication = authentication;
           done();
@@ -30,11 +30,11 @@ module.exports = function () {
       var createErr, createUserId, validateErr, validateIsValid;
 
       beforeAll(function (done) {
-        lofcbg.session.create(user.username, user.password, function (err, userId) {
+        lofcg.session.create(user.username, user.password, function (err, userId) {
           createErr = err;
           createUserId = userId;
 
-          lofcbg.session.validate(function (err, isValid) {
+          lofcg.session.validate(function (err, isValid) {
             validateErr = err;
             validateIsValid = isValid;
             done();
@@ -56,7 +56,7 @@ module.exports = function () {
         var getErr, getAuthentication;
 
         beforeAll(function (done) {
-          lofcbg.session.get(function (err, authentication) {
+          lofcg.session.get(function (err, authentication) {
             getErr = err;
             getAuthentication = authentication;
             done();
@@ -72,10 +72,10 @@ module.exports = function () {
           var destroyErr, validateErr2, validateIsValid2;
 
           beforeAll(function (done) {
-            lofcbg.session.destroy(function (err) {
+            lofcg.session.destroy(function (err) {
               destroyErr = err;
 
-              lofcbg.session.validate(function (err, isValid) {
+              lofcg.session.validate(function (err, isValid) {
                 validateErr2 = err;
                 validateIsValid2 = isValid;
                 done();
@@ -96,11 +96,11 @@ module.exports = function () {
             var setErr, setIsSet, validateErr3, validateIsValid3;
 
             beforeAll(function (done) {
-              lofcbg.session.set(getAuthentication, function (err, isSet) {
+              lofcg.session.set(getAuthentication, function (err, isSet) {
                 setErr = err;
                 setIsSet = isSet;
 
-                lofcbg.session.validate(function (err, isValid) {
+                lofcg.session.validate(function (err, isValid) {
                   validateErr3 = err;
                   validateIsValid3 = isValid;
                   done();

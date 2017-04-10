@@ -1,9 +1,9 @@
-module.exports = function (lofcbg) {
-  require('../../shared/collection/issues-list.spec')(lofcbg);
+module.exports = function (lofcg) {
+  require('../../shared/collection/issues-list.spec')(lofcg);
 
   describe('add issue to list', function () {
     it('should return error when adding to collection without permission', function (done) {
-      lofcbg.collection.add(testIssueId, function (err) {
+      lofcg.collection.add(testIssueId, function (err) {
         expect(err).toEqual(jasmine.any(Error));
         expect(err.message).toEqual('Not authenticated');
         done();
@@ -13,7 +13,7 @@ module.exports = function (lofcbg) {
 
   describe('remove issue from list', function () {
     it('should return error when removing to collection without permission', function (done) {
-      lofcbg.collection.remove(testIssueId, function (err) {
+      lofcg.collection.remove(testIssueId, function (err) {
         expect(err).toEqual(jasmine.any(Error));
         expect(err.message).toEqual('Not authenticated');
         done();

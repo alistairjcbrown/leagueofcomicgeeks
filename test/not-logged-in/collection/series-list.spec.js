@@ -1,9 +1,9 @@
-module.exports = function (lofcbg) {
-  require('../../shared/collection/series-list.spec')(lofcbg);
+module.exports = function (lofcg) {
+  require('../../shared/collection/series-list.spec')(lofcg);
 
   describe('add series to list', function () {
     it('should return error when adding to collection without permission', function (done) {
-      lofcbg.collection.add(testIssueId, { type: lofcbg.types.SERIES }, function (err) {
+      lofcg.collection.add(testIssueId, { type: lofcg.types.SERIES }, function (err) {
         expect(err).toEqual(jasmine.any(Error));
         expect(err.message).toEqual('Not authenticated');
         done();
@@ -13,7 +13,7 @@ module.exports = function (lofcbg) {
 
   describe('remove series from list', function () {
     it('should return error when removing to collection without permission', function (done) {
-      lofcbg.collection.remove(testIssueId, { type: lofcbg.types.SERIES }, function (err) {
+      lofcg.collection.remove(testIssueId, { type: lofcg.types.SERIES }, function (err) {
         expect(err).toEqual(jasmine.any(Error));
         expect(err.message).toEqual('Not authenticated');
         done();
