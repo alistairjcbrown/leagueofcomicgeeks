@@ -1,22 +1,22 @@
-var _ = require('lodash');
-var queryString = require('query-string');
-var lofcg = require('../../');
-var config = require('../../config');
+/* eslint-disable no-console */
+const _ = require('lodash');
+const queryString = require('query-string');
+const lofcg = require('../../');
 
-var listIdMapping = {
+const listIdMapping = {
   2: 'collection',
   1: 'pull-list',
   5: 'read-list',
   3: 'wish-list'
 };
 
-var getListName = function (listId) {
+const getListName = function (listId) {
   return _.get(listIdMapping, listId, listId);
 };
 
-var createStandardObject = function (request) {
+const createStandardObject = function (request) {
   if (request.method === 'POST' && _.has(request.form, 'list_id')) {
-    var isBulk = (request.uri === '/comic/my_list_bulk');
+    const isBulk = (request.uri === '/comic/my_list_bulk');
     return {
       path: request.uri,
       list: getListName(request.form.list_id),
@@ -27,12 +27,12 @@ var createStandardObject = function (request) {
   }
 
   if (request.method === 'GET' && request.uri.split('?').length > 1) {
-    var urlPieces = request.uri.split('?');
-    var path = urlPieces[0];
-    var query = queryString.parse(urlPieces[1]);
+    const urlPieces = request.uri.split('?');
+    const path = urlPieces[0];
+    const query = queryString.parse(urlPieces[1]);
 
     return {
-      path: path,
+      path,
       list: getListName(query.list),
       type: query.list_option,
       method: request.method
@@ -46,18 +46,18 @@ var createStandardObject = function (request) {
 };
 
 module.exports = function (type, spy) {
-  console.log('\n' + type + ' calls made (' + spy.callCount + ')');
+  console.log(`\n${type} calls made (${spy.callCount})`);
 
-  var mappedRequests = _.reduce(_.range(spy.callCount), function (mapping, callIndex) {
-    var call = spy.getCall(callIndex);
-    var data = createStandardObject(call.args[0]);
-    var type = data.type || 'none';
-    mapping[type] = (mapping[type] || []).concat(data);
+  const mappedRequests = _.reduce(_.range(spy.callCount), (mapping, callIndex) => {
+    const call = spy.getCall(callIndex);
+    const data = createStandardObject(call.args[0]);
+    const dataType = data.type || 'none';
+    mapping[dataType] = (mapping[dataType] || []).concat(data); // eslint-disable-line no-param-reassign
     return mapping;
   }, {});
 
-  _.forEach(['none', 'issue', 'series'], function (type) {
-    var requests = mappedRequests[type] || [];
-    console.log(' > ' + _.capitalize(type) + ': ' + requests.length + ' requests');
+  _.forEach(['none', 'issue', 'series'], (dataType) => {
+    const requests = mappedRequests[dataType] || [];
+    console.log(` > ${_.capitalize(dataType)}: ${requests.length} requests`);
   });
 };

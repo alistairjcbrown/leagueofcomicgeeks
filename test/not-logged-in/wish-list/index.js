@@ -1,5 +1,5 @@
 module.exports = function (lofcg) {
-  describe('Wish List', function () {
+  describe('Wish List', () => {
     require('./issues-list.spec')(lofcg);
     require('./series-list.spec')(lofcg);
   });

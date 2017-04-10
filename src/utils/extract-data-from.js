@@ -1,75 +1,75 @@
-var _ = require('lodash');
-var cheerio = require('cheerio');
-var moment = require('moment');
-var config = require('../../config');
+const _ = require('lodash');
+const cheerio = require('cheerio');
+const moment = require('moment');
+const config = require('../../config');
 
-var convertToISO8601Date = function (dateString) {
+const convertToISO8601Date = function (dateString) {
   if (_.isEmpty(dateString)) return '';
-  var date = moment(dateString, 'MMM Do, YYYY');
+  const date = moment(dateString, 'MMM Do, YYYY');
   if (!date.isValid()) return '';
   return date.format('YYYY-MM-DD');
 };
 
-var seriesExtractor = function (response) {
-  var $ = cheerio.load(response.list);
+const seriesExtractor = function (response) {
+  const $ = cheerio.load(response.list);
 
-  var extractSeriesData = function () {
-    var $name = $(this).find('.name a');
-    var cover = $(this).find('.cover img').attr('data-original');
-    var publisher = $(this).find('.publisher').text().trim();
-    var count = parseInt($(this).find('.details').text().trim(), 10);
-    var series = $(this).find('.series').text().trim();
+  const extractSeriesData = function () {
+    const $name = $(this).find('.name a');
+    const cover = $(this).find('.cover img').attr('data-original');
+    const publisher = $(this).find('.publisher').text().trim();
+    const count = parseInt($(this).find('.details').text().trim(), 10);
+    const series = $(this).find('.series').text().trim();
 
     return {
       id: $name.attr('data-id'),
       name: $name.text().trim(),
       cover: config.rootUrl + cover,
-      publisher: publisher,
-      count: count,
-      series: series
+      publisher,
+      count,
+      series
     };
   };
 
   return $('li').map(extractSeriesData).get();
 };
 
-var issueExtractor = function (response) {
-  var $ = cheerio.load(response.list);
+const issueExtractor = function (response) {
+  const $ = cheerio.load(response.list);
 
-  var extractIssueData = function () {
-    var id = $(this).attr('id').replace('comic-', '').trim();
-    var name = $(this).find('.comic-title').text().trim();
-    var cover = $(this).find('.comic-cover-art img').attr('data-original');
+  const extractIssueData = function () {
+    const id = $(this).attr('id').replace('comic-', '').trim();
+    const name = $(this).find('.comic-title').text().trim();
+    const cover = $(this).find('.comic-cover-art img').attr('data-original');
 
-    var comicDetails = $(this).find('.comic-details').text().split('·');
-    var publisher = (comicDetails[0] || '').trim();
-    var releaseDate = convertToISO8601Date((comicDetails[1] || '').trim());
-    var price = (comicDetails[2] || '').trim();
+    const comicDetails = $(this).find('.comic-details').text().split('·');
+    const publisher = (comicDetails[0] || '').trim();
+    const releaseDate = convertToISO8601Date((comicDetails[1] || '').trim());
+    const price = (comicDetails[2] || '').trim();
 
-    var $description = $(this).find('.comic-description p');
+    const $description = $(this).find('.comic-description p');
     $description.find('a').remove();
-    var description = $description.text().trim();
+    const description = $description.text().trim();
 
     return {
-      id: id,
-      name: name,
+      id,
+      name,
       cover: config.rootUrl + cover,
-      publisher: publisher,
-      description: description,
-      releaseDate: releaseDate,
-      price: price
+      publisher,
+      description,
+      releaseDate,
+      price
     };
   };
 
   return $('li').map(extractIssueData).get();
 };
 
-var extractionHandler = {
+const extractionHandler = {
   series: seriesExtractor,
   issue: issueExtractor
 };
 
 module.exports = function (response, options) {
-  var handler = extractionHandler[options.type] || extractionHandler[config.defaultType];
+  const handler = extractionHandler[options.type] || extractionHandler[config.defaultType];
   return handler(response);
 };

@@ -1,35 +1,35 @@
-var _ = require('lodash');
-var helpers = require('../../utils/helper-tests');
-var allIssuesReadList = require('./test-data/all-issues-read-list');
+const _ = require('lodash');
+const helpers = require('../../utils/helper-tests');
+const allIssuesReadList = require('./test-data/all-issues-read-list');
 
 module.exports = function (lofcg) {
-  var additionalArgs = [];
-  var confirmEmptyFirst = _.partial(helpers.confirmEmptyFirst, lofcg.readList, additionalArgs);
+  const additionalArgs = [];
+  const confirmEmptyFirst = _.partial(helpers.confirmEmptyFirst, lofcg.readList, additionalArgs);
 
   require('../../shared/read-list/issues-list.spec')(lofcg);
 
-  describe('add issue to list', function () {
-    describe('when valid issue id used', confirmEmptyFirst(function () {
-      var addErr;
+  describe('add issue to list', () => {
+    describe('when valid issue id used', confirmEmptyFirst(() => {
+      let addErr;
 
-      beforeAll(function (done) {
-        lofcg.readList.add(testIssueId, function (err) {
+      beforeAll((done) => {
+        lofcg.readList.add(testIssueId, (err) => {
           addErr = err;
           done();
         });
       });
 
-      it('should not return an error', function () {
+      it('should not return an error', () => {
         expect(addErr).toBeNull();
       });
 
-      describe('getting list', function () {
-        it('should contain the previously added issue', function (done) {
-          lofcg.readList.get(editableUserId, function (err, readList) {
+      describe('getting list', () => {
+        it('should contain the previously added issue', (done) => {
+          lofcg.readList.get(editableUserId, (err, readList) => {
             expect(err).toBeNull();
             expect(readList.length).toBe(1);
             expect(readList).toEqual(allIssuesReadList);
-            _.each(readList, function (comic) {
+            _.each(readList, (comic) => {
               expect(comic).toBeAComicIssue();
             });
             done();
@@ -37,14 +37,14 @@ module.exports = function (lofcg) {
         });
       });
 
-      describe('remove issue from list', function () {
+      describe('remove issue from list', () => {
         helpers.testRemovingFromList(lofcg.readList, testIssueId, additionalArgs);
       });
     }));
 
-    describe('when invalid issue id used', function () {
-      it('should not return an error', function (done) {
-        lofcg.readList.add('foo', function (err) {
+    describe('when invalid issue id used', () => {
+      it('should not return an error', (done) => {
+        lofcg.readList.add('foo', (err) => {
           expect(err).toEqual(jasmine.any(Error));
           expect(err.message).toEqual('Unable to add comic to list');
           done();
@@ -53,14 +53,14 @@ module.exports = function (lofcg) {
     });
   });
 
-  describe('remove issue from list', function () {
-    describe('when removing issue that isn\'t in read list', confirmEmptyFirst(function () {
+  describe('remove issue from list', () => {
+    describe('when removing issue that isn\'t in read list', confirmEmptyFirst(() => {
       helpers.testRemovingFromList(lofcg.readList, testIssueId, additionalArgs);
     }));
 
-    describe('when invalid issue id used', function () {
-      it('should not return an error', function (done) {
-        lofcg.readList.remove('foo', function (err) {
+    describe('when invalid issue id used', () => {
+      it('should not return an error', (done) => {
+        lofcg.readList.remove('foo', (err) => {
           expect(err).toEqual(jasmine.any(Error));
           expect(err.message).toEqual('Unable to remove comic from list');
           done();

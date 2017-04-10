@@ -1,23 +1,23 @@
-var accessList = require('./list-access');
-var accessListBulk = require('./list-access-bulk');
-var optionalOptions = require('./optional-options');
-var types = require('./types');
+const accessList = require('./list-access');
+const accessListBulk = require('./list-access-bulk');
+const optionalOptions = require('./optional-options');
+const types = require('./types');
 
-var getListAccess = function (type) {
+const getListAccess = function (type) {
   return (type === types.SERIES) ? accessListBulk : accessList;
 };
 
 module.exports = function (listId) {
-  var getList = function (userId, options, callback) {
-    var parameters = {};
+  const getList = function (userId, options, callback) {
+    const parameters = {};
     return accessList.get(userId, listId, parameters, options, callback);
   };
 
-  var addToList = function (resourceId, options, callback) {
+  const addToList = function (resourceId, options, callback) {
     return getListAccess(options.type).add(resourceId, listId, callback);
   };
 
-  var removeFromList = function (resourceId, options, callback) {
+  const removeFromList = function (resourceId, options, callback) {
     return getListAccess(options.type).remove(resourceId, listId, callback);
   };
 

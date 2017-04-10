@@ -1,10 +1,19 @@
+const types = require('./src/utils/types');
+const session = require('./src/session');
+const searchResults = require('./src/search-results');
+const newComics = require('./src/new-comics');
+const collection = require('./src/collection');
+const pullList = require('./src/pull-list');
+const wishList = require('./src/wish-list');
+const readList = require('./src/read-list');
+
 module.exports = {
-  types: require('./src/utils/types'),
-  session: require('./src/session'),
-  searchResults: require('./src/search-results'),
-  newComics: require('./src/new-comics'),
-  collection: require('./src/collection'),
-  pullList: require('./src/pull-list'),
-  wishList: require('./src/wish-list'),
-  readList: require('./src/read-list'),
+  types,
+  session,
+  searchResults,
+  newComics,
+  collection,
+  pullList,
+  wishList,
+  readList
 };

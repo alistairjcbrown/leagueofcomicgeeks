@@ -1,35 +1,35 @@
-var _ = require('lodash');
-var helpers = require('../../utils/helper-tests');
-var allIssuesCollection = require('./test-data/all-issues-collection');
+const _ = require('lodash');
+const helpers = require('../../utils/helper-tests');
+const allIssuesCollection = require('./test-data/all-issues-collection');
 
 module.exports = function (lofcg) {
-  var additionalArgs = [];
-  var confirmEmptyFirst = _.partial(helpers.confirmEmptyFirst, lofcg.collection, additionalArgs);
+  const additionalArgs = [];
+  const confirmEmptyFirst = _.partial(helpers.confirmEmptyFirst, lofcg.collection, additionalArgs);
 
   require('../../shared/collection/issues-list.spec')(lofcg);
 
-  describe('add issue to list', function () {
-    describe('when valid issue id used', confirmEmptyFirst(function () {
-      var addErr;
+  describe('add issue to list', () => {
+    describe('when valid issue id used', confirmEmptyFirst(() => {
+      let addErr;
 
-      beforeAll(function (done) {
-        lofcg.collection.add(testIssueId, function (err) {
+      beforeAll((done) => {
+        lofcg.collection.add(testIssueId, (err) => {
           addErr = err;
           done();
         });
       });
 
-      it('should not return an error', function () {
+      it('should not return an error', () => {
         expect(addErr).toBeNull();
       });
 
-      describe('getting list', function () {
-        it('should contain the previously added issue', function (done) {
-          lofcg.collection.get(editableUserId, function (err, collection) {
+      describe('getting list', () => {
+        it('should contain the previously added issue', (done) => {
+          lofcg.collection.get(editableUserId, (err, collection) => {
             expect(err).toBeNull();
             expect(collection.length).toBe(1);
             expect(collection).toEqual(allIssuesCollection);
-            _.each(collection, function (comic) {
+            _.each(collection, (comic) => {
               expect(comic).toBeAComicIssue();
             });
             done();
@@ -37,14 +37,14 @@ module.exports = function (lofcg) {
         });
       });
 
-      describe('remove issue from list', function () {
+      describe('remove issue from list', () => {
         helpers.testRemovingFromList(lofcg.collection, testIssueId, additionalArgs);
       });
     }));
 
-    describe('when invalid issue id used', function () {
-      it('should not return an error', function (done) {
-        lofcg.collection.add('foo', function (err) {
+    describe('when invalid issue id used', () => {
+      it('should not return an error', (done) => {
+        lofcg.collection.add('foo', (err) => {
           expect(err).toEqual(jasmine.any(Error));
           expect(err.message).toEqual('Unable to add comic to list');
           done();
@@ -53,14 +53,14 @@ module.exports = function (lofcg) {
     });
   });
 
-  describe('remove issue from list', function () {
-    describe('when removing issue that isn\'t in collection', confirmEmptyFirst(function () {
+  describe('remove issue from list', () => {
+    describe('when removing issue that isn\'t in collection', confirmEmptyFirst(() => {
       helpers.testRemovingFromList(lofcg.collection, testIssueId, additionalArgs);
     }));
 
-    describe('when invalid issue id used', function () {
-      it('should not return an error', function (done) {
-        lofcg.collection.remove('foo', function (err) {
+    describe('when invalid issue id used', () => {
+      it('should not return an error', (done) => {
+        lofcg.collection.remove('foo', (err) => {
           expect(err).toEqual(jasmine.any(Error));
           expect(err.message).toEqual('Unable to remove comic from list');
           done();

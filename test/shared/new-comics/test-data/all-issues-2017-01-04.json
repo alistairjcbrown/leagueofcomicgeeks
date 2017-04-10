@@ -630,15 +630,6 @@
         "price": "$16.99"
     },
     {
-        "id": "8302380",
-        "name": "Justice League #12 Variant Edition (jl Ss)",
-        "cover": "http://leagueofcomicgeeks.com/comics/covers/medium/8302380-justice-league-12-variant-edition-jl-ss.jpg?1483496492",
-        "publisher": "DC Comics",
-        "description": "A “JUSTICE LEAGUE VS. SUICIDE SQUAD” tie-in! Behold the rebirth of one of the DC Universe’s most cunning villains as [REDACTED].",
-        "releaseDate": "2017-01-04",
-        "price": "$2.99"
-    },
-    {
         "id": "8146900",
         "name": "Squarriors: Summer #2",
         "cover": "http://leagueofcomicgeeks.com/comics/covers/medium/8146900-squarriors-summer-2.jpg?1483505154",
@@ -646,6 +637,15 @@
         "description": "The Maw and Amoni begin their march to the Tin Kin compound, Tree Jump and Crash retrace Pasha's Southern journey, and the Tin Kin must decide whether to shelter or refuse a group of unusual refugees.",
         "releaseDate": "2017-01-04",
         "price": "$3.99"
+    },
+    {
+        "id": "8302380",
+        "name": "Justice League #12 Variant Edition (jl Ss)",
+        "cover": "http://leagueofcomicgeeks.com/comics/covers/medium/8302380-justice-league-12-variant-edition-jl-ss.jpg?1483496492",
+        "publisher": "DC Comics",
+        "description": "A “JUSTICE LEAGUE VS. SUICIDE SQUAD” tie-in! Behold the rebirth of one of the DC Universe’s most cunning villains as [REDACTED].",
+        "releaseDate": "2017-01-04",
+        "price": "$2.99"
     },
     {
         "id": "4863677",

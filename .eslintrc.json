@@ -1,0 +1,26 @@
+{
+    "extends": "airbnb-base",
+    "plugins": [
+        "import"
+    ],
+    "globals": {
+        "editableUserId": true,
+        "readonlyUserId": true,
+        "testIssueId": true,
+        "testSeriesId": true,
+        "jasmine": true,
+        "beforeAll": true,
+        "afterAll": true,
+        "beforeEach": true,
+        "afterEach": true,
+        "describe": true,
+        "it": true,
+        "expect": true
+    },
+    "rules": {
+      "comma-dangle": ["error", "never"],
+      "max-len": ["error", 120],
+      "global-require": "off",
+      "func-names": "off"
+    }
+}

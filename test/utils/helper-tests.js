@@ -1,25 +1,26 @@
-var _ = require('lodash');
+const _ = require('lodash');
 
-var confirmEmptyFirst = function (resource, additionalArgs, tests) {
+const confirmEmptyFirst = function (resource, additionalArgs, tests) {
   return function () {
-    describe('list is empty', function () {
-      var getErr, getValue;
+    describe('list is empty', () => {
+      let getErr;
+      let getValue;
 
-      beforeAll(function (done) {
-        var callback = function (err, value) {
+      beforeAll((done) => {
+        const callback = function (err, value) {
           getErr = err;
           getValue = value;
           done();
-        }
-        var getArgs = [editableUserId].concat((additionalArgs || []), callback);
-        resource.get.apply(resource, getArgs);
+        };
+        const getArgs = [editableUserId].concat((additionalArgs || []), callback);
+        resource.get(...getArgs);
       });
 
-      it('should not return an error', function () {
+      it('should not return an error', () => {
         expect(getErr).toBeNull();
       });
 
-      it('should be empty list', function () {
+      it('should be empty list', () => {
         expect(getValue.length).toBe(0);
         expect(getValue).toEqual([]);
       });
@@ -29,44 +30,44 @@ var confirmEmptyFirst = function (resource, additionalArgs, tests) {
   };
 };
 
-var testRemovingFromList = function (resource, resourceId, additionalArgs) {
-  var removeAdditionalArgs = additionalArgs;
-  var getAdditionalArgs = additionalArgs;
+const testRemovingFromList = function (resource, resourceId, additionalArgs) {
+  let removeAdditionalArgs = additionalArgs;
+  let getAdditionalArgs = additionalArgs;
 
   if (_.isObject(additionalArgs) && !_.isArray(additionalArgs)) {
     removeAdditionalArgs = additionalArgs.remove;
     getAdditionalArgs = additionalArgs.get;
   }
 
-  var removeErr;
-  beforeAll(function (done) {
-    var callback = function (err) {
+  let removeErr;
+  beforeAll((done) => {
+    const callback = function (err) {
       removeErr = err;
       done();
     };
-    var removeArgs = [resourceId].concat((removeAdditionalArgs || []), callback);
-    resource.remove.apply(resource, removeArgs);
+    const removeArgs = [resourceId].concat((removeAdditionalArgs || []), callback);
+    resource.remove(...removeArgs);
   });
 
-  it('should not return an error', function () {
+  it('should not return an error', () => {
     expect(removeErr).toBeNull();
   });
 
-  describe('getting list', function () {
-    it('should be empty', function (done) {
-      var callback = function (err, value) {
+  describe('getting list', () => {
+    it('should be empty', (done) => {
+      const callback = function (err, value) {
         expect(err).toBeNull();
         expect(value.length).toBe(0);
         expect(value).toEqual([]);
         done();
       };
-      var getArgs = [editableUserId].concat((getAdditionalArgs || []), callback);
-      resource.get.apply(resource, getArgs);
+      const getArgs = [editableUserId].concat((getAdditionalArgs || []), callback);
+      resource.get(...getArgs);
     });
   });
 };
 
 module.exports = {
-  confirmEmptyFirst: confirmEmptyFirst,
-  testRemovingFromList: testRemovingFromList
+  confirmEmptyFirst,
+  testRemovingFromList
 };

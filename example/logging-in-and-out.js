@@ -1,52 +1,53 @@
-var lofcg = require('../');
+/* eslint-disable no-console */
+const lofcg = require('../');
 
-var username = '<username>';
-var password = '<password>';
+const username = '<username>';
+const password = '<password>';
 
 // Check no valid session
-lofcg.session.validate(function (err, isValid) {
-  if (err) {
-    console.log("An error has occurred validating session:", err);
+lofcg.session.validate((errValidate, isValidInitially) => {
+  if (errValidate) {
+    console.log('An error has occurred validating session:', errValidate);
     return;
   }
 
-  console.log('Is session valid?', isValid);
+  console.log('Is session valid?', isValidInitially);
 
   // Log in
-  lofcg.session.create(username, password, function (err, userId) {
-    if (err) {
-      console.log("An error has occurred logging in:", err);
+  lofcg.session.create(username, password, (errCreate, userId) => {
+    if (errCreate) {
+      console.log('An error has occurred logging in:', errCreate);
       return;
     }
 
     console.log('Logged in as:', userId);
 
     // Check session is now valid
-    lofcg.session.validate(function (err, isValid) {
-      if (err) {
-        console.log("An error has occurred validating session:", err);
+    lofcg.session.validate((errValidate2, isValidAfterLogin) => {
+      if (errValidate2) {
+        console.log('An error has occurred validating session:', errValidate2);
         return;
       }
 
-      console.log('Is session valid?', isValid);
+      console.log('Is session valid?', isValidAfterLogin);
 
       // Log out
-      lofcg.session.destroy(function (err) {
-        if (err) {
-          console.log("An error has occurred logging out:", err);
+      lofcg.session.destroy((errDestroy) => {
+        if (errDestroy) {
+          console.log('An error has occurred logging out:', errDestroy);
           return;
         }
 
         console.log('Logged out');
 
         // Check session has invalidated
-        lofcg.session.validate(function (err, isValid) {
-          if (err) {
-            console.log("An error has occurred validating session:", err);
+        lofcg.session.validate((errValidate3, isValidAfterLogout) => {
+          if (errValidate3) {
+            console.log('An error has occurred validating session:', errValidate3);
             return;
           }
 
-          console.log('Is session valid?', isValid);
+          console.log('Is session valid?', isValidAfterLogout);
         });
       });
     });

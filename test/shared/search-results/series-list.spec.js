@@ -1,11 +1,14 @@
-var _ = require('lodash');
-var allSeriesBlackMagic = require('./test-data/all-series-black-magic');
-var filteredSeriesBlackMagic = require('./test-data/filtered-series-black-magic');
+const _ = require('lodash');
+const allSeriesBlackMagic = require('./test-data/all-series-black-magic');
+const filteredSeriesBlackMagic = require('./test-data/filtered-series-black-magic');
 
 module.exports = function (lofcg, searchTerm) {
-  describe('get series list', function () {
-    it('should provide no results for unknown search term', function (done) {
-      lofcg.searchResults.get(undefined, 'foobarbaz', { type: lofcg.types.SERIES }, function (err, searchResults) {
+  const options = { type: lofcg.types.SERIES };
+  const filteredOptions = _.extend({ publishers: ['Image Comics'] }, options);
+
+  describe('get series list', () => {
+    it('should provide no results for unknown search term', (done) => {
+      lofcg.searchResults.get(undefined, 'foobarbaz', options, (err, searchResults) => {
         expect(err).toBeNull();
         expect(searchResults.length).toBe(0);
         expect(searchResults).toEqual([]);
@@ -13,24 +16,24 @@ module.exports = function (lofcg, searchTerm) {
       });
     });
 
-    it('should provide results for known search term', function (done) {
-      lofcg.searchResults.get(undefined, searchTerm, { type: lofcg.types.SERIES }, function (err, searchResults) {
+    it('should provide results for known search term', (done) => {
+      lofcg.searchResults.get(undefined, searchTerm, options, (err, searchResults) => {
         expect(err).toBeNull();
         expect(searchResults.length).toBe(8);
         expect(searchResults).toEqual(allSeriesBlackMagic);
-        _.each(searchResults, function (comic) {
+        _.each(searchResults, (comic) => {
           expect(comic).toBeAComicSeries();
         });
         done();
       });
     });
 
-    it('should provide a filtered list of new comics', function (done) {
-      lofcg.searchResults.get(undefined, searchTerm, { type: lofcg.types.SERIES, publishers: ['Image Comics'] }, function (err, searchResults) {
+    it('should provide a filtered list of new comics', (done) => {
+      lofcg.searchResults.get(undefined, searchTerm, filteredOptions, (err, searchResults) => {
         expect(err).toBeNull();
         expect(searchResults.length).toBe(2);
         expect(searchResults).toEqual(filteredSeriesBlackMagic);
-        _.each(searchResults, function (comic) {
+        _.each(searchResults, (comic) => {
           expect(comic).toBeAComicSeries();
         });
         done();

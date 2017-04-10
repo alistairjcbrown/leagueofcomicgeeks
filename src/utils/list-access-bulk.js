@@ -1,27 +1,25 @@
-var _ = require('lodash');
-var queryString = require('query-string');
-var request = require('./request');
-var authentication = require('./authentication');
-var extractDataFrom = require('./extract-data-from');
-var config = require('../../config');
+const _ = require('lodash');
+const request = require('./request');
+const authentication = require('./authentication');
 
-var myListUrl = '/comic/my_list_bulk';
-var defaultIsSuccessful = function (body) {
+const myListUrl = '/comic/my_list_bulk';
+const defaultIsSuccessful = function (body) {
   return !_.isNaN(parseInt(body, 10));
 };
 
-var modifyList = function (seriesId, listId, actionId, isSuccessful, failureMessage, callback) {
+const modifyList = function (seriesId, listId, actionId, isSuccessful, failureMessage, callback) {
   if (!authentication.isAuthenticated()) {
-    return callback(new Error('Not authenticated'));
+    callback(new Error('Not authenticated'));
+    return;
   }
 
-  var data = {
+  const data = {
     series_id: seriesId,
     list_id: listId,
     action: actionId
   };
 
-  request.post({ uri: myListUrl, form: data }, function (error, response, body) {
+  request.post({ uri: myListUrl, form: data }, (error, response, body) => {
     if (error) {
       return callback(error);
     }
@@ -31,22 +29,22 @@ var modifyList = function (seriesId, listId, actionId, isSuccessful, failureMess
     }
 
     if (response && response.statusCode !== 200) {
-      return callback(new Error('Unexpected status code ' + response.statusCode));
+      return callback(new Error(`Unexpected status code ${response.statusCode}`));
     }
 
-    callback(null);
+    return callback(null);
   });
 };
 
-var addToList = function (seriesId, listId, callback) {
-  var actionId = 'add';
-  var failureMessage = 'Unable to add series to list';
+const addToList = function (seriesId, listId, callback) {
+  const actionId = 'add';
+  const failureMessage = 'Unable to add series to list';
   return modifyList(seriesId, listId, actionId, defaultIsSuccessful, failureMessage, callback);
 };
 
-var removeFromList = function (seriesId, listId, callback) {
-  var actionId = 'remove';
-  var failureMessage = 'Unable to remove series from list';
+const removeFromList = function (seriesId, listId, callback) {
+  const actionId = 'remove';
+  const failureMessage = 'Unable to remove series from list';
   return modifyList(seriesId, listId, actionId, defaultIsSuccessful, failureMessage, callback);
 };
 

@@ -1,16 +1,16 @@
-var _ = require('lodash');
-var accessList = require('./utils/list-access');
-var accessListBulk = require('./utils/list-access-bulk');
-var optionalOptions = require('./utils/optional-options');
-var validateDate = require('./utils/validate-date');
-var types = require('./utils/types');
+const _ = require('lodash');
+const accessList = require('./utils/list-access');
+const accessListBulk = require('./utils/list-access-bulk');
+const optionalOptions = require('./utils/optional-options');
+const validateDate = require('./utils/validate-date');
+const types = require('./utils/types');
 
-var listId = 1;
+const listId = 1;
 
-var getPullList = function (userId, date, options, callback) {
-  var parameters = {
+const getPullList = function (userId, date, options, callback) {
+  const parameters = {
     date_type: 'week',
-    date: date
+    date
   };
 
   if (!validateDate(date)) {
@@ -20,25 +20,25 @@ var getPullList = function (userId, date, options, callback) {
   return accessList.get(userId, listId, parameters, options, callback);
 };
 
-var addToPullList = function (resourceId, options, callback) {
+const addToPullList = function (resourceId, options, callback) {
   if (options.type === types.ISSUE) {
     return accessList.add(resourceId, listId, callback);
   }
 
-  var failureMessage = 'Unable to subscribe to series';
-  var isSuccessResponse = function (body) {
+  const failureMessage = 'Unable to subscribe to series';
+  const isSuccessResponse = function (body) {
     return _.includes(body, ' subscribed ');
   };
   return accessListBulk.modify(resourceId, listId, 'subscribe', isSuccessResponse, failureMessage, callback);
 };
 
-var removeFromPullList = function (resourceId, options, callback) {
+const removeFromPullList = function (resourceId, options, callback) {
   if (options.type === types.ISSUE) {
     return accessList.remove(resourceId, listId, callback);
   }
 
-  var failureMessage = 'Unable to unsubscribe from series';
-  var isSuccessResponse = function (body) {
+  const failureMessage = 'Unable to unsubscribe from series';
+  const isSuccessResponse = function (body) {
     return _.includes(body, ' unsubscribed ');
   };
   return accessListBulk.modify(resourceId, listId, 'unsubscribe', isSuccessResponse, failureMessage, callback);

@@ -1,13 +1,13 @@
-var accessList = require('./utils/list-access');
-var optionalOptions = require('./utils/optional-options');
-var validateDate = require('./utils/validate-date');
+const accessList = require('./utils/list-access');
+const optionalOptions = require('./utils/optional-options');
+const validateDate = require('./utils/validate-date');
 
-var listId = 'releases';
+const listId = 'releases';
 
-var getNewComics = function (userId, date, options, callback) {
-  var parameters = {
+const getNewComics = function (userId, date, options, callback) {
+  const parameters = {
     date_type: 'week',
-    date: date,
+    date,
     order: 'pulls'
   };
 
@@ -19,5 +19,5 @@ var getNewComics = function (userId, date, options, callback) {
 };
 
 module.exports = {
-  get: optionalOptions(getNewComics),
+  get: optionalOptions(getNewComics)
 };

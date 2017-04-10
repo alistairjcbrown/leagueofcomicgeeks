@@ -1,6 +1,6 @@
-var request = require('request');
-var authentication = require('./authentication');
-var config = require('../../config');
+const request = require('request');
+const authentication = require('./authentication');
+const config = require('../../config');
 
 module.exports = request.defaults({
   jar: authentication.cookieJar,

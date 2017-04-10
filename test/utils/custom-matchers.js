@@ -1,33 +1,34 @@
-var _ = require('lodash');
-var moment = require('moment');
-var expectedIssueKeys = ['id', 'name', 'cover', 'publisher', 'description', 'releaseDate', 'price'];
-var expectedSeriesKeys = ['id', 'name', 'cover', 'publisher', 'count', 'series'];
-var expectedSessionKeys = ['id', 'username', 'email', 'session'];
+const _ = require('lodash');
+const moment = require('moment');
 
-var createFailure = function (message) {
-  return { pass: false, message: message };
+const expectedIssueKeys = ['id', 'name', 'cover', 'publisher', 'description', 'releaseDate', 'price'];
+const expectedSeriesKeys = ['id', 'name', 'cover', 'publisher', 'count', 'series'];
+const expectedSessionKeys = ['id', 'username', 'email', 'session'];
+
+const createFailure = function (message) {
+  return { pass: false, message };
 };
 
-var isNonEmptyString = function (value) {
+const isNonEmptyString = function (value) {
   return _.isString(value) && !_.isEmpty(value);
 };
 
-var isPositiveNumber = function (value) {
+const isPositiveNumber = function (value) {
   return _.isNumber(value) && value > 0;
 };
 
-var isUrl = function (value) {
+const isUrl = function (value) {
   return _.startsWith(value, 'http://') || _.startsWith(value, 'https://');
 };
 
-var isDate = function (value) {
+const isDate = function (value) {
   return moment(value).isValid();
 };
 
 module.exports = {
-  toBeAComicIssue: function(util) {
+  toBeAComicIssue() {
     return {
-      compare: function(actual) {
+      compare(actual) {
         if (_.difference(_.keys(actual), expectedIssueKeys).length > 0) {
           return createFailure('Unexpected keys in comic issue object');
         }
@@ -45,9 +46,9 @@ module.exports = {
     };
   },
 
-  toBeAComicSeries: function(util) {
+  toBeAComicSeries() {
     return {
-      compare: function(actual) {
+      compare(actual) {
         if (_.difference(_.keys(actual), expectedSeriesKeys).length > 0) {
           return createFailure('Unexpected keys in comic series object');
         }
@@ -64,9 +65,9 @@ module.exports = {
     };
   },
 
-  toBeASessionObject: function(util) {
+  toBeASessionObject() {
     return {
-      compare: function(actual, expected) {
+      compare(actual, expected) {
         if (_.difference(_.keys(actual), expectedSessionKeys).length > 0) {
           return createFailure('Unexpected keys in session object');
         }

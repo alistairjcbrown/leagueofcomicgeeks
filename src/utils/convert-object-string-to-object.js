@@ -1,7 +1,7 @@
-var _ = require('lodash');
+const _ = require('lodash');
 
 module.exports = function (objectString) {
-  var sanitisedObjectString = _.trim(objectString.trim(), '{}')
+  const sanitisedObjectString = _.trim(objectString.trim(), '{}')
     .trim()
     .replace(/'/g, '"')
     .replace(/\s/g, '')
@@ -9,8 +9,8 @@ module.exports = function (objectString) {
     .replace(/([^:,]+):/g, '"$1":');
 
   try {
-    return JSON.parse('{' + sanitisedObjectString + '}');
-  } catch(e) {
+    return JSON.parse(`{${sanitisedObjectString}}`);
+  } catch (e) {
     return null;
   }
 };

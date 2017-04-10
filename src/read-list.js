@@ -1,3 +1,4 @@
-var createListAccessFor = require('./utils/create-list-access-for');
-var listId = 5;
+const createListAccessFor = require('./utils/create-list-access-for');
+
+const listId = 5;
 module.exports = createListAccessFor(listId);

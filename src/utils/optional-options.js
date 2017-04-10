@@ -1,16 +1,14 @@
-var _ = require('lodash');
-var types = require('./types');
+const _ = require('lodash');
+const types = require('./types');
 
 module.exports = function (wrappedFunction) {
-  return function () {
-    var args = Array.prototype.slice.call(arguments);
-
-    var argsCount = args.length;
-    var lastArg = args[argsCount - 1];
-    var penultimateArg = args[argsCount - 2];
+  return function (...args) {
+    const argsCount = args.length;
+    const lastArg = args[argsCount - 1];
+    const penultimateArg = args[argsCount - 2];
 
     if (!_.isObject(penultimateArg) && _.isFunction(lastArg)) {
-      var defaultedOptions = { type: types.ISSUE };
+      const defaultedOptions = { type: types.ISSUE };
       args.splice(argsCount - 1, 0, defaultedOptions);
     }
 
@@ -18,6 +16,6 @@ module.exports = function (wrappedFunction) {
       penultimateArg.type = types.ISSUE;
     }
 
-    return wrappedFunction.apply(null, args);
+    return wrappedFunction(...args);
   };
-}
+};

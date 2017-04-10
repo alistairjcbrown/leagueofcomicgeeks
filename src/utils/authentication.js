@@ -1,59 +1,59 @@
-var _ = require('lodash');
-var request = require('request');
-var cookie = require('cookie');
-var moment = require('moment');
-var config = require('../../config');
+const _ = require('lodash');
+const request = require('request');
+const cookie = require('cookie');
+const moment = require('moment');
+const config = require('../../config');
 
-var cookieJar = request.jar();
-var user = null;
+const cookieJar = request.jar();
+let user = null;
 
-var getSession = function () {
-  var cookieString = cookieJar.getCookieString(config.rootUrl);
+const getSession = function () {
+  const cookieString = cookieJar.getCookieString(config.rootUrl);
   return cookie.parse(cookieString)[config.sessionKey];
 };
 
-var setSession = function (value, expiry, age) {
-  var options = {
+const setSession = function (value, expiry, age) {
+  const options = {
     expires: expiry,
     maxAge: age,
     path: '/'
   };
-  var cookieValue = cookie.serialize(config.sessionKey, value, options);
+  const cookieValue = cookie.serialize(config.sessionKey, value, options);
   cookieJar.setCookie(cookieValue, config.rootUrl);
 };
 
 module.exports = {
-  isAuthenticated: function () {
+  isAuthenticated() {
     return _.isObject(user) && _.isString(getSession());
   },
 
-  destroy: function () {
-    var yesterday = moment().subtract(1, 'day').toDate();
+  destroy() {
+    const yesterday = moment().subtract(1, 'day').toDate();
     setSession('', yesterday, 0);
     user = null;
   },
 
-  get: function () {
-    var session = getSession();
+  get() {
+    const session = getSession();
     if (!_.isObject(user)) return null;
-    return _.extend({}, user, { session: session });
+    return _.extend({}, user, { session });
   },
 
-  set: function (id, username, email, session) {
+  set(id, username, email, session) {
     user = {
-      id: id,
-      username: username,
-      email: email
+      id,
+      username,
+      email
     };
 
     if (_.isString(session)) {
-      var inThirtyDays = moment().add(30, 'days').toDate();
-      var thirtyDaysInSeconds = 2592000;
+      const inThirtyDays = moment().add(30, 'days').toDate();
+      const thirtyDaysInSeconds = 2592000;
       setSession(session, inThirtyDays, thirtyDaysInSeconds);
     }
 
     return true;
   },
 
-  cookieJar: cookieJar
-}
+  cookieJar
+};
