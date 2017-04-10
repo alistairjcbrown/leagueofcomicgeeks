@@ -1,6 +1,8 @@
 # leagueofcomicgeeks
 
-Unofficial Node.js library for interacting with [League of Comic Geeks](http://leagueofcomicgeeks.com/). This provides an API for any system wishing to interact with an account on League of Comic Geeks and supports authentication and all lists. It has has a comprehensive integration test setup to detect when the site has made breaking changes. Please create an issue or (better yet) a pull request if you see a problem or need additional features!
+Unofficial Node.js library for interacting with [League of Comic Geeks](http://leagueofcomicgeeks.com/). This provides an API for any system wishing to interact with an account on League of Comic Geeks and supports authentication and all lists. It has a comprehensive integration test setup to detect when the site makes breaking changes. Please create an issue or (better yet) a pull request if you see a problem or need additional features!
+
+---
 
 ## Resources
 
@@ -12,71 +14,97 @@ Unofficial Node.js library for interacting with [League of Comic Geeks](http://l
 1. Wish List
 1. Pull List
 
+All methods on resources are asynchronous and follow the nodejs "error-first callback" pattern. For use with promises, consider using something like [Bluebird's promisification functions](http://bluebirdjs.com/docs/api/promisification.html).
+
+There are examples on using the different resources in the `examples` directory.
+
 ### Session
 
 Methods on the session object:
- - `.create`
- - `.validate`
- - `.destroy`
- - `.get`
- - `.set`
+ - `.create` - Create a new session using the provided username and password. This sets up the session for all subsequent calls.
+ - `.validate` - Validate that the active session is still valid.
+ - `.destroy` - Destroy the current session both locally and on the site.
+ - `.get` - Get the active session object.
+ - `.set` - Set a previously retrieved session object.
 
-Used to log in and out of the application. The current user session can be retrieved and loaded for serialisation.
+Used to log in and out of the application. You can get the current session object for saving, as well as set the current session by setting a previously retrieved session object. The active session can then be validated to confirm it's working.
 
 ### Lists
 
 Calls to get list data all follow a standard format:
 
-```
+```js
 list.get(identifier, options, callback);
 ```
 
-Where identifiers can be an issue id, series id, search term, pull list date, etc. depending on the list being accessed (see below for examples)
+Where the `identifier` can be an issue id, series id, search term, pull list date, etc. depending on the list being accessed.
+
+The `options` parameter is optional, but is used to specify the type returned (eg. "series" or "issue") and for any sorting or filtering.
+
+Options support:
+ - `type` - "series" or "issue". Defaults to "issue".
+   - Use the `lofcg.types` helper for getting type values, eg. `lofcg.types.ISSUE`
+ - `publishers` - an array of publisher names to filter on. Default to no filtering.
+
+```js
+const lofcg = require('leagueofcomicgeeks');
+const options = {
+  type: lofcg.types.SERIES,
+  publishers: ['Marvel Comics', 'DC Comics', 'Other']
+}
+lofcg.searchResults.get('detective', options, function (err, results) {
+   // ...
+});
+```
+
+The exception to this is the Pull List, which also requires a date:
+
+```js
+const lofcg = require('leagueofcomicgeeks');
+const myUserId = 26853; // alistairjcbrown
+lofcg.pullList.get(myUserId, '2017-03-29', function (err, pullList) {
+  // ...
+});
+```
+
+Again, additional examples can be found in the `examples` directory.
 
 #### Read-only Lists
 
 Methods on read-only lists:
- - `.get`
+ - `.get` - Get a list of comic issues or series for a user
 
-New Comics and Search Results are read-only lists, meaning you can only get data from them, you cannot update them.
+New Comics and Search Results are read-only lists - you can only get data from them, you cannot update them.
 
 #### User Lists
 
 Methods on user lists:
- - `.get`
- - `.add`
- - `.remove`
+ - `.get` - Get a list of comic issues or series for a user
+ - `.add` - Add a comic issue or series to my list
+ - `.remove` - Add a comic issue or series to my list
 
 **Note:** `.add` and `.remove` require you to be authenticated. `.get` does not and can be called on any user.
 
+---
 
 ## To do
 
- - Need ability to check session and log out
-   - [X] Validate session by pulling a protected page
-   - [X] Use `/logout` to destroy the session, also destroying locally
-
  - Tests
-   - [X] Integration tests
-   - [X] Update read-only integration tests to use a specificly set up test account, and confirm response content
    - [ ] Provide sorting to prevent test data changing
    - [ ] Unit tests
+   - [ ] Jenkins integration
+     - [ ] Periodic run for integration tests
+     - [ ] PR run for unit tests
 
- - API
-   - [X] Does search and new comics need a user Id to be passed?
+ - Additional functionality
+   - [ ] Sorting - A-Z, Z-A
+     - [ ] Pull lists can have "most pulled"
+   - [ ] Filtering - owned, not owned, read, not read
+     - [ ] New comics can have "only #1s"
 
- - Tooling
-   - [X] Linting
-   - [ ] Documentation
-   - [ ] Additional examples
-   - [ ] Publish module
-
- - Can we dynamically load the publishers list in / update it periodically?
+ - Get publishers list in / update it periodically?
    - [ ] Perhaps a publisher module which can be called to get latest, which by default falls back to JSON file
    - [ ] Without coupling the code, can we use the session check to get the updated list of providers?
-
- - Additional filters
-   - [ ] New comics; only #1s, sorting, etc.
 
 ## Who am I?
 
