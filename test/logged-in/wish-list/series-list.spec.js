@@ -8,23 +8,23 @@ module.exports = function (lofcg) {
 
   require('../../shared/wish-list/series-list.spec')(lofcg);
 
-  describe('add series to list', () => {
-    describe('when valid series id used', confirmEmptyFirst(() => {
+  describe('add series to list', function () {
+    describe('when valid series id used', confirmEmptyFirst(function () {
       let addErr;
 
-      beforeAll((done) => {
+      beforeAll(function (done) {
         lofcg.wishList.add(testSeriesId, { type: lofcg.types.SERIES }, (err) => {
           addErr = err;
           done();
         });
       });
 
-      it('should not return an error', () => {
+      it('should not return an error', function () {
         expect(addErr).toBeNull();
       });
 
-      describe('getting list', () => {
-        it('should contain the previously added series', (done) => {
+      describe('getting list', function () {
+        it('should contain the previously added series', function (done) {
           lofcg.wishList.get(editableUserId, { type: lofcg.types.SERIES }, (err, wishList) => {
             expect(err).toBeNull();
             expect(wishList.length).toBe(1);
@@ -37,13 +37,13 @@ module.exports = function (lofcg) {
         });
       });
 
-      describe('remove series from list', () => {
+      describe('remove series from list', function () {
         helpers.testRemovingFromList(lofcg.wishList, testSeriesId, additionalArgs);
       });
     }));
 
-    describe('when invalid series id used', () => {
-      it('should not return an error', (done) => {
+    describe('when invalid series id used', function () {
+      it('should not return an error', function (done) {
         lofcg.wishList.add('foo', { type: lofcg.types.SERIES }, (err) => {
           expect(err).toEqual(jasmine.any(Error));
           expect(err.message).toEqual('Unable to add series to list');
@@ -53,13 +53,13 @@ module.exports = function (lofcg) {
     });
   });
 
-  describe('remove series from list', () => {
-    describe('when removing series that isn\'t in wish list', confirmEmptyFirst(() => {
+  describe('remove series from list', function () {
+    describe('when removing series that isn\'t in wish list', confirmEmptyFirst(function () {
       helpers.testRemovingFromList(lofcg.wishList, testSeriesId, additionalArgs);
     }));
 
-    describe('when invalid series id used', () => {
-      it('should not return an error', (done) => {
+    describe('when invalid series id used', function () {
+      it('should not return an error', function (done) {
         lofcg.wishList.remove('foo', { type: lofcg.types.SERIES }, (err) => {
           expect(err).toEqual(jasmine.any(Error));
           expect(err.message).toEqual('Unable to remove series from list');

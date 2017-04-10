@@ -6,8 +6,8 @@ module.exports = function (lofcg) {
   const options = { type: lofcg.types.SERIES };
   const filteredOptions = _.extend({ publishers: ['Image Comics'] }, options);
 
-  describe('get series list', () => {
-    it('should provide no comics in wish list with an invalid user id', (done) => {
+  describe('get series list', function () {
+    it('should provide no comics in wish list with an invalid user id', function (done) {
       lofcg.wishList.get('foo', options, (err, wishList) => {
         expect(err).toBeNull();
         expect(wishList.length).toBe(0);
@@ -16,7 +16,7 @@ module.exports = function (lofcg) {
       });
     });
 
-    it('should provide a list of comics from a users wish list', (done) => {
+    it('should provide a list of comics from a users wish list', function (done) {
       lofcg.wishList.get(readonlyUserId, options, (err, wishList) => {
         expect(err).toBeNull();
         expect(wishList.length).toBe(4);
@@ -28,7 +28,7 @@ module.exports = function (lofcg) {
       });
     });
 
-    it('should provide a filtered list of comics from a users wish list', (done) => {
+    it('should provide a filtered list of comics from a users wish list', function (done) {
       lofcg.wishList.get(readonlyUserId, filteredOptions, (err, wishList) => {
         expect(err).toBeNull();
         expect(wishList.length).toBe(2);

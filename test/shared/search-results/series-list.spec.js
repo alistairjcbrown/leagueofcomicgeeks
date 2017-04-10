@@ -6,8 +6,8 @@ module.exports = function (lofcg, searchTerm) {
   const options = { type: lofcg.types.SERIES };
   const filteredOptions = _.extend({ publishers: ['Image Comics'] }, options);
 
-  describe('get series list', () => {
-    it('should provide no results for unknown search term', (done) => {
+  describe('get series list', function () {
+    it('should provide no results for unknown search term', function (done) {
       lofcg.searchResults.get('foobarbaz', options, (err, searchResults) => {
         expect(err).toBeNull();
         expect(searchResults.length).toBe(0);
@@ -16,7 +16,7 @@ module.exports = function (lofcg, searchTerm) {
       });
     });
 
-    it('should provide results for known search term', (done) => {
+    it('should provide results for known search term', function (done) {
       lofcg.searchResults.get(searchTerm, options, (err, searchResults) => {
         expect(err).toBeNull();
         expect(searchResults.length).toBe(8);
@@ -28,7 +28,7 @@ module.exports = function (lofcg, searchTerm) {
       });
     });
 
-    it('should provide a filtered list of new comics', (done) => {
+    it('should provide a filtered list of new comics', function (done) {
       lofcg.searchResults.get(searchTerm, filteredOptions, (err, searchResults) => {
         expect(err).toBeNull();
         expect(searchResults.length).toBe(2);

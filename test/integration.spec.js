@@ -16,15 +16,15 @@ const defaultTimeoutInterval = 20000;
 jasmine.DEFAULT_TIMEOUT_INTERVAL = defaultTimeoutInterval;
 jasmine.getEnv().defaultTimeoutInterval = defaultTimeoutInterval;
 
-describe('Integration tests', () => {
-  afterAll(() => {
+describe('Integration tests', function () {
+  afterAll(function () {
     outputCallReport('GET', request.get);
     outputCallReport('POST', request.post);
     request.get.restore();
     request.post.restore();
   });
 
-  beforeEach(() => {
+  beforeEach(function () {
     jasmine.addMatchers(customMatchers);
   });
 

@@ -1,7 +1,7 @@
 const lofcg = require('../../');
 
 module.exports = function () {
-  describe('Not Logged In', () => {
+  describe('Not Logged In', function () {
     require('./new-comics')(lofcg);
     require('./search-results')(lofcg);
     require('./collection')(lofcg);

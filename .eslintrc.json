@@ -21,6 +21,7 @@
       "comma-dangle": ["error", "never"],
       "max-len": ["error", 120],
       "global-require": "off",
-      "func-names": "off"
+      "func-names": "off",
+      "prefer-arrow-callback": "off"
     }
 }

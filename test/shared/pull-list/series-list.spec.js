@@ -6,8 +6,8 @@ module.exports = function (lofcg, pullListDate) {
   const options = { type: lofcg.types.SERIES };
   const filteredOptions = _.extend({ publishers: ['Image Comics'] }, options);
 
-  describe('get series list', () => {
-    it('should provide no comics in pull list with an invalid user id', (done) => {
+  describe('get series list', function () {
+    it('should provide no comics in pull list with an invalid user id', function (done) {
       lofcg.pullList.get('foo', pullListDate, options, (err, pullList) => {
         expect(err).toBeNull();
         expect(pullList.length).toBe(0);
@@ -16,7 +16,7 @@ module.exports = function (lofcg, pullListDate) {
       });
     });
 
-    it('should provide a list of comics from a users pull list', (done) => {
+    it('should provide a list of comics from a users pull list', function (done) {
       lofcg.pullList.get(readonlyUserId, pullListDate, options, (err, pullList) => {
         expect(err).toBeNull();
         expect(pullList.length).toBe(2);
@@ -28,7 +28,7 @@ module.exports = function (lofcg, pullListDate) {
       });
     });
 
-    it('should provide a filtered list of comics from a users pull list', (done) => {
+    it('should provide a filtered list of comics from a users pull list', function (done) {
       lofcg.pullList.get(readonlyUserId, pullListDate, filteredOptions, (err, pullList) => {
         expect(err).toBeNull();
         expect(pullList.length).toBe(1);
@@ -40,7 +40,7 @@ module.exports = function (lofcg, pullListDate) {
       });
     });
 
-    it('should return an error when provided with an invalid date', (done) => {
+    it('should return an error when provided with an invalid date', function (done) {
       lofcg.pullList.get(readonlyUserId, 'foo', options, (err) => {
         expect(err).toEqual(jasmine.any(Error));
         expect(err.message).toEqual('Invalid date value provided');

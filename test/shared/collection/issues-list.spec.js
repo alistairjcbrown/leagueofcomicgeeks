@@ -3,8 +3,8 @@ const allIssuesCollection = require('./test-data/all-issues-collection');
 const filteredIssuesCollection = require('./test-data/filtered-issues-collection');
 
 module.exports = function (lofcg) {
-  describe('get issues list', () => {
-    it('should provide no comics in collection with an invalid user id', (done) => {
+  describe('get issues list', function () {
+    it('should provide no comics in collection with an invalid user id', function (done) {
       lofcg.collection.get('foo', (err, collection) => {
         expect(err).toBeNull();
         expect(collection.length).toBe(0);
@@ -13,7 +13,7 @@ module.exports = function (lofcg) {
       });
     });
 
-    it('should provide a list of comics from a users collection', (done) => {
+    it('should provide a list of comics from a users collection', function (done) {
       lofcg.collection.get(readonlyUserId, (err, collection) => {
         expect(err).toBeNull();
         expect(collection.length).toBe(86);
@@ -25,7 +25,7 @@ module.exports = function (lofcg) {
       });
     });
 
-    it('should provide a filtered list of comics from a users collection', (done) => {
+    it('should provide a filtered list of comics from a users collection', function (done) {
       lofcg.collection.get(readonlyUserId, { publishers: ['Image Comics'] }, (err, collection) => {
         expect(err).toBeNull();
         expect(collection.length).toBe(13);

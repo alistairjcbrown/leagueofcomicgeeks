@@ -2,11 +2,11 @@ const _ = require('lodash');
 
 const confirmEmptyFirst = function (resource, additionalArgs, tests) {
   return function () {
-    describe('list is empty', () => {
+    describe('list is empty', function () {
       let getErr;
       let getValue;
 
-      beforeAll((done) => {
+      beforeAll(function (done) {
         const callback = function (err, value) {
           getErr = err;
           getValue = value;
@@ -16,11 +16,11 @@ const confirmEmptyFirst = function (resource, additionalArgs, tests) {
         resource.get(...getArgs);
       });
 
-      it('should not return an error', () => {
+      it('should not return an error', function () {
         expect(getErr).toBeNull();
       });
 
-      it('should be empty list', () => {
+      it('should be empty list', function () {
         expect(getValue.length).toBe(0);
         expect(getValue).toEqual([]);
       });
@@ -40,7 +40,7 @@ const testRemovingFromList = function (resource, resourceId, additionalArgs) {
   }
 
   let removeErr;
-  beforeAll((done) => {
+  beforeAll(function (done) {
     const callback = function (err) {
       removeErr = err;
       done();
@@ -49,12 +49,12 @@ const testRemovingFromList = function (resource, resourceId, additionalArgs) {
     resource.remove(...removeArgs);
   });
 
-  it('should not return an error', () => {
+  it('should not return an error', function () {
     expect(removeErr).toBeNull();
   });
 
-  describe('getting list', () => {
-    it('should be empty', (done) => {
+  describe('getting list', function () {
+    it('should be empty', function (done) {
       const callback = function (err, value) {
         expect(err).toBeNull();
         expect(value.length).toBe(0);

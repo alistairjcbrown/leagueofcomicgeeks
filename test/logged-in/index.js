@@ -2,20 +2,20 @@ const lofcg = require('../../');
 const user = require('../utils/test-credentials');
 
 module.exports = function () {
-  describe('Logged In', () => {
-    afterAll((done) => {
+  describe('Logged In', function () {
+    afterAll(function (done) {
       lofcg.session.destroy(() => {
         done();
       });
     });
 
-    beforeAll((done) => {
+    beforeAll(function (done) {
       lofcg.session.create(user.username, user.password, () => {
         done();
       });
     });
 
-    it('has a valid log in session', (done) => {
+    it('has a valid log in session', function (done) {
       lofcg.session.validate((err, isValid) => {
         expect(err).toBeNull();
         expect(isValid).toBe(true);

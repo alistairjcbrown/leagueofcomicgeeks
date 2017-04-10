@@ -3,8 +3,8 @@ const allIssuesWishList = require('./test-data/all-issues-wish-list');
 const filteredIssuesWishList = require('./test-data/filtered-issues-wish-list');
 
 module.exports = function (lofcg) {
-  describe('get issues list', () => {
-    it('should provide no comics in wish list with an invalid user id', (done) => {
+  describe('get issues list', function () {
+    it('should provide no comics in wish list with an invalid user id', function (done) {
       lofcg.wishList.get('foo', (err, wishList) => {
         expect(err).toBeNull();
         expect(wishList.length).toBe(0);
@@ -13,7 +13,7 @@ module.exports = function (lofcg) {
       });
     });
 
-    it('should provide a list of comics from a users wish list', (done) => {
+    it('should provide a list of comics from a users wish list', function (done) {
       lofcg.wishList.get(readonlyUserId, (err, wishList) => {
         expect(err).toBeNull();
         expect(wishList.length).toBe(16);
@@ -25,7 +25,7 @@ module.exports = function (lofcg) {
       });
     });
 
-    it('should provide a filtered list of comics from a users wish list', (done) => {
+    it('should provide a filtered list of comics from a users wish list', function (done) {
       lofcg.wishList.get(readonlyUserId, { publishers: ['Image Comics'] }, (err, wishList) => {
         expect(err).toBeNull();
         expect(wishList.length).toBe(11);
