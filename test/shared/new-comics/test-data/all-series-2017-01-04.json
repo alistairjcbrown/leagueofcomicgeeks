@@ -88,22 +88,6 @@
         "series": "2012"
     },
     {
-        "id": "114686",
-        "name": "The Autumnlands: Tooth & Claw",
-        "cover": "http://leagueofcomicgeeks.com/comics/covers/medium/8759009-the-autumnlands-tooth-claw.jpg",
-        "publisher": "Image Comics",
-        "count": 1,
-        "series": "2014"
-    },
-    {
-        "id": "127055",
-        "name": "The Avengers",
-        "cover": "http://leagueofcomicgeeks.com/comics/covers/medium/9172708-the-avengers.jpg",
-        "publisher": "Marvel Comics",
-        "count": 2,
-        "series": "2016"
-    },
-    {
         "id": "123183",
         "name": "Back to the Future: Citizen Brown",
         "cover": "http://leagueofcomicgeeks.com/comics/covers/medium/8886084-back-to-the-future-citizen-brown.jpg",
@@ -296,14 +280,6 @@
         "series": ""
     },
     {
-        "id": "121317",
-        "name": "The Demon Prince of Momochi House",
-        "cover": "http://leagueofcomicgeeks.com/comics/covers/medium/9692907-the-demon-prince-of-momochi-house.jpg",
-        "publisher": "VIZ Media",
-        "count": 1,
-        "series": ""
-    },
-    {
         "id": "123681",
         "name": "Disney Princess",
         "cover": "http://leagueofcomicgeeks.com/comics/covers/medium/8501592-disney-princess.jpg",
@@ -389,22 +365,6 @@
         "cover": "http://leagueofcomicgeeks.com/comics/covers/medium/6152672-faith.jpg",
         "publisher": "Valiant",
         "count": 5,
-        "series": "2016"
-    },
-    {
-        "id": "128452",
-        "name": "The Fall and Rise of Captain Atom",
-        "cover": "http://leagueofcomicgeeks.com/comics/covers/medium/8652905-the-fall-and-rise-of-captain-atom.jpg",
-        "publisher": "DC Comics",
-        "count": 2,
-        "series": "2017"
-    },
-    {
-        "id": "124366",
-        "name": "The Flintstones",
-        "cover": "http://leagueofcomicgeeks.com/comics/covers/medium/2335868-the-flintstones.jpg",
-        "publisher": "DC Comics",
-        "count": 2,
         "series": "2016"
     },
     {
@@ -504,22 +464,6 @@
         "series": "2016"
     },
     {
-        "id": "127797",
-        "name": "The Incredible Hulk Epic Collection: Future Imperfect",
-        "cover": "http://leagueofcomicgeeks.com/comics/covers/medium/4858558-the-incredible-hulk-epic-collection-future-imperfect.jpg",
-        "publisher": "Marvel Comics",
-        "count": 1,
-        "series": ""
-    },
-    {
-        "id": "118443",
-        "name": "The Incredible Hulk: Epic Collection",
-        "cover": "http://leagueofcomicgeeks.com/comics/covers/medium/9344788-the-incredible-hulk-epic-collection.jpg",
-        "publisher": "Marvel Comics",
-        "count": 1,
-        "series": ""
-    },
-    {
         "id": "128049",
         "name": "Injustice: Gods Among Us - Ground Zero",
         "cover": "http://leagueofcomicgeeks.com/comics/covers/medium/8719121-injustice-gods-among-us-ground-zero.jpg",
@@ -544,20 +488,20 @@
         "series": "2016"
     },
     {
-        "id": "128139",
-        "name": "Justice League of America: The Atom Rebirth",
-        "cover": "http://leagueofcomicgeeks.com/comics/covers/medium/8632080-justice-league-of-america-the-atom-rebirth.jpg",
-        "publisher": "DC Comics",
-        "count": 2,
-        "series": "2017"
-    },
-    {
         "id": "127795",
         "name": "Justice League United",
         "cover": "http://leagueofcomicgeeks.com/comics/covers/medium/9788714-justice-league-united.jpg",
         "publisher": "DC Comics",
         "count": 1,
         "series": ""
+    },
+    {
+        "id": "128139",
+        "name": "Justice League of America: The Atom Rebirth",
+        "cover": "http://leagueofcomicgeeks.com/comics/covers/medium/8632080-justice-league-of-america-the-atom-rebirth.jpg",
+        "publisher": "DC Comics",
+        "count": 2,
+        "series": "2017"
     },
     {
         "id": "127627",
@@ -728,14 +672,6 @@
         "series": ""
     },
     {
-        "id": "119224",
-        "name": "The New Avengers",
-        "cover": "http://leagueofcomicgeeks.com/comics/covers/medium/7001112-the-new-avengers.jpg",
-        "publisher": "Marvel Comics",
-        "count": 1,
-        "series": "2015"
-    },
-    {
         "id": "124030",
         "name": "Nightwing",
         "cover": "http://leagueofcomicgeeks.com/comics/covers/medium/8250153-nightwing.jpg",
@@ -888,14 +824,6 @@
         "series": "2016"
     },
     {
-        "id": "122692",
-        "name": "The Shadow Glass",
-        "cover": "http://leagueofcomicgeeks.com/comics/covers/medium/2997236-the-shadow-glass.jpg",
-        "publisher": "Dark Horse Comics",
-        "count": 1,
-        "series": "2016"
-    },
-    {
         "id": "129844",
         "name": "Sixsmiths",
         "cover": "http://leagueofcomicgeeks.com/comics/covers/medium/7156707-sixsmiths.jpg",
@@ -918,14 +846,6 @@
         "publisher": "Marvel Comics",
         "count": 2,
         "series": "2016"
-    },
-    {
-        "id": "116505",
-        "name": "The Smurfs Anthology",
-        "cover": "http://leagueofcomicgeeks.com/comics/covers/medium/6034447-the-smurfs-anthology.jpg",
-        "publisher": "Papercutz",
-        "count": 1,
-        "series": ""
     },
     {
         "id": "129421",
@@ -992,6 +912,118 @@
         "series": "2016"
     },
     {
+        "id": "114686",
+        "name": "The Autumnlands: Tooth & Claw",
+        "cover": "http://leagueofcomicgeeks.com/comics/covers/medium/8759009-the-autumnlands-tooth-claw.jpg",
+        "publisher": "Image Comics",
+        "count": 1,
+        "series": "2014"
+    },
+    {
+        "id": "127055",
+        "name": "The Avengers",
+        "cover": "http://leagueofcomicgeeks.com/comics/covers/medium/9172708-the-avengers.jpg",
+        "publisher": "Marvel Comics",
+        "count": 2,
+        "series": "2016"
+    },
+    {
+        "id": "121317",
+        "name": "The Demon Prince of Momochi House",
+        "cover": "http://leagueofcomicgeeks.com/comics/covers/medium/9692907-the-demon-prince-of-momochi-house.jpg",
+        "publisher": "VIZ Media",
+        "count": 1,
+        "series": ""
+    },
+    {
+        "id": "128452",
+        "name": "The Fall and Rise of Captain Atom",
+        "cover": "http://leagueofcomicgeeks.com/comics/covers/medium/8652905-the-fall-and-rise-of-captain-atom.jpg",
+        "publisher": "DC Comics",
+        "count": 2,
+        "series": "2017"
+    },
+    {
+        "id": "124366",
+        "name": "The Flintstones",
+        "cover": "http://leagueofcomicgeeks.com/comics/covers/medium/2335868-the-flintstones.jpg",
+        "publisher": "DC Comics",
+        "count": 2,
+        "series": "2016"
+    },
+    {
+        "id": "127797",
+        "name": "The Incredible Hulk Epic Collection: Future Imperfect",
+        "cover": "http://leagueofcomicgeeks.com/comics/covers/medium/4858558-the-incredible-hulk-epic-collection-future-imperfect.jpg",
+        "publisher": "Marvel Comics",
+        "count": 1,
+        "series": ""
+    },
+    {
+        "id": "118443",
+        "name": "The Incredible Hulk: Epic Collection",
+        "cover": "http://leagueofcomicgeeks.com/comics/covers/medium/9344788-the-incredible-hulk-epic-collection.jpg",
+        "publisher": "Marvel Comics",
+        "count": 1,
+        "series": ""
+    },
+    {
+        "id": "119224",
+        "name": "The New Avengers",
+        "cover": "http://leagueofcomicgeeks.com/comics/covers/medium/7001112-the-new-avengers.jpg",
+        "publisher": "Marvel Comics",
+        "count": 1,
+        "series": "2015"
+    },
+    {
+        "id": "122692",
+        "name": "The Shadow Glass",
+        "cover": "http://leagueofcomicgeeks.com/comics/covers/medium/2997236-the-shadow-glass.jpg",
+        "publisher": "Dark Horse Comics",
+        "count": 1,
+        "series": "2016"
+    },
+    {
+        "id": "116505",
+        "name": "The Smurfs Anthology",
+        "cover": "http://leagueofcomicgeeks.com/comics/covers/medium/6034447-the-smurfs-anthology.jpg",
+        "publisher": "Papercutz",
+        "count": 1,
+        "series": ""
+    },
+    {
+        "id": "127003",
+        "name": "The Unstoppable Wasp",
+        "cover": "http://leagueofcomicgeeks.com/comics/covers/medium/7228953-the-unstoppable-wasp.jpg",
+        "publisher": "Marvel Comics",
+        "count": 7,
+        "series": "2016"
+    },
+    {
+        "id": "126091",
+        "name": "The Unworthy Thor",
+        "cover": "http://leagueofcomicgeeks.com/comics/covers/medium/9959237-the-unworthy-thor.jpg",
+        "publisher": "Marvel Comics",
+        "count": 3,
+        "series": "2016"
+    },
+    {
+        "id": "100004",
+        "name": "The Walking Dead",
+        "cover": "http://leagueofcomicgeeks.com/comics/covers/medium/3614432-the-walking-dead.jpg",
+        "publisher": "Image Comics",
+        "count": 2,
+        "series": "2003"
+    },
+    {
+        "id": "113171",
+        "name": "The Wicked + The Divine",
+        "cover": "http://leagueofcomicgeeks.com/comics/covers/medium/8222681-the-wicked-the-divine.jpg",
+        "publisher": "Image Comics",
+        "count": 2,
+        "series": "2014"
+    },
+    {
         "id": "129846",
         "name": "Tower of Comic Book Freaks",
         "cover": "http://leagueofcomicgeeks.com/comics/covers/medium/8807756-tower-of-comic-book-freaks.jpg",
@@ -1032,44 +1064,12 @@
         "series": "2015"
     },
     {
-        "id": "127003",
-        "name": "The Unstoppable Wasp",
-        "cover": "http://leagueofcomicgeeks.com/comics/covers/medium/7228953-the-unstoppable-wasp.jpg",
-        "publisher": "Marvel Comics",
-        "count": 7,
-        "series": "2016"
-    },
-    {
-        "id": "126091",
-        "name": "The Unworthy Thor",
-        "cover": "http://leagueofcomicgeeks.com/comics/covers/medium/9959237-the-unworthy-thor.jpg",
-        "publisher": "Marvel Comics",
-        "count": 3,
-        "series": "2016"
-    },
-    {
         "id": "126217",
         "name": "Vikings Uprising",
         "cover": "http://leagueofcomicgeeks.com/comics/covers/medium/6372928-vikings-uprising.jpg",
         "publisher": "Titan Books",
         "count": 3,
         "series": ""
-    },
-    {
-        "id": "100004",
-        "name": "The Walking Dead",
-        "cover": "http://leagueofcomicgeeks.com/comics/covers/medium/3614432-the-walking-dead.jpg",
-        "publisher": "Image Comics",
-        "count": 2,
-        "series": "2003"
-    },
-    {
-        "id": "113171",
-        "name": "The Wicked + The Divine",
-        "cover": "http://leagueofcomicgeeks.com/comics/covers/medium/8222681-the-wicked-the-divine.jpg",
-        "publisher": "Image Comics",
-        "count": 2,
-        "series": "2014"
     },
     {
         "id": "127784",
@@ -1080,20 +1080,20 @@
         "series": ""
     },
     {
-        "id": "125005",
-        "name": "World of Tanks",
-        "cover": "http://leagueofcomicgeeks.com/comics/covers/medium/3050429-world-of-tanks.jpg",
-        "publisher": "Dark Horse Comics",
-        "count": 1,
-        "series": "2016"
-    },
-    {
         "id": "120654",
         "name": "World Trigger",
         "cover": "http://leagueofcomicgeeks.com/comics/covers/medium/1365788-world-trigger.jpg",
         "publisher": "VIZ Media",
         "count": 1,
         "series": ""
+    },
+    {
+        "id": "125005",
+        "name": "World of Tanks",
+        "cover": "http://leagueofcomicgeeks.com/comics/covers/medium/3050429-world-of-tanks.jpg",
+        "publisher": "Dark Horse Comics",
+        "count": 1,
+        "series": "2016"
     },
     {
         "id": "127736",

@@ -1,10 +1,13 @@
 const _ = require('lodash');
 const allSeriesPullList = require('./test-data/all-series-pull-list');
 const filteredSeriesPullList = require('./test-data/filtered-series-pull-list');
+const sortedSeriesPullList = require('./test-data/sorted-series-pull-list');
 
 module.exports = function (lofcg, pullListDate) {
   const options = { type: lofcg.types.SERIES };
   const filteredOptions = _.extend({ publishers: ['Image Comics'] }, options);
+  const sortedOptions = _.extend({ sort: 'desc' }, options);
+  const customSortedOptions = _.extend({ sort: 'pulls' }, options);
 
   describe('get series list', function () {
     it('should provide no comics in pull list with an invalid user id', function (done) {
@@ -33,6 +36,30 @@ module.exports = function (lofcg, pullListDate) {
         expect(err).toBeNull();
         expect(pullList.length).toBe(1);
         expect(pullList).toEqual(filteredSeriesPullList);
+        _.each(pullList, (comic) => {
+          expect(comic).toBeAComicSeries();
+        });
+        done();
+      });
+    });
+
+    it('should provide a sorted list of comics from a users pull list', function (done) {
+      lofcg.pullList.get(readonlyUserId, pullListDate, sortedOptions, (err, pullList) => {
+        expect(err).toBeNull();
+        expect(pullList.length).toBe(2);
+        expect(pullList).toEqual(sortedSeriesPullList);
+        _.each(pullList, (comic) => {
+          expect(comic).toBeAComicSeries();
+        });
+        done();
+      });
+    });
+
+    it('should provide a custom sorted list of comics from a users pull list', function (done) {
+      lofcg.pullList.get(readonlyUserId, pullListDate, customSortedOptions, (err, pullList) => {
+        expect(err).toBeNull();
+        expect(pullList.length).toBe(2);
+        expect(pullList).toEqual(allSeriesPullList); // Custom sorting does not apply to series
         _.each(pullList, (comic) => {
           expect(comic).toBeAComicSeries();
         });

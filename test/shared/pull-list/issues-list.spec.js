@@ -1,6 +1,7 @@
 const _ = require('lodash');
 const allIssuesPullList = require('./test-data/all-issues-pull-list');
 const filteredIssuesPullList = require('./test-data/filtered-issues-pull-list');
+const sortedIssuesPullList = require('./test-data/sorted-issues-pull-list');
 
 module.exports = function (lofcg, pullListDate) {
   describe('get issues list', function () {
@@ -30,6 +31,30 @@ module.exports = function (lofcg, pullListDate) {
         expect(err).toBeNull();
         expect(pullList.length).toBe(1);
         expect(pullList).toEqual(filteredIssuesPullList);
+        _.each(pullList, (comic) => {
+          expect(comic).toBeAComicIssue();
+        });
+        done();
+      });
+    });
+
+    it('should provide a sorted list of comics from a users pull list', function (done) {
+      lofcg.pullList.get(readonlyUserId, pullListDate, { sort: 'desc' }, (err, pullList) => {
+        expect(err).toBeNull();
+        expect(pullList.length).toBe(2);
+        expect(pullList).toEqual(sortedIssuesPullList);
+        _.each(pullList, (comic) => {
+          expect(comic).toBeAComicIssue();
+        });
+        done();
+      });
+    });
+
+    it('should provide a custom sorted list of comics from a users pull list', function (done) {
+      lofcg.pullList.get(readonlyUserId, pullListDate, { sort: 'pulls' }, (err, pullList) => {
+        expect(err).toBeNull();
+        expect(pullList.length).toBe(2);
+        expect(pullList).toEqual(sortedIssuesPullList); // Custom sorting is the same order as descending
         _.each(pullList, (comic) => {
           expect(comic).toBeAComicIssue();
         });

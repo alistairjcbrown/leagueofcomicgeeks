@@ -1,10 +1,12 @@
 const _ = require('lodash');
 const allSeries20170104 = require('./test-data/all-series-2017-01-04');
 const filteredSeries20170104 = require('./test-data/filtered-series-2017-01-04');
+const sortedSeries20170104 = require('./test-data/sorted-series-2017-01-04');
 
 module.exports = function (lofcg, newComicsDate) {
   const options = { type: lofcg.types.SERIES };
   const filteredOptions = _.extend({ publishers: ['Image Comics'] }, options);
+  const sortedOptions = _.extend({ sort: 'desc' }, options);
 
   describe('get series list', function () {
     it('should provide no new comic series', function (done) {
@@ -33,6 +35,18 @@ module.exports = function (lofcg, newComicsDate) {
         expect(err).toBeNull();
         expect(newComics.length).toBe(8);
         expect(newComics).toEqual(filteredSeries20170104);
+        _.each(newComics, (comic) => {
+          expect(comic).toBeAComicSeries();
+        });
+        done();
+      });
+    });
+
+    it('should provide a sorted list of new comic series', function (done) {
+      lofcg.newComics.get(newComicsDate, sortedOptions, (err, newComics) => {
+        expect(err).toBeNull();
+        expect(newComics.length).toBe(139);
+        expect(newComics).toEqual(sortedSeries20170104);
         _.each(newComics, (comic) => {
           expect(comic).toBeAComicSeries();
         });

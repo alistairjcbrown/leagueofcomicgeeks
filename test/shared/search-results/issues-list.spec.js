@@ -1,6 +1,7 @@
 const _ = require('lodash');
 const allIssuesBlackMagic = require('./test-data/all-issues-black-magic');
 const filteredIssuesBlackMagic = require('./test-data/filtered-issues-black-magic');
+const sortedIssuesBlackMagic = require('./test-data/sorted-issues-black-magic');
 
 module.exports = function (lofcg, searchTerm) {
   describe('get issues list', function () {
@@ -30,6 +31,18 @@ module.exports = function (lofcg, searchTerm) {
         expect(err).toBeNull();
         expect(searchResults.length).toBe(15);
         expect(searchResults).toEqual(filteredIssuesBlackMagic);
+        _.each(searchResults, (comic) => {
+          expect(comic).toBeAComicIssue();
+        });
+        done();
+      });
+    });
+
+    it('should provide a sorted list of new comics', function (done) {
+      lofcg.searchResults.get(searchTerm, { sort: 'desc' }, (err, searchResults) => {
+        expect(err).toBeNull();
+        expect(searchResults.length).toBe(38);
+        expect(searchResults).toEqual(sortedIssuesBlackMagic);
         _.each(searchResults, (comic) => {
           expect(comic).toBeAComicIssue();
         });

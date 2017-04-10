@@ -1,13 +1,5 @@
 [
     {
-        "id": "114686",
-        "name": "The Autumnlands: Tooth & Claw",
-        "cover": "http://leagueofcomicgeeks.com/comics/covers/medium/8759009-the-autumnlands-tooth-claw.jpg",
-        "publisher": "Image Comics",
-        "count": 1,
-        "series": "2014"
-    },
-    {
         "id": "111511",
         "name": "Black Science",
         "cover": "http://leagueofcomicgeeks.com/comics/covers/medium/9694083-black-science.jpg",
@@ -46,6 +38,14 @@
         "publisher": "Image Comics",
         "count": 1,
         "series": "2012"
+    },
+    {
+        "id": "114686",
+        "name": "The Autumnlands: Tooth & Claw",
+        "cover": "http://leagueofcomicgeeks.com/comics/covers/medium/8759009-the-autumnlands-tooth-claw.jpg",
+        "publisher": "Image Comics",
+        "count": 1,
+        "series": "2014"
     },
     {
         "id": "100004",

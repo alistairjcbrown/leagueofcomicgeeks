@@ -1,0 +1,34 @@
+[
+    {
+        "id": "115200",
+        "name": "The Unbeatable Squirrel Girl",
+        "cover": "http://leagueofcomicgeeks.com/comics/covers/medium/2790619-the-unbeatable-squirrel-girl.jpg",
+        "publisher": "Marvel Comics",
+        "count": 5,
+        "series": "2015"
+    },
+    {
+        "id": "124432",
+        "name": "Rick and Morty: Lil' Poopy Superstar",
+        "cover": "http://leagueofcomicgeeks.com/comics/covers/medium/5988322-rick-and-morty-lil-poopy-superstar.jpg",
+        "publisher": "Oni Press",
+        "count": 5,
+        "series": "2016"
+    },
+    {
+        "id": "116147",
+        "name": "Paper Girls",
+        "cover": "http://leagueofcomicgeeks.com/comics/covers/medium/1094288-paper-girls.jpg",
+        "publisher": "Image Comics",
+        "count": 13,
+        "series": "2015"
+    },
+    {
+        "id": "100124",
+        "name": "Adventure Time",
+        "cover": "http://leagueofcomicgeeks.com/comics/covers/medium/1205249-adventure-time.jpg",
+        "publisher": "BOOM! Studios",
+        "count": 11,
+        "series": "2012"
+    }
+]

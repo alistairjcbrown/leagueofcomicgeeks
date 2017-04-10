@@ -50,7 +50,7 @@ const getList = function (userId, listId, parameters, options, callback) {
     list_option: type,
     user_id: userId,
     view: viewType[type] || 'thumbs',
-    order: 'alpha-asc',
+    order: options.sort || 'alpha-asc',
     publisher: getPublisherIds(options.publishers)
   }, parameters);
   const urlParameterString = queryString.stringify(urlParameters, { arrayFormat: 'bracket' });

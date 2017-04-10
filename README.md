@@ -44,13 +44,16 @@ The `options` parameter is optional, but is used to specify the type returned (e
 Options support:
  - `type` - "series" or "issue". Defaults to "issue".
    - Use the `lofcg.types` helper for getting type values, eg. `lofcg.types.ISSUE`
- - `publishers` - an array of publisher names to filter on. Default to no filtering.
+ - `publishers` - an array of publisher names to filter on. Defaults to no filtering.
+ - `sort` - "asc" (ascending) or "desc" (descending). Defaults to "asc".
+   - **Note:** Sorting is performed within the module on the response from the server (ie. not by the server itself) due to sorting bugs in the endpoints. However, the server provides additional sorting options depending on the list. Passing a value which is not one of the two supported will be delegated to the server (eg. providing "pulls" for Most Pulled on Pull List will have that order provided by the server).
 
 ```js
 const lofcg = require('leagueofcomicgeeks');
 const options = {
   type: lofcg.types.SERIES,
-  publishers: ['Marvel Comics', 'DC Comics', 'Other']
+  publishers: ['Marvel Comics', 'DC Comics', 'Other'],
+  sort: 'desc'
 }
 lofcg.searchResults.get('detective', options, function (err, results) {
    // ...
@@ -90,15 +93,14 @@ Methods on user lists:
 ## To do
 
  - Tests
-   - [ ] Provide sorting to prevent test data changing
    - [ ] Unit tests
    - [ ] Jenkins integration
      - [ ] Periodic run for integration tests
      - [ ] PR run for unit tests
 
  - Additional functionality
-   - [ ] Sorting - A-Z, Z-A
-     - [ ] Pull lists can have "most pulled"
+   - [x] Sorting - A-Z, Z-A
+     - [x] Pull lists can have "most pulled"
    - [ ] Filtering - owned, not owned, read, not read
      - [ ] New comics can have "only #1s"
 

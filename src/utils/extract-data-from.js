@@ -10,7 +10,14 @@ const convertToISO8601Date = function (dateString) {
   return date.format('YYYY-MM-DD');
 };
 
-const seriesExtractor = function (response) {
+const sortList = function (list, sortBy = 'asc') {
+  if (sortBy === 'asc' || sortBy === 'desc') {
+    return _.orderBy(list, 'name', sortBy);
+  }
+  return list;
+};
+
+const seriesExtractor = function (response, options) {
   const $ = cheerio.load(response.list);
 
   const extractSeriesData = function () {
@@ -30,10 +37,10 @@ const seriesExtractor = function (response) {
     };
   };
 
-  return $('li').map(extractSeriesData).get();
+  return sortList($('li').map(extractSeriesData).get(), options.sort);
 };
 
-const issueExtractor = function (response) {
+const issueExtractor = function (response, options) {
   const $ = cheerio.load(response.list);
 
   const extractIssueData = function () {
@@ -61,7 +68,7 @@ const issueExtractor = function (response) {
     };
   };
 
-  return $('li').map(extractIssueData).get();
+  return sortList($('li').map(extractIssueData).get(), options.sort);
 };
 
 const extractionHandler = {
@@ -71,5 +78,5 @@ const extractionHandler = {
 
 module.exports = function (response, options) {
   const handler = extractionHandler[options.type] || extractionHandler[config.defaultType];
-  return handler(response);
+  return handler(response, options);
 };

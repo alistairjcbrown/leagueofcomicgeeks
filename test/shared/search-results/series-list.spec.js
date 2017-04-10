@@ -1,10 +1,12 @@
 const _ = require('lodash');
 const allSeriesBlackMagic = require('./test-data/all-series-black-magic');
 const filteredSeriesBlackMagic = require('./test-data/filtered-series-black-magic');
+const sortedSeriesBlackMagic = require('./test-data/sorted-series-black-magic');
 
 module.exports = function (lofcg, searchTerm) {
   const options = { type: lofcg.types.SERIES };
   const filteredOptions = _.extend({ publishers: ['Image Comics'] }, options);
+  const sortedOptions = _.extend({ sort: 'desc' }, options);
 
   describe('get series list', function () {
     it('should provide no results for unknown search term', function (done) {
@@ -33,6 +35,18 @@ module.exports = function (lofcg, searchTerm) {
         expect(err).toBeNull();
         expect(searchResults.length).toBe(2);
         expect(searchResults).toEqual(filteredSeriesBlackMagic);
+        _.each(searchResults, (comic) => {
+          expect(comic).toBeAComicSeries();
+        });
+        done();
+      });
+    });
+
+    it('should provide a sorted list of new comics', function (done) {
+      lofcg.searchResults.get(searchTerm, sortedOptions, (err, searchResults) => {
+        expect(err).toBeNull();
+        expect(searchResults.length).toBe(8);
+        expect(searchResults).toEqual(sortedSeriesBlackMagic);
         _.each(searchResults, (comic) => {
           expect(comic).toBeAComicSeries();
         });

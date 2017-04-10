@@ -1,6 +1,7 @@
 const _ = require('lodash');
 const allIssuesCollection = require('./test-data/all-issues-collection');
 const filteredIssuesCollection = require('./test-data/filtered-issues-collection');
+const sortedIssuesCollection = require('./test-data/sorted-issues-collection');
 
 module.exports = function (lofcg) {
   describe('get issues list', function () {
@@ -30,6 +31,18 @@ module.exports = function (lofcg) {
         expect(err).toBeNull();
         expect(collection.length).toBe(13);
         expect(collection).toEqual(filteredIssuesCollection);
+        _.each(collection, (comic) => {
+          expect(comic).toBeAComicIssue();
+        });
+        done();
+      });
+    });
+
+    it('should provide a sorted list of comics from a users collection', function (done) {
+      lofcg.collection.get(readonlyUserId, { sort: 'desc' }, (err, collection) => {
+        expect(err).toBeNull();
+        expect(collection.length).toBe(86);
+        expect(collection).toEqual(sortedIssuesCollection);
         _.each(collection, (comic) => {
           expect(comic).toBeAComicIssue();
         });
