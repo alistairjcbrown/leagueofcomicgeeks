@@ -101,6 +101,7 @@ Methods on user lists:
  - Additional functionality
    - [x] Sorting - A-Z, Z-A
      - [x] Pull lists can have "most pulled"
+   - List of subscriptions from `/profile/alistairjcbrown/pull-list-subscriptions`
    - [ ] Filtering - owned, not owned, read, not read
      - [ ] New comics can have "only #1s"
 
