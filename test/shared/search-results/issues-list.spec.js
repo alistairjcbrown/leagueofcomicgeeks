@@ -17,7 +17,7 @@ module.exports = function (lofcg, searchTerm) {
     it('should provide results for known search term', function (done) {
       lofcg.searchResults.get(searchTerm, (err, searchResults) => {
         expect(err).toBeNull();
-        expect(searchResults.length).toBe(38);
+        expect(searchResults.length).toBe(40);
         expect(searchResults).toEqual(allIssuesBlackMagic);
         _.each(searchResults, (comic) => {
           expect(comic).toBeAComicIssue();
@@ -26,10 +26,10 @@ module.exports = function (lofcg, searchTerm) {
       });
     });
 
-    it('should provide a filtered list of new comics', function (done) {
+    it('should provide a filtered list of search results', function (done) {
       lofcg.searchResults.get(searchTerm, { publishers: ['Image Comics'] }, (err, searchResults) => {
         expect(err).toBeNull();
-        expect(searchResults.length).toBe(15);
+        expect(searchResults.length).toBe(17);
         expect(searchResults).toEqual(filteredIssuesBlackMagic);
         _.each(searchResults, (comic) => {
           expect(comic).toBeAComicIssue();
@@ -38,10 +38,10 @@ module.exports = function (lofcg, searchTerm) {
       });
     });
 
-    it('should provide a sorted list of new comics', function (done) {
+    it('should provide a sorted list of search results', function (done) {
       lofcg.searchResults.get(searchTerm, { sort: 'desc' }, (err, searchResults) => {
         expect(err).toBeNull();
-        expect(searchResults.length).toBe(38);
+        expect(searchResults.length).toBe(40);
         expect(searchResults).toEqual(sortedIssuesBlackMagic);
         _.each(searchResults, (comic) => {
           expect(comic).toBeAComicIssue();

@@ -1,6 +1,6 @@
 const types = require('./src/utils/types');
 
-const protocol = 'http://';
+const protocol = 'https://';
 const domain = 'leagueofcomicgeeks.com';
 
 module.exports = {

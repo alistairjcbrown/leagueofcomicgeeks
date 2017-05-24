@@ -1,6 +1,6 @@
 # leagueofcomicgeeks
 
-Unofficial Node.js library for interacting with [League of Comic Geeks](http://leagueofcomicgeeks.com/). This provides an API for any system wishing to interact with an account on League of Comic Geeks and supports authentication and all lists. It has a comprehensive integration test setup to detect when the site makes breaking changes. Please create an issue or (better yet) a pull request if you see a problem or need additional features!
+Unofficial Node.js library for interacting with [League of Comic Geeks](https://leagueofcomicgeeks.com/). This provides an API for any system wishing to interact with an account on League of Comic Geeks and supports authentication and all lists. It has a comprehensive integration test setup to detect when the site makes breaking changes. Please create an issue or (better yet) a pull request if you see a problem or need additional features!
 
 ---
 
@@ -102,6 +102,7 @@ Methods on user lists:
    - [x] Sorting - A-Z, Z-A
      - [x] Pull lists can have "most pulled"
    - List of subscriptions from `/profile/alistairjcbrown/pull-list-subscriptions`
+   - [ ] Format selection - issues, annuals, digital, reprints, trade paperbacks, etc.
    - [ ] Filtering - owned, not owned, read, not read
      - [ ] New comics can have "only #1s"
 
@@ -113,4 +114,4 @@ Methods on user lists:
 
 Just a comic fan and someone who wanted to build on top of the awesome system in place at League of Comic Geeks.
 
-You can see my profile here: http://leagueofcomicgeeks.com/profile/alistairjcbrown
+You can see my profile here: https://leagueofcomicgeeks.com/profile/alistairjcbrown

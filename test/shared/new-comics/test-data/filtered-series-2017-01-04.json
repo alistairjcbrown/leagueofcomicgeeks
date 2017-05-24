@@ -2,7 +2,7 @@
     {
         "id": "111511",
         "name": "Black Science",
-        "cover": "http://leagueofcomicgeeks.com/comics/covers/medium/9694083-black-science.jpg",
+        "cover": "https://leagueofcomicgeeks.com/comics/covers/medium/9694083-black-science.jpg",
         "publisher": "Image Comics",
         "count": 1,
         "series": "2013"
@@ -10,7 +10,7 @@
     {
         "id": "126082",
         "name": "Cannibal",
-        "cover": "http://leagueofcomicgeeks.com/comics/covers/medium/3393034-cannibal.jpg",
+        "cover": "https://leagueofcomicgeeks.com/comics/covers/medium/3393034-cannibal.jpg",
         "publisher": "Image Comics",
         "count": 1,
         "series": "2016"
@@ -18,15 +18,15 @@
     {
         "id": "105421",
         "name": "Morning Glories",
-        "cover": "http://leagueofcomicgeeks.com/comics/covers/medium/4435488-morning-glories.jpg",
+        "cover": "https://leagueofcomicgeeks.com/comics/covers/medium/4435488-morning-glories.jpg",
         "publisher": "Image Comics",
         "count": 1,
-        "series": ""
+        "series": "2010 - 2016"
     },
     {
         "id": "112880",
         "name": "Nailbiter",
-        "cover": "http://leagueofcomicgeeks.com/comics/covers/medium/2870681-nailbiter.jpg",
+        "cover": "https://leagueofcomicgeeks.com/comics/covers/medium/2870681-nailbiter.jpg",
         "publisher": "Image Comics",
         "count": 1,
         "series": "2014"
@@ -34,15 +34,15 @@
     {
         "id": "100002",
         "name": "Saga",
-        "cover": "http://leagueofcomicgeeks.com/comics/covers/medium/2793270-saga.jpg",
+        "cover": "https://leagueofcomicgeeks.com/comics/covers/medium/2793270-saga.jpg",
         "publisher": "Image Comics",
         "count": 1,
         "series": "2012"
     },
     {
         "id": "114686",
-        "name": "The Autumnlands: Tooth & Claw",
-        "cover": "http://leagueofcomicgeeks.com/comics/covers/medium/8759009-the-autumnlands-tooth-claw.jpg",
+        "name": "The Autumnlands",
+        "cover": "https://leagueofcomicgeeks.com/comics/covers/medium/8759009-the-autumnlands.jpg",
         "publisher": "Image Comics",
         "count": 1,
         "series": "2014"
@@ -50,7 +50,7 @@
     {
         "id": "100004",
         "name": "The Walking Dead",
-        "cover": "http://leagueofcomicgeeks.com/comics/covers/medium/5373679-the-walking-dead.jpg",
+        "cover": "https://leagueofcomicgeeks.com/comics/covers/medium/5373679-the-walking-dead.jpg",
         "publisher": "Image Comics",
         "count": 2,
         "series": "2003"
@@ -58,7 +58,7 @@
     {
         "id": "113171",
         "name": "The Wicked + The Divine",
-        "cover": "http://leagueofcomicgeeks.com/comics/covers/medium/1158869-the-wicked-the-divine.jpg",
+        "cover": "https://leagueofcomicgeeks.com/comics/covers/medium/1158869-the-wicked-the-divine.jpg",
         "publisher": "Image Comics",
         "count": 2,
         "series": "2014"

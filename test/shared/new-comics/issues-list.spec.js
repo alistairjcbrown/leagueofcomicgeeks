@@ -6,7 +6,7 @@ const sortedIssues20170104 = require('./test-data/sorted-issues-2017-01-04');
 module.exports = function (lofcg, newComicsDate) {
   describe('get issues list', function () {
     it('should provide no new comic', function (done) {
-      lofcg.newComics.get('2017-01-01', (err, newComics) => {
+      lofcg.newComics.get('1966-01-01', (err, newComics) => {
         expect(err).toBeNull();
         expect(newComics.length).toBe(0);
         expect(newComics).toEqual([]);
@@ -17,7 +17,7 @@ module.exports = function (lofcg, newComicsDate) {
     it('should provide a list of new comics', function (done) {
       lofcg.newComics.get(newComicsDate, (err, newComics) => {
         expect(err).toBeNull();
-        expect(newComics.length).toBe(289);
+        expect(newComics.length).toBe(290);
         expect(newComics).toEqual(allIssues20170104);
         _.each(newComics, (comic) => {
           expect(comic).toBeAComicIssue();
@@ -41,7 +41,7 @@ module.exports = function (lofcg, newComicsDate) {
     it('should provide a sorted list of new comics', function (done) {
       lofcg.newComics.get(newComicsDate, { sort: 'desc' }, (err, newComics) => {
         expect(err).toBeNull();
-        expect(newComics.length).toBe(289);
+        expect(newComics.length).toBe(290);
         expect(newComics).toEqual(sortedIssues20170104);
         _.each(newComics, (comic) => {
           expect(comic).toBeAComicIssue();

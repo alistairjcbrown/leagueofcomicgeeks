@@ -30,7 +30,7 @@ module.exports = function (lofcg, searchTerm) {
       });
     });
 
-    it('should provide a filtered list of new comics', function (done) {
+    it('should provide a filtered list of search results', function (done) {
       lofcg.searchResults.get(searchTerm, filteredOptions, (err, searchResults) => {
         expect(err).toBeNull();
         expect(searchResults.length).toBe(2);
@@ -42,7 +42,7 @@ module.exports = function (lofcg, searchTerm) {
       });
     });
 
-    it('should provide a sorted list of new comics', function (done) {
+    it('should provide a sorted list of search results', function (done) {
       lofcg.searchResults.get(searchTerm, sortedOptions, (err, searchResults) => {
         expect(err).toBeNull();
         expect(searchResults.length).toBe(8);
