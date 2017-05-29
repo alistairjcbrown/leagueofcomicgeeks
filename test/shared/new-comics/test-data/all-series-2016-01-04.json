@@ -1,0 +1,1162 @@
+[
+    {
+        "id": "100101",
+        "name": "100 Bullets",
+        "cover": "https://leagueofcomicgeeks.com/comics/covers/medium/6964720-100-bullets.jpg",
+        "publisher": "Vertigo Comics",
+        "count": 1,
+        "series": "1999 - 2009"
+    },
+    {
+        "id": "120400",
+        "name": "A-Force",
+        "cover": "https://leagueofcomicgeeks.com/comics/covers/medium/3099238-a-force.jpg",
+        "publisher": "Marvel Comics",
+        "count": 4,
+        "series": "2016"
+    },
+    {
+        "id": "100066",
+        "name": "Action Comics",
+        "cover": "https://leagueofcomicgeeks.com/comics/covers/medium/8938200-action-comics.jpg",
+        "publisher": "DC Comics",
+        "count": 2,
+        "series": "2011 - 2016"
+    },
+    {
+        "id": "117547",
+        "name": "Age of Reptiles: Ancient Egyptians",
+        "cover": "https://leagueofcomicgeeks.com/comics/covers/medium/6714034-age-of-reptiles-ancient-egyptians.jpg",
+        "publisher": "Dark Horse Comics",
+        "count": 1,
+        "series": "2015"
+    },
+    {
+        "id": "120189",
+        "name": "Aliens/Vampirella",
+        "cover": "https://leagueofcomicgeeks.com/comics/covers/medium/2879292-aliens-vampirella.jpg",
+        "publisher": "Dynamite",
+        "count": 1,
+        "series": "2015"
+    },
+    {
+        "id": "116161",
+        "name": "Amelia Cole",
+        "cover": "https://leagueofcomicgeeks.com/comics/covers/medium/3924296-amelia-cole.jpg",
+        "publisher": "Monkeybrain Comics",
+        "count": 1,
+        "series": "2012 - 2016"
+    },
+    {
+        "id": "112595",
+        "name": "Angel & Faith: Season 10",
+        "cover": "https://leagueofcomicgeeks.com/comics/covers/medium/9162719-angel-faith-season-10.jpg",
+        "publisher": "Dark Horse Comics",
+        "count": 2,
+        "series": "2014 - 2016"
+    },
+    {
+        "id": "122373",
+        "name": "Angry Birds Comics",
+        "cover": "https://leagueofcomicgeeks.com/comics/covers/medium/1494689-angry-birds-comics.jpg",
+        "publisher": "IDW Publishing",
+        "count": 3,
+        "series": "2016"
+    },
+    {
+        "id": "116942",
+        "name": "Archie",
+        "cover": "https://leagueofcomicgeeks.com/comics/covers/medium/5453965-archie.jpg",
+        "publisher": "Archie Comics",
+        "count": 3,
+        "series": "2015"
+    },
+    {
+        "id": "121316",
+        "name": "Art of Magic: The Gathering",
+        "cover": "https://leagueofcomicgeeks.com/comics/covers/medium/2548829-art-of-magic-the-gathering.jpg",
+        "publisher": "VIZ Media",
+        "count": 1,
+        "series": ""
+    },
+    {
+        "id": "100951",
+        "name": "Baltimore",
+        "cover": "https://leagueofcomicgeeks.com/comics/covers/medium/8833243-baltimore.jpg",
+        "publisher": "Dark Horse Comics",
+        "count": 1,
+        "series": ""
+    },
+    {
+        "id": "100963",
+        "name": "Barb Wire",
+        "cover": "https://leagueofcomicgeeks.com/comics/covers/medium/8687722-barb-wire.jpg",
+        "publisher": "Dark Horse Comics",
+        "count": 1,
+        "series": "2015 - 2016"
+    },
+    {
+        "id": "119109",
+        "name": "Batman & Robin Eternal",
+        "cover": "https://leagueofcomicgeeks.com/comics/covers/medium/9635447-batman-robin-eternal.jpg",
+        "publisher": "DC Comics",
+        "count": 1,
+        "series": "2015 - 2016"
+    },
+    {
+        "id": "117301",
+        "name": "Batman Beyond",
+        "cover": "https://leagueofcomicgeeks.com/comics/covers/medium/6402306-batman-beyond.jpg",
+        "publisher": "DC Comics",
+        "count": 1,
+        "series": "2015 - 2016"
+    },
+    {
+        "id": "116205",
+        "name": "Batman: Arkham Knight",
+        "cover": "https://leagueofcomicgeeks.com/comics/covers/medium/3939472-batman-arkham-knight.jpg",
+        "publisher": "DC Comics",
+        "count": 1,
+        "series": "2015"
+    },
+    {
+        "id": "113898",
+        "name": "Bitch Planet",
+        "cover": "https://leagueofcomicgeeks.com/comics/covers/medium/4552215-bitch-planet.jpg",
+        "publisher": "Image Comics",
+        "count": 1,
+        "series": "2014"
+    },
+    {
+        "id": "111511",
+        "name": "Black Science",
+        "cover": "https://leagueofcomicgeeks.com/comics/covers/medium/6005852-black-science.jpg",
+        "publisher": "Image Comics",
+        "count": 1,
+        "series": "2013"
+    },
+    {
+        "id": "119755",
+        "name": "Bloodthirsty: One Nation Under Water",
+        "cover": "https://leagueofcomicgeeks.com/comics/covers/medium/1390873-bloodthirsty-one-nation-under-water.jpg",
+        "publisher": "Titan Books",
+        "count": 2,
+        "series": "2015"
+    },
+    {
+        "id": "101335",
+        "name": "Blue Exorcist",
+        "cover": "https://leagueofcomicgeeks.com/comics/covers/medium/2962282-blue-exorcist.jpg",
+        "publisher": "VIZ Media",
+        "count": 1,
+        "series": ""
+    },
+    {
+        "id": "121485",
+        "name": "Color Your Own Deadpool",
+        "cover": "https://leagueofcomicgeeks.com/comics/covers/medium/9475174-color-your-own-deadpool.jpg",
+        "publisher": "Marvel Comics",
+        "count": 1,
+        "series": ""
+    },
+    {
+        "id": "119684",
+        "name": "Contest of Champions",
+        "cover": "https://leagueofcomicgeeks.com/comics/covers/medium/4178256-contest-of-champions.jpg",
+        "publisher": "Marvel Comics",
+        "count": 6,
+        "series": "2015 - 2016"
+    },
+    {
+        "id": "118168",
+        "name": "DC Comics Bombshells",
+        "cover": "https://leagueofcomicgeeks.com/comics/covers/medium/6156318-dc-comics-bombshells.jpg",
+        "publisher": "DC Comics",
+        "count": 1,
+        "series": "2015"
+    },
+    {
+        "id": "121458",
+        "name": "DC Essentials DC the New Frontier",
+        "cover": "https://leagueofcomicgeeks.com/comics/covers/medium/7316310-dc-essentials-dc-the-new-frontier.jpg",
+        "publisher": "DC Comics",
+        "count": 1,
+        "series": ""
+    },
+    {
+        "id": "100170",
+        "name": "DC: The New Frontier",
+        "cover": "https://leagueofcomicgeeks.com/comics/covers/medium/2132962-dc-the-new-frontier.jpg",
+        "publisher": "DC Comics",
+        "count": 1,
+        "series": "2004"
+    },
+    {
+        "id": "131952",
+        "name": "DMC",
+        "cover": "https://leagueofcomicgeeks.com/comics/covers/medium/2118920-dmc.jpg",
+        "publisher": "Other",
+        "count": 1,
+        "series": "2014"
+    },
+    {
+        "id": "118437",
+        "name": "Dark Corridor",
+        "cover": "https://leagueofcomicgeeks.com/comics/covers/medium/1653159-dark-corridor.jpg",
+        "publisher": "Image Comics",
+        "count": 1,
+        "series": "2015"
+    },
+    {
+        "id": "119645",
+        "name": "Dead Vengeance",
+        "cover": "https://leagueofcomicgeeks.com/comics/covers/medium/3256027-dead-vengeance.jpg",
+        "publisher": "Dark Horse Comics",
+        "count": 1,
+        "series": "2015 - 2016"
+    },
+    {
+        "id": "118817",
+        "name": "Deadpool",
+        "cover": "https://leagueofcomicgeeks.com/comics/covers/medium/2624735-deadpool.jpg",
+        "publisher": "Marvel Comics",
+        "count": 2,
+        "series": "2015"
+    },
+    {
+        "id": "119695",
+        "name": "Deadpool & Cable: Split Second",
+        "cover": "https://leagueofcomicgeeks.com/comics/covers/medium/3158425-deadpool-cable-split-second.jpg",
+        "publisher": "Marvel Comics",
+        "count": 1,
+        "series": "2015 - 2016"
+    },
+    {
+        "id": "102284",
+        "name": "Deadpool Classic",
+        "cover": "https://leagueofcomicgeeks.com/comics/covers/medium/4255414-deadpool-classic.jpg",
+        "publisher": "Marvel Comics",
+        "count": 1,
+        "series": ""
+    },
+    {
+        "id": "117309",
+        "name": "Deadpool's Secret Secret Wars",
+        "cover": "https://leagueofcomicgeeks.com/comics/covers/medium/1617902-deadpools-secret-secret-wars.jpg",
+        "publisher": "Marvel Comics",
+        "count": 1,
+        "series": "2015"
+    },
+    {
+        "id": "100100",
+        "name": "Detective Comics",
+        "cover": "https://leagueofcomicgeeks.com/comics/covers/medium/1635277-detective-comics.jpg",
+        "publisher": "DC Comics",
+        "count": 4,
+        "series": "2011 - 2016"
+    },
+    {
+        "id": "119042",
+        "name": "Doctor Strange",
+        "cover": "https://leagueofcomicgeeks.com/comics/covers/medium/6133408-doctor-strange.jpg",
+        "publisher": "Marvel Comics",
+        "count": 2,
+        "series": "2015"
+    },
+    {
+        "id": "120602",
+        "name": "Doctor Who: The Tenth Doctor - Year Two",
+        "cover": "https://leagueofcomicgeeks.com/comics/covers/medium/7780828-doctor-who-the-tenth-doctor-year-two.jpg",
+        "publisher": "Titan Books",
+        "count": 2,
+        "series": "2015 - 2016"
+    },
+    {
+        "id": "120610",
+        "name": "Doctor Who: The Twelfth Doctor - Year Two",
+        "cover": "https://leagueofcomicgeeks.com/comics/covers/medium/6891645-doctor-who-the-twelfth-doctor-year-two.jpg",
+        "publisher": "Titan Books",
+        "count": 5,
+        "series": "2015 - 2017"
+    },
+    {
+        "id": "102679",
+        "name": "Elephantmen",
+        "cover": "https://leagueofcomicgeeks.com/comics/covers/medium/6581246-elephantmen.jpg",
+        "publisher": "Image Comics",
+        "count": 1,
+        "series": ""
+    },
+    {
+        "id": "125241",
+        "name": "Exlibrium",
+        "cover": "https://leagueofcomicgeeks.com/comics/covers/medium/1921643-exlibrium.jpg",
+        "publisher": "Other",
+        "count": 1,
+        "series": "2015"
+    },
+    {
+        "id": "111174",
+        "name": "FBP: Federal Bureau of Physics",
+        "cover": "https://leagueofcomicgeeks.com/comics/covers/medium/9002997-fbp-federal-bureau-of-physics.jpg",
+        "publisher": "Vertigo Comics",
+        "count": 1,
+        "series": "2013 - 2015"
+    },
+    {
+        "id": "121247",
+        "name": "Four Eyes: Hearts of Fire",
+        "cover": "https://leagueofcomicgeeks.com/comics/covers/medium/9729365-four-eyes-hearts-of-fire.jpg",
+        "publisher": "Image Comics",
+        "count": 1,
+        "series": "2016"
+    },
+    {
+        "id": "115576",
+        "name": "Future Proof",
+        "cover": "https://leagueofcomicgeeks.com/comics/covers/medium/8236968-future-proof.jpg",
+        "publisher": "Bliss On Tap Publishing",
+        "count": 1,
+        "series": "2014"
+    },
+    {
+        "id": "101711",
+        "name": "G.I. Joe: A Real American Hero",
+        "cover": "https://leagueofcomicgeeks.com/comics/covers/medium/2339022-gi-joe-a-real-american-hero.jpg",
+        "publisher": "IDW Publishing",
+        "count": 2,
+        "series": "2010"
+    },
+    {
+        "id": "116374",
+        "name": "Giant Days",
+        "cover": "https://leagueofcomicgeeks.com/comics/covers/medium/7041748-giant-days.jpg",
+        "publisher": "BOOM! Studios",
+        "count": 1,
+        "series": "2015"
+    },
+    {
+        "id": "120664",
+        "name": "Girl Crazy",
+        "cover": "https://leagueofcomicgeeks.com/comics/covers/medium/3160480-girl-crazy.jpg",
+        "publisher": "Dark Horse Comics",
+        "count": 1,
+        "series": ""
+    },
+    {
+        "id": "118136",
+        "name": "Grant Morrison's 18 Days",
+        "cover": "https://leagueofcomicgeeks.com/comics/covers/medium/6239355-grant-morrisons-18-days.jpg",
+        "publisher": "Graphic India",
+        "count": 3,
+        "series": "2015"
+    },
+    {
+        "id": "103525",
+        "name": "Green Arrow",
+        "cover": "https://leagueofcomicgeeks.com/comics/covers/medium/8933551-green-arrow.jpg",
+        "publisher": "DC Comics",
+        "count": 2,
+        "series": "2011 - 2016"
+    },
+    {
+        "id": "100075",
+        "name": "Green Lantern",
+        "cover": "https://leagueofcomicgeeks.com/comics/covers/medium/1417597-green-lantern.jpg",
+        "publisher": "DC Comics",
+        "count": 2,
+        "series": "2011 - 2016"
+    },
+    {
+        "id": "113882",
+        "name": "Grimm Fairy Tales Presents Robyn Hood",
+        "cover": "https://leagueofcomicgeeks.com/comics/covers/medium/4046124-grimm-fairy-tales-presents-robyn-hood.jpg",
+        "publisher": "Zenescope",
+        "count": 3,
+        "series": "2014"
+    },
+    {
+        "id": "120393",
+        "name": "Guardians of Infinity",
+        "cover": "https://leagueofcomicgeeks.com/comics/covers/medium/4431462-guardians-of-infinity.jpg",
+        "publisher": "Marvel Comics",
+        "count": 2,
+        "series": "2015 - 2016"
+    },
+    {
+        "id": "111031",
+        "name": "Guardians of the Galaxy",
+        "cover": "https://leagueofcomicgeeks.com/comics/covers/medium/7673190-guardians-of-the-galaxy.jpg",
+        "publisher": "Marvel Comics",
+        "count": 1,
+        "series": "2013 - 2015"
+    },
+    {
+        "id": "131857",
+        "name": "Heathen",
+        "cover": "https://leagueofcomicgeeks.com/comics/covers/medium/5995172-heathen.jpg",
+        "publisher": "Heavy Metal",
+        "count": 1,
+        "series": "2016"
+    },
+    {
+        "id": "103812",
+        "name": "Heavy Metal",
+        "cover": "https://leagueofcomicgeeks.com/comics/covers/medium/5435134-heavy-metal.jpg",
+        "publisher": "Heavy Metal",
+        "count": 3,
+        "series": ""
+    },
+    {
+        "id": "114468",
+        "name": "Hero Cats",
+        "cover": "https://leagueofcomicgeeks.com/comics/covers/medium/5711938-hero-cats.jpg",
+        "publisher": "Action Lab Comics",
+        "count": 1,
+        "series": ""
+    },
+    {
+        "id": "119707",
+        "name": "Heroes: Vengeance",
+        "cover": "https://leagueofcomicgeeks.com/comics/covers/medium/1301606-heroes-vengeance.jpg",
+        "publisher": "Titan Books",
+        "count": 2,
+        "series": "2015 - 2016"
+    },
+    {
+        "id": "122523",
+        "name": "Hip-Hop Variant Sampler",
+        "cover": "https://leagueofcomicgeeks.com/comics/covers/medium/4451772-hip-hop-variant-sampler.jpg",
+        "publisher": "Marvel Comics",
+        "count": 1,
+        "series": "2016"
+    },
+    {
+        "id": "128155",
+        "name": "Holidaze",
+        "cover": "https://leagueofcomicgeeks.com/comics/covers/medium/9637753-holidaze.jpg",
+        "publisher": "Other",
+        "count": 1,
+        "series": "2016"
+    },
+    {
+        "id": "121318",
+        "name": "Honey So Sweet",
+        "cover": "https://leagueofcomicgeeks.com/comics/covers/medium/6549279-honey-so-sweet.jpg",
+        "publisher": "VIZ Media",
+        "count": 1,
+        "series": ""
+    },
+    {
+        "id": "121181",
+        "name": "Injustice: Gods Among Us - Year Five",
+        "cover": "https://leagueofcomicgeeks.com/comics/covers/medium/1455329-injustice-gods-among-us-year-five.jpg",
+        "publisher": "DC Comics",
+        "count": 1,
+        "series": "2015 - 2016"
+    },
+    {
+        "id": "122333",
+        "name": "Interceptor",
+        "cover": "https://leagueofcomicgeeks.com/comics/covers/medium/4720066-interceptor.jpg",
+        "publisher": "Heavy Metal",
+        "count": 2,
+        "series": "2016"
+    },
+    {
+        "id": "117292",
+        "name": "Invader Zim",
+        "cover": "https://leagueofcomicgeeks.com/comics/covers/medium/4257000-invader-zim.jpg",
+        "publisher": "Oni Press",
+        "count": 2,
+        "series": "2015"
+    },
+    {
+        "id": "119115",
+        "name": "Invincible Iron Man",
+        "cover": "https://leagueofcomicgeeks.com/comics/covers/medium/7154190-invincible-iron-man.jpg",
+        "publisher": "Marvel Comics",
+        "count": 1,
+        "series": "2015 - 2016"
+    },
+    {
+        "id": "120150",
+        "name": "Joe Golem: Occult Detective",
+        "cover": "https://leagueofcomicgeeks.com/comics/covers/medium/1929908-joe-golem-occult-detective.jpg",
+        "publisher": "Dark Horse Comics",
+        "count": 1,
+        "series": "2015"
+    },
+    {
+        "id": "120140",
+        "name": "Johnny Red",
+        "cover": "https://leagueofcomicgeeks.com/comics/covers/medium/9208763-johnny-red.jpg",
+        "publisher": "Titan Books",
+        "count": 2,
+        "series": "2015"
+    },
+    {
+        "id": "116618",
+        "name": "Jughead and Archie Comics Double Digest",
+        "cover": "https://leagueofcomicgeeks.com/comics/covers/medium/3153779-jughead-and-archie-comics-double-digest.jpg",
+        "publisher": "Archie Comics",
+        "count": 1,
+        "series": ""
+    },
+    {
+        "id": "121107",
+        "name": "Kiss of the Rose Princess",
+        "cover": "https://leagueofcomicgeeks.com/comics/covers/medium/9773652-kiss-of-the-rose-princess.jpg",
+        "publisher": "VIZ Media",
+        "count": 1,
+        "series": ""
+    },
+    {
+        "id": "119708",
+        "name": "Kung Fu Panda",
+        "cover": "https://leagueofcomicgeeks.com/comics/covers/medium/6275856-kung-fu-panda.jpg",
+        "publisher": "Titan Books",
+        "count": 3,
+        "series": ""
+    },
+    {
+        "id": "119646",
+        "name": "Lara Croft and the Frozen Omen",
+        "cover": "https://leagueofcomicgeeks.com/comics/covers/medium/4698089-lara-croft-and-the-frozen-omen.jpg",
+        "publisher": "Dark Horse Comics",
+        "count": 1,
+        "series": "2015 - 2016"
+    },
+    {
+        "id": "110737",
+        "name": "Letter 44",
+        "cover": "https://leagueofcomicgeeks.com/comics/covers/medium/1246629-letter-44.jpg",
+        "publisher": "Oni Press",
+        "count": 2,
+        "series": "2013 - 2017"
+    },
+    {
+        "id": "121110",
+        "name": "Lone Wolf 2100",
+        "cover": "https://leagueofcomicgeeks.com/comics/covers/medium/1525337-lone-wolf-2100.jpg",
+        "publisher": "Dark Horse Comics",
+        "count": 1,
+        "series": "2016"
+    },
+    {
+        "id": "120667",
+        "name": "Marvel Universe Ultimate Spider-Man and Avengers Digest",
+        "cover": "https://leagueofcomicgeeks.com/comics/covers/medium/3647733-marvel-universe-ultimate-spider-man-and-avengers-digest.jpg",
+        "publisher": "Marvel Comics",
+        "count": 1,
+        "series": ""
+    },
+    {
+        "id": "121201",
+        "name": "Marvel's Captain America: Civil War Prelude",
+        "cover": "https://leagueofcomicgeeks.com/comics/covers/medium/3287141-marvels-captain-america-civil-war-prelude.jpg",
+        "publisher": "Marvel Comics",
+        "count": 1,
+        "series": "2015 - 2016"
+    },
+    {
+        "id": "121470",
+        "name": "Mickey Mouse: Gift of the Sun Lord",
+        "cover": "https://leagueofcomicgeeks.com/comics/covers/medium/2902704-mickey-mouse-gift-of-the-sun-lord.jpg",
+        "publisher": "IDW Publishing",
+        "count": 1,
+        "series": ""
+    },
+    {
+        "id": "116940",
+        "name": "Midnighter",
+        "cover": "https://leagueofcomicgeeks.com/comics/covers/medium/5581086-midnighter.jpg",
+        "publisher": "DC Comics",
+        "count": 1,
+        "series": "2015 - 2016"
+    },
+    {
+        "id": "118972",
+        "name": "Miracleman By Gaiman and Buckingham",
+        "cover": "https://leagueofcomicgeeks.com/comics/covers/medium/8240327-miracleman-by-gaiman-and-buckingham.jpg",
+        "publisher": "Marvel Comics",
+        "count": 4,
+        "series": ""
+    },
+    {
+        "id": "115644",
+        "name": "Munchkin",
+        "cover": "https://leagueofcomicgeeks.com/comics/covers/medium/9285781-munchkin.jpg",
+        "publisher": "BOOM! Studios",
+        "count": 1,
+        "series": "2015"
+    },
+    {
+        "id": "111854",
+        "name": "My Little Pony: Friends Forever",
+        "cover": "https://leagueofcomicgeeks.com/comics/covers/medium/9078196-my-little-pony-friends-forever.jpg",
+        "publisher": "IDW Publishing",
+        "count": 2,
+        "series": "2014"
+    },
+    {
+        "id": "121320",
+        "name": "My Love Story",
+        "cover": "https://leagueofcomicgeeks.com/comics/covers/medium/9538949-my-love-story.jpg",
+        "publisher": "VIZ Media",
+        "count": 1,
+        "series": ""
+    },
+    {
+        "id": "120255",
+        "name": "Mystery Girl",
+        "cover": "https://leagueofcomicgeeks.com/comics/covers/medium/3528060-mystery-girl.jpg",
+        "publisher": "Dark Horse Comics",
+        "count": 1,
+        "series": "2015"
+    },
+    {
+        "id": "116705",
+        "name": "Mythic",
+        "cover": "https://leagueofcomicgeeks.com/comics/covers/medium/6296245-mythic.jpg",
+        "publisher": "Image Comics",
+        "count": 2,
+        "series": "2015 - 2016"
+    },
+    {
+        "id": "112880",
+        "name": "Nailbiter",
+        "cover": "https://leagueofcomicgeeks.com/comics/covers/medium/8723904-nailbiter.jpg",
+        "publisher": "Image Comics",
+        "count": 1,
+        "series": "2014"
+    },
+    {
+        "id": "105516",
+        "name": "Naruto",
+        "cover": "https://leagueofcomicgeeks.com/comics/covers/medium/4240879-naruto.jpg",
+        "publisher": "VIZ Media",
+        "count": 2,
+        "series": ""
+    },
+    {
+        "id": "121321",
+        "name": "Naruto Seventh Hokage Scarlet Spring",
+        "cover": "https://leagueofcomicgeeks.com/comics/covers/medium/8323817-naruto-seventh-hokage-scarlet-spring.jpg",
+        "publisher": "VIZ Media",
+        "count": 1,
+        "series": ""
+    },
+    {
+        "id": "121322",
+        "name": "Natsumes Book of Friends: Vol 19",
+        "cover": "https://leagueofcomicgeeks.com/comics/covers/medium/3098003-natsumes-book-of-friends-vol-19.jpg",
+        "publisher": "VIZ Media",
+        "count": 1,
+        "series": ""
+    },
+    {
+        "id": "105660",
+        "name": "Ninjak",
+        "cover": "https://leagueofcomicgeeks.com/comics/covers/medium/7642107-ninjak.jpg",
+        "publisher": "Valiant",
+        "count": 1,
+        "series": "2015"
+    },
+    {
+        "id": "120634",
+        "name": "Nisekoi: False Love",
+        "cover": "https://leagueofcomicgeeks.com/comics/covers/medium/2790099-nisekoi-false-love.jpg",
+        "publisher": "VIZ Media",
+        "count": 1,
+        "series": ""
+    },
+    {
+        "id": "120652",
+        "name": "Pacific Rim: Tales From The Drift",
+        "cover": "https://leagueofcomicgeeks.com/comics/covers/medium/6808616-pacific-rim-tales-from-the-drift.jpg",
+        "publisher": "Legendary Comics",
+        "count": 2,
+        "series": "2015 - 2016"
+    },
+    {
+        "id": "116147",
+        "name": "Paper Girls",
+        "cover": "https://leagueofcomicgeeks.com/comics/covers/medium/3173369-paper-girls.jpg",
+        "publisher": "Image Comics",
+        "count": 1,
+        "series": "2015"
+    },
+    {
+        "id": "117067",
+        "name": "Pathfinder: Origins",
+        "cover": "https://leagueofcomicgeeks.com/comics/covers/medium/2247662-pathfinder-origins.jpg",
+        "publisher": "Dynamite",
+        "count": 1,
+        "series": "2015"
+    },
+    {
+        "id": "105937",
+        "name": "Popeye Classics",
+        "cover": "https://leagueofcomicgeeks.com/comics/covers/medium/2897729-popeye-classics.jpg",
+        "publisher": "IDW Publishing",
+        "count": 1,
+        "series": ""
+    },
+    {
+        "id": "119383",
+        "name": "Power Cubed",
+        "cover": "https://leagueofcomicgeeks.com/comics/covers/medium/2363308-power-cubed.jpg",
+        "publisher": "Dark Horse Comics",
+        "count": 1,
+        "series": ""
+    },
+    {
+        "id": "121556",
+        "name": "Red Fury",
+        "cover": "https://leagueofcomicgeeks.com/comics/covers/medium/1413218-red-fury.jpg",
+        "publisher": "Other",
+        "count": 1,
+        "series": "2015"
+    },
+    {
+        "id": "100003",
+        "name": "Red Hood and the Outlaws",
+        "cover": "https://leagueofcomicgeeks.com/comics/covers/medium/6856861-red-hood-and-the-outlaws.jpg",
+        "publisher": "DC Comics",
+        "count": 1,
+        "series": "2011 - 2015"
+    },
+    {
+        "id": "115605",
+        "name": "Red Sonja: Vulture's Circle",
+        "cover": "https://leagueofcomicgeeks.com/comics/covers/medium/8738471-red-sonja-vultures-circle.jpg",
+        "publisher": "Dynamite",
+        "count": 1,
+        "series": "2015"
+    },
+    {
+        "id": "106191",
+        "name": "Regular Show",
+        "cover": "https://leagueofcomicgeeks.com/comics/covers/medium/3818772-regular-show.jpg",
+        "publisher": "BOOM! Studios",
+        "count": 2,
+        "series": "2013"
+    },
+    {
+        "id": "120972",
+        "name": "Replica",
+        "cover": "https://leagueofcomicgeeks.com/comics/covers/medium/4434648-replica.jpg",
+        "publisher": "AfterShock Comics",
+        "count": 1,
+        "series": "2015"
+    },
+    {
+        "id": "120759",
+        "name": "Rogues! Odd Parenthood",
+        "cover": "https://leagueofcomicgeeks.com/comics/covers/medium/9008844-rogues-odd-parenthood.jpg",
+        "publisher": "Amigo Comics",
+        "count": 1,
+        "series": "2015"
+    },
+    {
+        "id": "119119",
+        "name": "Saints",
+        "cover": "https://leagueofcomicgeeks.com/comics/covers/medium/5570666-saints.jpg",
+        "publisher": "Image Comics",
+        "count": 1,
+        "series": "2015"
+    },
+    {
+        "id": "116536",
+        "name": "Scarlett Couture",
+        "cover": "https://leagueofcomicgeeks.com/comics/covers/medium/7806833-scarlett-couture.jpg",
+        "publisher": "Titan Books",
+        "count": 1,
+        "series": "2015"
+    },
+    {
+        "id": "112341",
+        "name": "Silver Surfer",
+        "cover": "https://leagueofcomicgeeks.com/comics/covers/medium/4614283-silver-surfer.jpg",
+        "publisher": "Marvel Comics",
+        "count": 1,
+        "series": "2014 - 2015"
+    },
+    {
+        "id": "119061",
+        "name": "Spider-Gwen",
+        "cover": "https://leagueofcomicgeeks.com/comics/covers/medium/5898719-spider-gwen.jpg",
+        "publisher": "Marvel Comics",
+        "count": 2,
+        "series": "2015"
+    },
+    {
+        "id": "119215",
+        "name": "Spider-Man / Deadpool",
+        "cover": "https://leagueofcomicgeeks.com/comics/covers/medium/3061927-spider-man-deadpool.jpg",
+        "publisher": "Marvel Comics",
+        "count": 9,
+        "series": "2016"
+    },
+    {
+        "id": "118629",
+        "name": "Spider-Man Vs. Venom",
+        "cover": "https://leagueofcomicgeeks.com/comics/covers/medium/3173463-spider-man-vs-venom.jpg",
+        "publisher": "Marvel Comics",
+        "count": 1,
+        "series": "1990"
+    },
+    {
+        "id": "120037",
+        "name": "Spider-Woman",
+        "cover": "https://leagueofcomicgeeks.com/comics/covers/medium/7706082-spider-woman.jpg",
+        "publisher": "Marvel Comics",
+        "count": 1,
+        "series": "2015 - 2017"
+    },
+    {
+        "id": "113061",
+        "name": "Star Trek: New Visions",
+        "cover": "https://leagueofcomicgeeks.com/comics/covers/medium/4073537-star-trek-new-visions.jpg",
+        "publisher": "IDW Publishing",
+        "count": 1,
+        "series": "2014"
+    },
+    {
+        "id": "121190",
+        "name": "Star Trek: Starfleet Academy",
+        "cover": "https://leagueofcomicgeeks.com/comics/covers/medium/5409995-star-trek-starfleet-academy.jpg",
+        "publisher": "IDW Publishing",
+        "count": 3,
+        "series": "2015"
+    },
+    {
+        "id": "107096",
+        "name": "Star Wars",
+        "cover": "https://leagueofcomicgeeks.com/comics/covers/medium/7260681-star-wars.jpg",
+        "publisher": "Marvel Comics",
+        "count": 4,
+        "series": "2015"
+    },
+    {
+        "id": "115630",
+        "name": "Star Wars: Darth Vader",
+        "cover": "https://leagueofcomicgeeks.com/comics/covers/medium/6112591-star-wars-darth-vader.jpg",
+        "publisher": "Marvel Comics",
+        "count": 6,
+        "series": "2015 - 2016"
+    },
+    {
+        "id": "119510",
+        "name": "Straitjacket",
+        "cover": "https://leagueofcomicgeeks.com/comics/covers/medium/7286756-straitjacket.jpg",
+        "publisher": "Amigo Comics",
+        "count": 1,
+        "series": "2015"
+    },
+    {
+        "id": "115847",
+        "name": "Stray Bullets: Sunshine and Roses",
+        "cover": "https://leagueofcomicgeeks.com/comics/covers/medium/8617541-stray-bullets-sunshine-and-roses.jpg",
+        "publisher": "Image Comics",
+        "count": 1,
+        "series": "2015"
+    },
+    {
+        "id": "119446",
+        "name": "Survivors' Club",
+        "cover": "https://leagueofcomicgeeks.com/comics/covers/medium/2064080-survivors-club.jpg",
+        "publisher": "Vertigo Comics",
+        "count": 1,
+        "series": "2015 - 2016"
+    },
+    {
+        "id": "120423",
+        "name": "Swamp Thing",
+        "cover": "https://leagueofcomicgeeks.com/comics/covers/medium/9416103-swamp-thing.jpg",
+        "publisher": "DC Comics",
+        "count": 2,
+        "series": "2016"
+    },
+    {
+        "id": "107565",
+        "name": "Teenage Mutant Ninja Turtles: Color Classics",
+        "cover": "https://leagueofcomicgeeks.com/comics/covers/medium/3261521-teenage-mutant-ninja-turtles-color-classics.jpg",
+        "publisher": "IDW Publishing",
+        "count": 1,
+        "series": "2015 - 2016"
+    },
+    {
+        "id": "121529",
+        "name": "Teenage Mutant Ninja Turtles: Vol 13 Vengeance Pt 2",
+        "cover": "https://leagueofcomicgeeks.com/comics/covers/medium/9415006-teenage-mutant-ninja-turtles-vol-13-vengeance-pt-2.jpg",
+        "publisher": "IDW Publishing",
+        "count": 1,
+        "series": ""
+    },
+    {
+        "id": "119197",
+        "name": "Telos",
+        "cover": "https://leagueofcomicgeeks.com/comics/covers/medium/2118857-telos.jpg",
+        "publisher": "DC Comics",
+        "count": 1,
+        "series": "2015 - 2016"
+    },
+    {
+        "id": "113911",
+        "name": "Terminal Hero",
+        "cover": "https://leagueofcomicgeeks.com/comics/covers/medium/7792979-terminal-hero.jpg",
+        "publisher": "Dynamite",
+        "count": 1,
+        "series": "2014 - 2015"
+    },
+    {
+        "id": "112408",
+        "name": "The Amazing Spider-Man",
+        "cover": "https://leagueofcomicgeeks.com/comics/covers/medium/2535230-the-amazing-spider-man.jpg",
+        "publisher": "Marvel Comics",
+        "count": 1,
+        "series": "2014 - 2015"
+    },
+    {
+        "id": "119456",
+        "name": "The Amazing Spider-Man",
+        "cover": "https://leagueofcomicgeeks.com/comics/covers/medium/8599700-the-amazing-spider-man.jpg",
+        "publisher": "Marvel Comics",
+        "count": 2,
+        "series": "2015"
+    },
+    {
+        "id": "121317",
+        "name": "The Demon Prince of Momochi House",
+        "cover": "https://leagueofcomicgeeks.com/comics/covers/medium/4442978-the-demon-prince-of-momochi-house.jpg",
+        "publisher": "VIZ Media",
+        "count": 1,
+        "series": ""
+    },
+    {
+        "id": "121341",
+        "name": "The Eighth Seal",
+        "cover": "https://leagueofcomicgeeks.com/comics/covers/medium/9543224-the-eighth-seal.jpg",
+        "publisher": "IDW Publishing",
+        "count": 2,
+        "series": "2015"
+    },
+    {
+        "id": "112981",
+        "name": "The Fade Out",
+        "cover": "https://leagueofcomicgeeks.com/comics/covers/medium/4361286-the-fade-out.jpg",
+        "publisher": "Image Comics",
+        "count": 1,
+        "series": "2014 - 2016"
+    },
+    {
+        "id": "121244",
+        "name": "The Last Contract",
+        "cover": "https://leagueofcomicgeeks.com/comics/covers/medium/3881960-the-last-contract.jpg",
+        "publisher": "BOOM! Studios",
+        "count": 2,
+        "series": "2016"
+    },
+    {
+        "id": "121156",
+        "name": "The Legend of Wonder Woman",
+        "cover": "https://leagueofcomicgeeks.com/comics/covers/medium/5559667-the-legend-of-wonder-woman.jpg",
+        "publisher": "DC Comics",
+        "count": 1,
+        "series": "2015"
+    },
+    {
+        "id": "114780",
+        "name": "The October Faction",
+        "cover": "https://leagueofcomicgeeks.com/comics/covers/medium/5551010-the-october-faction.jpg",
+        "publisher": "IDW Publishing",
+        "count": 2,
+        "series": "2014"
+    },
+    {
+        "id": "119288",
+        "name": "The Sheriff of Babylon",
+        "cover": "https://leagueofcomicgeeks.com/comics/covers/medium/8236974-the-sheriff-of-babylon.jpg",
+        "publisher": "Vertigo Comics",
+        "count": 1,
+        "series": "2015"
+    },
+    {
+        "id": "120398",
+        "name": "The Totally Awesome Hulk",
+        "cover": "https://leagueofcomicgeeks.com/comics/covers/medium/2779253-the-totally-awesome-hulk.jpg",
+        "publisher": "Marvel Comics",
+        "count": 3,
+        "series": "2015"
+    },
+    {
+        "id": "120656",
+        "name": "The Ultimate Graphic Novels Collection",
+        "cover": "https://leagueofcomicgeeks.com/comics/covers/medium/5134003-the-ultimate-graphic-novels-collection.jpg",
+        "publisher": "Hachette Partworks",
+        "count": 1,
+        "series": "2011 - 2016"
+    },
+    {
+        "id": "120073",
+        "name": "The Ultimates",
+        "cover": "https://leagueofcomicgeeks.com/comics/covers/medium/9331123-the-ultimates.jpg",
+        "publisher": "Marvel Comics",
+        "count": 3,
+        "series": "2015 - 2016"
+    },
+    {
+        "id": "119690",
+        "name": "The Vision",
+        "cover": "https://leagueofcomicgeeks.com/comics/covers/medium/4553832-the-vision.jpg",
+        "publisher": "Marvel Comics",
+        "count": 2,
+        "series": "2015 - 2016"
+    },
+    {
+        "id": "113020",
+        "name": "The Woods",
+        "cover": "https://leagueofcomicgeeks.com/comics/covers/medium/5339325-the-woods.jpg",
+        "publisher": "BOOM! Studios",
+        "count": 1,
+        "series": "2014"
+    },
+    {
+        "id": "118473",
+        "name": "This Damned Band",
+        "cover": "https://leagueofcomicgeeks.com/comics/covers/medium/2424300-this-damned-band.jpg",
+        "publisher": "Dark Horse Comics",
+        "count": 1,
+        "series": "2015 - 2016"
+    },
+    {
+        "id": "119077",
+        "name": "Toil and Trouble",
+        "cover": "https://leagueofcomicgeeks.com/comics/covers/medium/4498595-toil-and-trouble.jpg",
+        "publisher": "BOOM! Studios",
+        "count": 1,
+        "series": "2015"
+    },
+    {
+        "id": "121160",
+        "name": "True Believers: Deadpool",
+        "cover": "https://leagueofcomicgeeks.com/comics/covers/medium/3421032-true-believers-deadpool.jpg",
+        "publisher": "Marvel Comics",
+        "count": 1,
+        "series": ""
+    },
+    {
+        "id": "121161",
+        "name": "True Believers: Deadpool Origins",
+        "cover": "https://leagueofcomicgeeks.com/comics/covers/medium/7748668-true-believers-deadpool-origins.jpg",
+        "publisher": "Marvel Comics",
+        "count": 1,
+        "series": ""
+    },
+    {
+        "id": "120653",
+        "name": "Twin Star Exorcists",
+        "cover": "https://leagueofcomicgeeks.com/comics/covers/medium/8773177-twin-star-exorcists.jpg",
+        "publisher": "VIZ Media",
+        "count": 1,
+        "series": ""
+    },
+    {
+        "id": "117311",
+        "name": "Ultimate End",
+        "cover": "https://leagueofcomicgeeks.com/comics/covers/medium/6152006-ultimate-end.jpg",
+        "publisher": "Marvel Comics",
+        "count": 1,
+        "series": "2015"
+    },
+    {
+        "id": "120437",
+        "name": "Uncanny X-Men",
+        "cover": "https://leagueofcomicgeeks.com/comics/covers/medium/9306813-uncanny-x-men.jpg",
+        "publisher": "Marvel Comics",
+        "count": 6,
+        "series": "2016 - 2017"
+    },
+    {
+        "id": "116692",
+        "name": "Uncle Scrooge",
+        "cover": "https://leagueofcomicgeeks.com/comics/covers/medium/7744104-uncle-scrooge.jpg",
+        "publisher": "IDW Publishing",
+        "count": 2,
+        "series": "2015"
+    },
+    {
+        "id": "119287",
+        "name": "Unfollow",
+        "cover": "https://leagueofcomicgeeks.com/comics/covers/medium/5666561-unfollow.jpg",
+        "publisher": "Vertigo Comics",
+        "count": 1,
+        "series": "2015 - 2017"
+    },
+    {
+        "id": "127000",
+        "name": "Until We Sleep",
+        "cover": "https://leagueofcomicgeeks.com/comics/covers/medium/4008457-until-we-sleep.jpg",
+        "publisher": "Other",
+        "count": 3,
+        "series": "2015"
+    },
+    {
+        "id": "116033",
+        "name": "V-Wars: Night Terrors Prose",
+        "cover": "https://leagueofcomicgeeks.com/comics/covers/medium/5111597-v-wars-night-terrors-prose.jpg",
+        "publisher": "IDW Publishing",
+        "count": 2,
+        "series": ""
+    },
+    {
+        "id": "120412",
+        "name": "Van Helsing vs. Dracula",
+        "cover": "https://leagueofcomicgeeks.com/comics/covers/medium/8652021-van-helsing-vs-dracula.jpg",
+        "publisher": "Zenescope",
+        "count": 4,
+        "series": "2015 - 2016"
+    },
+    {
+        "id": "120438",
+        "name": "Weirdworld",
+        "cover": "https://leagueofcomicgeeks.com/comics/covers/medium/2089872-weirdworld.jpg",
+        "publisher": "Marvel Comics",
+        "count": 2,
+        "series": "2015 - 2016"
+    },
+    {
+        "id": "120654",
+        "name": "World Trigger",
+        "cover": "https://leagueofcomicgeeks.com/comics/covers/medium/7324966-world-trigger.jpg",
+        "publisher": "VIZ Media",
+        "count": 1,
+        "series": ""
+    },
+    {
+        "id": "121338",
+        "name": "X-Men: Worst X-Man Ever",
+        "cover": "https://leagueofcomicgeeks.com/comics/covers/medium/8813065-x-men-worst-x-man-ever.jpg",
+        "publisher": "Marvel Comics",
+        "count": 1,
+        "series": "2016"
+    },
+    {
+        "id": "109539",
+        "name": "X-O Manowar",
+        "cover": "https://leagueofcomicgeeks.com/comics/covers/medium/1489106-x-o-manowar.jpg",
+        "publisher": "Valiant",
+        "count": 4,
+        "series": "2012 - 2016"
+    },
+    {
+        "id": "120639",
+        "name": "Yo-kai Watch",
+        "cover": "https://leagueofcomicgeeks.com/comics/covers/medium/6617764-yo-kai-watch.jpg",
+        "publisher": "VIZ Media",
+        "count": 1,
+        "series": ""
+    }
+]
