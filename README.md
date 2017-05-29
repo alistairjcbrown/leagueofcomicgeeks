@@ -1,5 +1,9 @@
 # leagueofcomicgeeks
 
+[![npm version](https://badge.fury.io/js/leagueofcomicgeeks.svg)](https://badge.fury.io/js/leagueofcomicgeeks)
+[![Build Status](https://travis-ci.org/alistairjcbrown/leagueofcomicgeeks.svg?branch=master)](https://travis-ci.org/alistairjcbrown/leagueofcomicgeeks)
+[![Dependencies Status](https://david-dm.org/alistairjcbrown/leagueofcomicgeeks/status.svg)](https://david-dm.org/alistairjcbrown/leagueofcomicgeeks)
+
 Unofficial Node.js library for interacting with [League of Comic Geeks](https://leagueofcomicgeeks.com/). This provides an API for any system wishing to interact with an account on League of Comic Geeks and supports authentication and all lists. It has a comprehensive integration test setup to detect when the site makes breaking changes. Please create an issue or (better yet) a pull request if you see a problem or need additional features!
 
 ---
@@ -94,8 +98,8 @@ Methods on user lists:
 
  - Tests
    - [ ] Unit tests
-   - [ ] Jenkins integration
-     - [ ] Periodic run for integration tests
+   - [ ] Travid integration
+     - [x] Periodic run for integration tests
      - [ ] PR run for unit tests
 
  - Additional functionality
