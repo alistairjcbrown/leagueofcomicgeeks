@@ -59,14 +59,11 @@ module.exports = function (lofcg, pullListDate) {
         });
 
         describe('getting list', function () {
-          it('should still contain an issue from the previously added series', function (done) {
+          it('should not contain an issue from the previously added series', function (done) {
             lofcg.pullList.get(editableUserId, futurePullListDate, { type: lofcg.types.SERIES }, (err, pullList) => {
               expect(err).toBeNull();
-              expect(pullList.length).toBe(1);
-              expect(pullList).toEqual(allSeriesPullList);
-              _.each(pullList, (comic) => {
-                expect(comic).toBeAComicSeries();
-              });
+              expect(pullList.length).toBe(0);
+              expect(pullList).toEqual([]);
               done();
             });
           });

@@ -1,7 +1,6 @@
 # leagueofcomicgeeks
 
 [![Greenkeeper badge](https://badges.greenkeeper.io/alistairjcbrown/leagueofcomicgeeks.svg)](https://greenkeeper.io/)
-
 [![npm version](https://badge.fury.io/js/leagueofcomicgeeks.svg)](https://badge.fury.io/js/leagueofcomicgeeks)
 [![Build Status](https://travis-ci.org/alistairjcbrown/leagueofcomicgeeks.svg?branch=master)](https://travis-ci.org/alistairjcbrown/leagueofcomicgeeks)
 [![Dependencies Status](https://david-dm.org/alistairjcbrown/leagueofcomicgeeks/status.svg)](https://david-dm.org/alistairjcbrown/leagueofcomicgeeks)
