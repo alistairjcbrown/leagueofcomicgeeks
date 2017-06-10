@@ -1,7 +1,7 @@
 let testConfig;
 
 try {
-  testConfig = require('../../.test_config.json');
+  testConfig = require('../../.test_config.json'); // eslint-disable-line import/no-unresolved
 } catch (e) {
   testConfig = {};
 }
