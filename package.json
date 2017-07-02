@@ -15,7 +15,7 @@
   "author": "Alistair Brown <npm@alistairjcbrown.com>",
   "license": "MIT",
   "dependencies": {
-    "cheerio": "^0.22.0",
+    "cheerio": "^1.0.0-rc.2",
     "cookie": "^0.3.1",
     "lodash": "^4.17.4",
     "moment": "^2.18.1",
