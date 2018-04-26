@@ -1,6 +1,7 @@
 language: node_js
 node_js:
   - "7"
+  - "10"
 script:
  - if [ "$TRAVIS_EVENT_TYPE" = "cron" ]; then npm run test-integration; fi
  - if [ "$TRAVIS_EVENT_TYPE" != "cron" ]; then npm run test; fi
