@@ -1,4 +1,4 @@
-require('dotenv').config()
+require('dotenv').config();
 
 const sinon = require('sinon');
 const request = require('request');

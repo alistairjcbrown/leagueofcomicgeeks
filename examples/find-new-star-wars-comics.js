@@ -15,10 +15,10 @@ const filterUnwanted = function (list) {
   const variant = ' variant';
   return _.filter(list, function ({ name = '' }) {
     const matches = name.match(/#\d+\w?(.*)?/i);
-    return !name.toLowerCase().endsWith(tradePaperback) &&
-           !name.toLowerCase().endsWith(hardCover) &&
-           !name.toLowerCase().endsWith(variant) &&
-           (_.isNull(matches) || _.isUndefined(matches[1]));
+    return !name.toLowerCase().endsWith(tradePaperback)
+           && !name.toLowerCase().endsWith(hardCover)
+           && !name.toLowerCase().endsWith(variant)
+           && (_.isNull(matches) || _.isUndefined(matches[1]));
   });
 };
 

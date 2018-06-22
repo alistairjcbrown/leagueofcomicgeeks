@@ -15,19 +15,19 @@
   "author": "Alistair Brown <npm@alistairjcbrown.com>",
   "license": "MIT",
   "dependencies": {
-    "cheerio": "^0.22.0",
+    "cheerio": "^1.0.0-rc.2",
     "cookie": "^0.3.1",
-    "lodash": "^4.17.4",
-    "moment": "^2.18.1",
-    "query-string": "^4.3.4",
-    "request": "^2.81.0"
+    "lodash": "^4.17.10",
+    "moment": "^2.22.2",
+    "query-string": "^6.1.0",
+    "request": "^2.87.0"
   },
   "devDependencies": {
     "dotenv": "^6.0.0",
-    "eslint": "^3.19.0",
-    "eslint-config-airbnb-base": "^11.2.0",
-    "eslint-plugin-import": "^2.3.0",
-    "jasmine": "^2.6.0",
-    "sinon": "^2.3.4"
+    "eslint": "^4.19.1",
+    "eslint-config-airbnb-base": "^13.0.0",
+    "eslint-plugin-import": "^2.12.0",
+    "jasmine": "^3.1.0",
+    "sinon": "^6.0.0"
   }
 }
