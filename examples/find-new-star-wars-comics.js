@@ -14,10 +14,11 @@ const filterUnwanted = function (list) {
   const hardCover = ' hc';
   const variant = ' variant';
   return _.filter(list, function ({ name = '' }) {
+    const matches = name.match(/#\d+\w?(.*)?/i);
     return !name.toLowerCase().endsWith(tradePaperback) &&
            !name.toLowerCase().endsWith(hardCover) &&
            !name.toLowerCase().endsWith(variant) &&
-           _.isUndefined(name.match(/#\d+\w?(.*)?/i)[1]);
+           (_.isNull(matches) || _.isUndefined(matches[1]));
   });
 };
 
@@ -45,4 +46,3 @@ range.forEach(function (count) {
     outputresults(data);
   });
 });
-

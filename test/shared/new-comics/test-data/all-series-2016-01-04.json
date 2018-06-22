@@ -8,6 +8,14 @@
         "series": "1999 - 2009"
     },
     {
+        "id": "100255",
+        "name": "2000 AD",
+        "cover": "https://leagueofcomicgeeks.com/comics/covers/medium/8951361-2000-ad.jpg",
+        "publisher": "Rebellion",
+        "count": 1,
+        "series": "1977"
+    },
+    {
         "id": "120400",
         "name": "A-Force",
         "cover": "https://leagueofcomicgeeks.com/comics/covers/medium/3099238-a-force.jpg",
@@ -144,14 +152,6 @@
         "series": "2015"
     },
     {
-        "id": "101335",
-        "name": "Blue Exorcist",
-        "cover": "https://leagueofcomicgeeks.com/comics/covers/medium/2962282-blue-exorcist.jpg",
-        "publisher": "VIZ Media",
-        "count": 1,
-        "series": ""
-    },
-    {
         "id": "121485",
         "name": "Color Your Own Deadpool",
         "cover": "https://leagueofcomicgeeks.com/comics/covers/medium/9475174-color-your-own-deadpool.jpg",
@@ -173,7 +173,7 @@
         "cover": "https://leagueofcomicgeeks.com/comics/covers/medium/6156318-dc-comics-bombshells.jpg",
         "publisher": "DC Comics",
         "count": 1,
-        "series": "2015"
+        "series": "2015 - 2017"
     },
     {
         "id": "121458",
@@ -221,7 +221,7 @@
         "cover": "https://leagueofcomicgeeks.com/comics/covers/medium/2624735-deadpool.jpg",
         "publisher": "Marvel Comics",
         "count": 2,
-        "series": "2015"
+        "series": "2015 - 2017"
     },
     {
         "id": "119695",
@@ -261,7 +261,7 @@
         "cover": "https://leagueofcomicgeeks.com/comics/covers/medium/6133408-doctor-strange.jpg",
         "publisher": "Marvel Comics",
         "count": 2,
-        "series": "2015"
+        "series": "2015 - 2017"
     },
     {
         "id": "120602",
@@ -285,7 +285,7 @@
         "cover": "https://leagueofcomicgeeks.com/comics/covers/medium/6581246-elephantmen.jpg",
         "publisher": "Image Comics",
         "count": 1,
-        "series": ""
+        "series": "2006 - 2017"
     },
     {
         "id": "125241",
@@ -402,9 +402,9 @@
     {
         "id": "103812",
         "name": "Heavy Metal",
-        "cover": "https://leagueofcomicgeeks.com/comics/covers/medium/5435134-heavy-metal.jpg",
+        "cover": "https://leagueofcomicgeeks.com/comics/covers/medium/2956415-heavy-metal.jpg",
         "publisher": "Heavy Metal",
-        "count": 3,
+        "count": 2,
         "series": ""
     },
     {
@@ -485,7 +485,7 @@
         "cover": "https://leagueofcomicgeeks.com/comics/covers/medium/1929908-joe-golem-occult-detective.jpg",
         "publisher": "Dark Horse Comics",
         "count": 1,
-        "series": "2015"
+        "series": "2015 - 2016"
     },
     {
         "id": "120140",
@@ -544,6 +544,14 @@
         "series": "2016"
     },
     {
+        "id": "125248",
+        "name": "Marvel Hip Hop Covers",
+        "cover": "https://leagueofcomicgeeks.com/comics/covers/medium/7310847-marvel-hip-hop-covers.jpg",
+        "publisher": "Marvel Comics",
+        "count": 1,
+        "series": ""
+    },
+    {
         "id": "120667",
         "name": "Marvel Universe Ultimate Spider-Man and Avengers Digest",
         "cover": "https://leagueofcomicgeeks.com/comics/covers/medium/3647733-marvel-universe-ultimate-spider-man-and-avengers-digest.jpg",
@@ -581,7 +589,7 @@
         "cover": "https://leagueofcomicgeeks.com/comics/covers/medium/8240327-miracleman-by-gaiman-and-buckingham.jpg",
         "publisher": "Marvel Comics",
         "count": 4,
-        "series": ""
+        "series": "2015 - 2016"
     },
     {
         "id": "115644",
@@ -597,7 +605,7 @@
         "cover": "https://leagueofcomicgeeks.com/comics/covers/medium/9078196-my-little-pony-friends-forever.jpg",
         "publisher": "IDW Publishing",
         "count": 2,
-        "series": "2014"
+        "series": "2014 - 2017"
     },
     {
         "id": "121320",
@@ -629,15 +637,23 @@
         "cover": "https://leagueofcomicgeeks.com/comics/covers/medium/8723904-nailbiter.jpg",
         "publisher": "Image Comics",
         "count": 1,
-        "series": "2014"
+        "series": "2014 - 2017"
     },
     {
         "id": "105516",
         "name": "Naruto",
         "cover": "https://leagueofcomicgeeks.com/comics/covers/medium/4240879-naruto.jpg",
         "publisher": "VIZ Media",
-        "count": 2,
+        "count": 1,
         "series": ""
+    },
+    {
+        "id": "135668",
+        "name": "Naruto (3-in-1 Edition)",
+        "cover": "https://leagueofcomicgeeks.com/comics/covers/medium/3653485-naruto-3-in-1-edition.jpg",
+        "publisher": "VIZ Media",
+        "count": 1,
+        "series": "2011"
     },
     {
         "id": "121321",
@@ -661,7 +677,7 @@
         "cover": "https://leagueofcomicgeeks.com/comics/covers/medium/7642107-ninjak.jpg",
         "publisher": "Valiant",
         "count": 1,
-        "series": "2015"
+        "series": "2015 - 2017"
     },
     {
         "id": "120634",
@@ -712,6 +728,14 @@
         "series": ""
     },
     {
+        "id": "133406",
+        "name": "Promethee",
+        "cover": "https://leagueofcomicgeeks.com/comics/covers/medium/5848401-promethee.jpg",
+        "publisher": "Soleil Productions",
+        "count": 1,
+        "series": "2016 - 2017"
+    },
+    {
         "id": "121556",
         "name": "Red Fury",
         "cover": "https://leagueofcomicgeeks.com/comics/covers/medium/1413218-red-fury.jpg",
@@ -741,7 +765,7 @@
         "cover": "https://leagueofcomicgeeks.com/comics/covers/medium/3818772-regular-show.jpg",
         "publisher": "BOOM! Studios",
         "count": 2,
-        "series": "2013"
+        "series": "2013 - 2016"
     },
     {
         "id": "120972",
@@ -749,7 +773,7 @@
         "cover": "https://leagueofcomicgeeks.com/comics/covers/medium/4434648-replica.jpg",
         "publisher": "AfterShock Comics",
         "count": 1,
-        "series": "2015"
+        "series": "2015 - 2016"
     },
     {
         "id": "120759",
@@ -765,7 +789,7 @@
         "cover": "https://leagueofcomicgeeks.com/comics/covers/medium/5570666-saints.jpg",
         "publisher": "Image Comics",
         "count": 1,
-        "series": "2015"
+        "series": "2015 - 2016"
     },
     {
         "id": "116536",
@@ -788,7 +812,7 @@
         "name": "Spider-Gwen",
         "cover": "https://leagueofcomicgeeks.com/comics/covers/medium/5898719-spider-gwen.jpg",
         "publisher": "Marvel Comics",
-        "count": 2,
+        "count": 3,
         "series": "2015"
     },
     {
@@ -796,7 +820,7 @@
         "name": "Spider-Man / Deadpool",
         "cover": "https://leagueofcomicgeeks.com/comics/covers/medium/3061927-spider-man-deadpool.jpg",
         "publisher": "Marvel Comics",
-        "count": 9,
+        "count": 10,
         "series": "2016"
     },
     {
@@ -829,7 +853,7 @@
         "cover": "https://leagueofcomicgeeks.com/comics/covers/medium/5409995-star-trek-starfleet-academy.jpg",
         "publisher": "IDW Publishing",
         "count": 3,
-        "series": "2015"
+        "series": "2015 - 2016"
     },
     {
         "id": "107096",
@@ -925,7 +949,7 @@
         "cover": "https://leagueofcomicgeeks.com/comics/covers/medium/8599700-the-amazing-spider-man.jpg",
         "publisher": "Marvel Comics",
         "count": 2,
-        "series": "2015"
+        "series": "2015 - 2017"
     },
     {
         "id": "121317",
@@ -965,7 +989,7 @@
         "cover": "https://leagueofcomicgeeks.com/comics/covers/medium/5559667-the-legend-of-wonder-woman.jpg",
         "publisher": "DC Comics",
         "count": 1,
-        "series": "2015"
+        "series": "2015 - 2016"
     },
     {
         "id": "114780",
@@ -973,7 +997,7 @@
         "cover": "https://leagueofcomicgeeks.com/comics/covers/medium/5551010-the-october-faction.jpg",
         "publisher": "IDW Publishing",
         "count": 2,
-        "series": "2014"
+        "series": "2014 - 2016"
     },
     {
         "id": "119288",
@@ -981,7 +1005,7 @@
         "cover": "https://leagueofcomicgeeks.com/comics/covers/medium/8236974-the-sheriff-of-babylon.jpg",
         "publisher": "Vertigo Comics",
         "count": 1,
-        "series": "2015"
+        "series": "2015 - 2016"
     },
     {
         "id": "120398",
@@ -989,7 +1013,7 @@
         "cover": "https://leagueofcomicgeeks.com/comics/covers/medium/2779253-the-totally-awesome-hulk.jpg",
         "publisher": "Marvel Comics",
         "count": 3,
-        "series": "2015"
+        "series": "2015 - 2017"
     },
     {
         "id": "120656",
@@ -1021,7 +1045,7 @@
         "cover": "https://leagueofcomicgeeks.com/comics/covers/medium/5339325-the-woods.jpg",
         "publisher": "BOOM! Studios",
         "count": 1,
-        "series": "2014"
+        "series": "2014 - 2017"
     },
     {
         "id": "118473",

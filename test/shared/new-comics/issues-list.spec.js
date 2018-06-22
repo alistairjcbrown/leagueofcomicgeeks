@@ -17,7 +17,7 @@ module.exports = function (lofcg, newComicsDate) {
     it('should provide a list of new comics', function (done) {
       lofcg.newComics.get(newComicsDate, (err, newComics) => {
         expect(err).toBeNull();
-        expect(newComics.length).toBe(240);
+        expect(newComics.length).toBe(243);
         expect(newComics).toEqual(allIssues20160104);
         _.each(newComics, (comic) => {
           expect(comic).toBeAComicIssue();
@@ -41,7 +41,7 @@ module.exports = function (lofcg, newComicsDate) {
     it('should provide a sorted list of new comics', function (done) {
       lofcg.newComics.get(newComicsDate, { sort: 'desc' }, (err, newComics) => {
         expect(err).toBeNull();
-        expect(newComics.length).toBe(240);
+        expect(newComics.length).toBe(243);
         expect(newComics).toEqual(sortedIssues20160104);
         _.each(newComics, (comic) => {
           expect(comic).toBeAComicIssue();
