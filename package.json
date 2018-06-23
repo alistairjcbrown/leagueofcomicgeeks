@@ -4,7 +4,7 @@
   "description": "Unofficial Node.js library for interacting with League of Comic Geeks",
   "main": "index.js",
   "scripts": {
-    "test-integration": "jasmine test/integration.spec.js",
+    "test-integration": "jasmine test/integration.spec.js --random=false",
     "test": "npm run lint",
     "lint": "eslint ."
   },
