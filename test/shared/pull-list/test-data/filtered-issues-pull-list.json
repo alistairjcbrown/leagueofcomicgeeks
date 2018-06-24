@@ -1,11 +1,20 @@
 [
     {
         "id": "8900134",
+        "variantId": null,
+        "url": "https://leagueofcomicgeeks.com/comic/8900134/paper-girls-14",
         "name": "Paper Girls #14",
-        "cover": "https://leagueofcomicgeeks.com/comics/covers/medium/8900134-paper-girls-14.jpg?1499101500",
+        "cover": "https://leagueofcomicgeeks.com/comics/covers/medium/8900134-paper-girls-14.jpg",
         "publisher": "Image Comics",
         "description": "Here comes the future!",
         "releaseDate": "2017-05-03",
-        "price": "$2.99"
+        "price": "$2.99",
+        "diamondSku": "MAR170767",
+        "userMetrics": {
+            "pulled": null,
+            "added": 615,
+            "consensusVote": 97,
+            "pickOfTheWeekVote": 8
+        }
     }
 ]

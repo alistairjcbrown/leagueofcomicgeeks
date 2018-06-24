@@ -1,11 +1,20 @@
 [
     {
         "id": "2881147",
+        "variantId": null,
+        "url": "https://leagueofcomicgeeks.com/comic/2881147/star-wars-rogue-one-1",
         "name": "Star Wars: Rogue One #1",
-        "cover": "https://leagueofcomicgeeks.com/comics/covers/medium/2881147-star-wars-rogue-one-1.jpg?1524438061",
+        "cover": "https://leagueofcomicgeeks.com/comics/covers/medium/2881147-star-wars-rogue-one-1.jpg",
         "publisher": "Marvel Comics",
         "description": "All appears lost in the fight against the tyrannical Galactic Empire. The Rebellion has discovered the existence of the Empire’s ultimate super-weapon. The Death Star. With the power to wipe planets from existence,...",
         "releaseDate": "2017-04-05",
-        "price": "$4.99"
+        "price": "$4.99",
+        "diamondSku": "FEB170948",
+        "userMetrics": {
+            "pulled": null,
+            "added": 318,
+            "consensusVote": 93,
+            "pickOfTheWeekVote": null
+        }
     }
 ]
