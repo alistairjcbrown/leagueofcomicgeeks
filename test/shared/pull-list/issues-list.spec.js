@@ -1,14 +1,10 @@
 const _ = require('lodash');
-const allIssuesPullList = require('./test-data/all-issues-pull-list');
-const filteredIssuesPullList = require('./test-data/filtered-issues-pull-list');
-const sortedIssuesPullList = require('./test-data/sorted-issues-pull-list');
 
 module.exports = function (lofcg, pullListDate) {
   describe('get issues list', function () {
     it('should provide no comics in pull list with an invalid user id', function (done) {
       lofcg.pullList.get('foo', pullListDate, (err, pullList) => {
         expect(err).toBeNull();
-        expect(pullList.length).toBe(0);
         expect(pullList).toEqual([]);
         done();
       });
@@ -17,8 +13,7 @@ module.exports = function (lofcg, pullListDate) {
     it('should provide a list of comics from a users pull list', function (done) {
       lofcg.pullList.get(readonlyUserId, pullListDate, (err, pullList) => {
         expect(err).toBeNull();
-        expect(pullList.length).toBe(2);
-        expect(pullList).toEqual(allIssuesPullList);
+        expect(pullList).toMatchJsonSnapshot('all-issues-pull-list');
         _.each(pullList, (comic) => {
           expect(comic).toBeAComicIssue();
         });
@@ -29,8 +24,7 @@ module.exports = function (lofcg, pullListDate) {
     it('should provide a filtered list of comics from a users pull list', function (done) {
       lofcg.pullList.get(readonlyUserId, pullListDate, { publishers: ['Image Comics'] }, (err, pullList) => {
         expect(err).toBeNull();
-        expect(pullList.length).toBe(1);
-        expect(pullList).toEqual(filteredIssuesPullList);
+        expect(pullList).toMatchJsonSnapshot('filtered-issues-pull-list');
         _.each(pullList, (comic) => {
           expect(comic).toBeAComicIssue();
         });
@@ -41,8 +35,7 @@ module.exports = function (lofcg, pullListDate) {
     it('should provide a sorted list of comics from a users pull list', function (done) {
       lofcg.pullList.get(readonlyUserId, pullListDate, { sort: 'desc' }, (err, pullList) => {
         expect(err).toBeNull();
-        expect(pullList.length).toBe(2);
-        expect(pullList).toEqual(sortedIssuesPullList);
+        expect(pullList).toMatchJsonSnapshot('sorted-issues-pull-list');
         _.each(pullList, (comic) => {
           expect(comic).toBeAComicIssue();
         });
@@ -53,8 +46,8 @@ module.exports = function (lofcg, pullListDate) {
     it('should provide a custom sorted list of comics from a users pull list', function (done) {
       lofcg.pullList.get(readonlyUserId, pullListDate, { sort: 'pulls' }, (err, pullList) => {
         expect(err).toBeNull();
-        expect(pullList.length).toBe(2);
-        expect(pullList).toEqual(sortedIssuesPullList); // Custom sorting is the same order as descending
+        // Custom sorting is the same order as descending
+        expect(pullList).toMatchJsonSnapshot('sorted-issues-pull-list');
         _.each(pullList, (comic) => {
           expect(comic).toBeAComicIssue();
         });

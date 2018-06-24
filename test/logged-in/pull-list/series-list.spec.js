@@ -1,6 +1,5 @@
 const _ = require('lodash');
 const helpers = require('../../utils/helper-tests');
-const allSeriesPullList = require('./test-data/all-series-pull-list');
 
 module.exports = function (lofcg, pullListDate) {
   const testFutureSeriesId = 131521; // Henry Roscoe: Detective, Sort of
@@ -34,8 +33,7 @@ module.exports = function (lofcg, pullListDate) {
         it('should contain an issue from the previously added series', function (done) {
           lofcg.pullList.get(editableUserId, futurePullListDate, { type: lofcg.types.SERIES }, (err, pullList) => {
             expect(err).toBeNull();
-            expect(pullList.length).toBe(1);
-            expect(pullList).toEqual(allSeriesPullList);
+            expect(pullList).toMatchJsonSnapshot('all-series-pull-list');
             _.each(pullList, (comic) => {
               expect(comic).toBeAComicSeries();
             });
@@ -62,7 +60,6 @@ module.exports = function (lofcg, pullListDate) {
           it('should not contain an issue from the previously added series', function (done) {
             lofcg.pullList.get(editableUserId, futurePullListDate, { type: lofcg.types.SERIES }, (err, pullList) => {
               expect(err).toBeNull();
-              expect(pullList.length).toBe(0);
               expect(pullList).toEqual([]);
               done();
             });
@@ -86,7 +83,6 @@ module.exports = function (lofcg, pullListDate) {
           it('should be empty pull list', function (done) {
             lofcg.pullList.get(editableUserId, pastPullListDate, { type: lofcg.types.SERIES }, (err, pullList) => {
               expect(err).toBeNull();
-              expect(pullList.length).toBe(0);
               expect(pullList).toEqual([]);
               done();
             });
@@ -127,7 +123,6 @@ module.exports = function (lofcg, pullListDate) {
         it('should be empty and not added historical issues to pull list', function (done) {
           lofcg.pullList.get(editableUserId, pastPullListDate, { type: lofcg.types.SERIES }, (err, pullList) => {
             expect(err).toBeNull();
-            expect(pullList.length).toBe(0);
             expect(pullList).toEqual([]);
             done();
           });

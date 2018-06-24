@@ -1,6 +1,5 @@
 const _ = require('lodash');
 const helpers = require('../../utils/helper-tests');
-const allIssuesReadList = require('./test-data/all-issues-read-list');
 
 module.exports = function (lofcg) {
   const additionalArgs = [];
@@ -27,8 +26,7 @@ module.exports = function (lofcg) {
         it('should contain the previously added issue', function (done) {
           lofcg.readList.get(editableUserId, (err, readList) => {
             expect(err).toBeNull();
-            expect(readList.length).toBe(1);
-            expect(readList).toEqual(allIssuesReadList);
+            expect(readList).toMatchJsonSnapshot('all-issues-read-list');
             _.each(readList, (comic) => {
               expect(comic).toBeAComicIssue();
             });
