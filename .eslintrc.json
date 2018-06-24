@@ -1,6 +1,10 @@
 {
-    "extends": "airbnb-base",
+    "extends": [
+        "airbnb-base",
+        "plugin:prettier/recommended"
+    ],
     "plugins": [
+        "prettier",
         "import"
     ],
     "globals": {
@@ -18,10 +22,11 @@
         "expect": true
     },
     "rules": {
-      "comma-dangle": ["error", "never"],
-      "max-len": ["error", 120],
-      "global-require": "off",
-      "func-names": "off",
-      "prefer-arrow-callback": "off"
+        "prettier/prettier": "error",
+        "comma-dangle": ["error", "never"],
+        "max-len": ["error", 120],
+        "global-require": "off",
+        "func-names": "off",
+        "prefer-arrow-callback": "off"
     }
 }

@@ -1,11 +1,11 @@
-const _ = require('lodash');
+const _ = require("lodash");
 
-module.exports = function (objectString) {
-  const sanitisedObjectString = _.trim(objectString.trim(), '{}')
+module.exports = function(objectString) {
+  const sanitisedObjectString = _.trim(objectString.trim(), "{}")
     .trim()
     .replace(/'/g, '"')
-    .replace(/\s/g, '')
-    .replace(/,$/, '')
+    .replace(/\s/g, "")
+    .replace(/,$/, "")
     .replace(/([^:,]+):/g, '"$1":');
 
   try {

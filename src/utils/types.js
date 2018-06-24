@@ -1,4 +1,4 @@
 module.exports = {
-  SERIES: 'series',
-  ISSUE: 'issue'
+  SERIES: "series",
+  ISSUE: "issue"
 };
