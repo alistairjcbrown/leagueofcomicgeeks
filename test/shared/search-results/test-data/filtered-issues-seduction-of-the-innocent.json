@@ -1,47 +1,92 @@
 [
     {
         "id": "1819483",
+        "variantId": null,
+        "url": "https://leagueofcomicgeeks.com/comic/1819483/seduction-of-the-innocent-1",
         "name": "Seduction of the Innocent #1",
-        "cover": "https://leagueofcomicgeeks.com/comics/covers/medium/1819483-seduction-of-the-innocent-1.jpg?1448973082",
+        "cover": "https://leagueofcomicgeeks.com/comics/covers/medium/1819483-seduction-of-the-innocent-1.jpg",
         "publisher": "Dynamite",
         "description": "San Francisco, 1953. FBI Agent Thomas Jennings has just arrived in the city, fresh-faced and ready to tackle crime in the big city… he thinks. In fact, Jennings is not nearly prepared for what he's about to encounter....",
         "releaseDate": "2015-12-02",
-        "price": "$3.99"
+        "price": "$3.99",
+        "diamondSku": "OCT151315",
+        "userMetrics": {
+            "pulled": null,
+            "added": 34,
+            "consensusVote": 100,
+            "pickOfTheWeekVote": null
+        }
     },
     {
         "id": "9638055",
+        "variantId": null,
+        "url": "https://leagueofcomicgeeks.com/comic/9638055/seduction-of-the-innocent-2",
         "name": "Seduction of the Innocent #2",
-        "cover": "https://leagueofcomicgeeks.com/comics/covers/medium/9638055-seduction-of-the-innocent-2.jpg?1451342046",
+        "cover": "https://leagueofcomicgeeks.com/comics/covers/medium/9638055-seduction-of-the-innocent-2.jpg",
         "publisher": "Dynamite",
         "description": "San Francisco, 1953. F.B.I. Agent Thomas Jennings has been in town all of forty-eight hours. He's been stabbed, chased, and betrayed, witnessing more horrors than he ever could have imagined. Now, in a desperate race...",
         "releaseDate": "2015-12-30",
-        "price": "$3.99"
+        "price": "$3.99",
+        "diamondSku": "NOV151304",
+        "userMetrics": {
+            "pulled": null,
+            "added": 22,
+            "consensusVote": null,
+            "pickOfTheWeekVote": null
+        }
     },
     {
         "id": "8546782",
+        "variantId": null,
+        "url": "https://leagueofcomicgeeks.com/comic/8546782/seduction-of-the-innocent-3",
         "name": "Seduction of the Innocent #3",
-        "cover": "https://leagueofcomicgeeks.com/comics/covers/medium/8546782-seduction-of-the-innocent-3.jpg?1454802977",
+        "cover": "https://leagueofcomicgeeks.com/comics/covers/medium/8546782-seduction-of-the-innocent-3.jpg",
         "publisher": "Dynamite",
         "description": "The streets of 1953 San Francisco are overflowing with blood, as a pair of ghastly killers continue to terrorize the city. FBI Agent Thomas Jennings has his hands full at his new post. He's got to find two lost children...",
         "releaseDate": "2016-02-03",
-        "price": "$3.99"
+        "price": "$3.99",
+        "diamondSku": "DEC151246",
+        "userMetrics": {
+            "pulled": null,
+            "added": 19,
+            "consensusVote": null,
+            "pickOfTheWeekVote": null
+        }
     },
     {
         "id": "7121846",
+        "variantId": null,
+        "url": "https://leagueofcomicgeeks.com/comic/7121846/seduction-of-the-innocent-4",
         "name": "Seduction of the Innocent #4",
-        "cover": "https://leagueofcomicgeeks.com/comics/covers/medium/7121846-seduction-of-the-innocent-4.jpg?1457004267",
+        "cover": "https://leagueofcomicgeeks.com/comics/covers/medium/7121846-seduction-of-the-innocent-4.jpg",
         "publisher": "Dynamite",
         "description": "In his first week on the job, FBI Agent Thomas Jennings has seen enough horror to threaten his faith, and perhaps his sanity. Now he stands alone - the last line of defense against a madman intent on the murder of two innocent...",
         "releaseDate": "2016-03-02",
-        "price": "$3.99"
+        "price": "$3.99",
+        "diamondSku": "JAN161376",
+        "userMetrics": {
+            "pulled": null,
+            "added": 20,
+            "consensusVote": null,
+            "pickOfTheWeekVote": null
+        }
     },
     {
         "id": "6220738",
+        "variantId": null,
+        "url": "https://leagueofcomicgeeks.com/comic/6220738/seduction-of-the-innocent-vol-1-tp",
         "name": "Seduction of the Innocent Vol. 1 TP",
-        "cover": "https://leagueofcomicgeeks.com/comics/covers/medium/6220738-seduction-of-the-innocent-vol-1-tp.jpg?1472583294",
+        "cover": "https://leagueofcomicgeeks.com/comics/covers/medium/6220738-seduction-of-the-innocent-vol-1-tp.jpg",
         "publisher": "Dynamite",
         "description": "Volume 1 - 1st printing. Collects Seduction of the Innocent (2015 Dynamite) #1-4. Written by Ande Parks. Art by Esteve Polls. Cover by Francesco Francavilla. FBI Agent Thomas Jennings has just arrived in San Francisco, fresh-faced...",
         "releaseDate": "2016-08-29",
-        "price": "$15.99"
+        "price": "$15.99",
+        "diamondSku": null,
+        "userMetrics": {
+            "pulled": null,
+            "added": 1,
+            "consensusVote": null,
+            "pickOfTheWeekVote": null
+        }
     }
 ]

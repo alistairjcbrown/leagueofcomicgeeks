@@ -1,776 +1,1550 @@
 [
     {
         "id": "4281652",
+        "variantId": null,
+        "url": "https://leagueofcomicgeeks.com/comic/4281652/adventure-time-1",
         "name": "Adventure Time #1",
-        "cover": "https://leagueofcomicgeeks.com/comics/covers/medium/4281652-adventure-time-1.jpg?1351042776",
+        "cover": "https://leagueofcomicgeeks.com/comics/covers/medium/4281652-adventure-time-1.jpg",
         "publisher": "BOOM! Studios",
         "description": "It's Adventure Time! Join Finn the Human, Jake the Dog, and Princess Bubblegum for all-new adventures through The Land of Ooo. The top-rated Cartoon Network show now has its own comic book! With the show exploding in the...",
         "releaseDate": "2012-02-08",
-        "price": "$3.99"
+        "price": "$3.99",
+        "diamondSku": "DEC110939",
+        "userMetrics": {
+            "pulled": null,
+            "added": 78,
+            "consensusVote": 100,
+            "pickOfTheWeekVote": null
+        }
     },
     {
         "id": "9426413",
+        "variantId": null,
+        "url": "https://leagueofcomicgeeks.com/comic/9426413/adventure-time-10",
         "name": "Adventure Time #10",
-        "cover": "https://leagueofcomicgeeks.com/comics/covers/medium/9426413-adventure-time-10.jpg?1407162985",
+        "cover": "https://leagueofcomicgeeks.com/comics/covers/medium/9426413-adventure-time-10.jpg",
         "publisher": "BOOM! Studios",
         "description": "THERE'S NO BETTER TIME TO JUMP INTO THE ALL-AGES SENSATION! Join Jake the Dog and Finn the Human as they have sensational adventures in the magical land of Ooo! If you haven't checked out the comic book adaptation...",
         "releaseDate": "2012-11-28",
-        "price": "$3.99"
+        "price": "$3.99",
+        "diamondSku": "SEP120936",
+        "userMetrics": {
+            "pulled": null,
+            "added": 60,
+            "consensusVote": null,
+            "pickOfTheWeekVote": null
+        }
     },
     {
         "id": "6782447",
+        "variantId": null,
+        "url": "https://leagueofcomicgeeks.com/comic/6782447/adventure-time-11",
         "name": "Adventure Time #11",
-        "cover": "https://leagueofcomicgeeks.com/comics/covers/medium/6782447-adventure-time-11.jpg?1355893962",
+        "cover": "https://leagueofcomicgeeks.com/comics/covers/medium/6782447-adventure-time-11.jpg",
         "publisher": "BOOM! Studios",
         "description": "THE FINAL TOTALLY AWESOME ISSUE OF THIS ADVENTURE TIME MINI-SERIES! Can the Scream Queens rock their crazy-huge biggest gig ever...and will Princess Bubblegum finally discover the true meaning of ROCK? Final issue of this...",
         "releaseDate": "2012-12-19",
-        "price": "$3.99"
+        "price": "$3.99",
+        "diamondSku": "OCT120924",
+        "userMetrics": {
+            "pulled": null,
+            "added": 72,
+            "consensusVote": 100,
+            "pickOfTheWeekVote": null
+        }
     },
     {
         "id": "7883919",
+        "variantId": null,
+        "url": "https://leagueofcomicgeeks.com/comic/7883919/adventure-time-12",
         "name": "Adventure Time #12",
-        "cover": "https://leagueofcomicgeeks.com/comics/covers/medium/7883919-adventure-time-12.jpg?1359524395",
+        "cover": "https://leagueofcomicgeeks.com/comics/covers/medium/7883919-adventure-time-12.jpg",
         "publisher": "BOOM! Studios",
         "description": "THE HOTTEST ALL-AGES COMIC CELEBRATES ITS ONE YEAR ANNIVERSARY! BMO's sick, but it's not just any virus...it's a magical virus! And now, Finn and Jake have to seek out a sorta-no-good-very-bad wizard to set things right!...",
         "releaseDate": "2013-01-30",
-        "price": "$3.99"
+        "price": "$3.99",
+        "diamondSku": "NOV120968",
+        "userMetrics": {
+            "pulled": null,
+            "added": 76,
+            "consensusVote": 100,
+            "pickOfTheWeekVote": null
+        }
     },
     {
         "id": "5012608",
+        "variantId": null,
+        "url": "https://leagueofcomicgeeks.com/comic/5012608/adventure-time-13",
         "name": "Adventure Time #13",
-        "cover": "https://leagueofcomicgeeks.com/comics/covers/medium/5012608-adventure-time-13.jpg?1528669332",
+        "cover": "https://leagueofcomicgeeks.com/comics/covers/medium/5012608-adventure-time-13.jpg",
         "publisher": "BOOM! Studios",
         "description": "CRITICS ARE CALLING ADVENTURE TIME THE \"BEST SERIES OF 2012!\" The latest issue of the hottest all-ages comic on the stands now! Join Finn and Jake as they work to save BMO from a magical virus...by going INSIDE...",
         "releaseDate": "2013-02-20",
-        "price": "$3.99"
+        "price": "$3.99",
+        "diamondSku": "DEC120942",
+        "userMetrics": {
+            "pulled": null,
+            "added": 69,
+            "consensusVote": 100,
+            "pickOfTheWeekVote": null
+        }
     },
     {
         "id": "5112162",
+        "variantId": null,
+        "url": "https://leagueofcomicgeeks.com/comic/5112162/adventure-time-14",
         "name": "Adventure Time #14",
-        "cover": "https://leagueofcomicgeeks.com/comics/covers/medium/5112162-adventure-time-14.jpg?1363606582",
+        "cover": "https://leagueofcomicgeeks.com/comics/covers/medium/5112162-adventure-time-14.jpg",
         "publisher": "BOOM! Studios",
         "description": "FINAL ISSUE OF THE ARC! Finn and Jake are trapped inside a digital world...who can rescue the heroes? Find out in the latest installment of \"the best comic of 2012!\" An all-ages sensation!",
         "releaseDate": "2013-03-20",
-        "price": "$3.99"
+        "price": "$3.99",
+        "diamondSku": "JAN130975",
+        "userMetrics": {
+            "pulled": null,
+            "added": 70,
+            "consensusVote": 100,
+            "pickOfTheWeekVote": null
+        }
     },
     {
         "id": "4694804",
+        "variantId": null,
+        "url": "https://leagueofcomicgeeks.com/comic/4694804/adventure-time-15",
         "name": "Adventure Time #15",
-        "cover": "https://leagueofcomicgeeks.com/comics/covers/medium/4694804-adventure-time-15.jpg?1528669342",
+        "cover": "https://leagueofcomicgeeks.com/comics/covers/medium/4694804-adventure-time-15.jpg",
         "publisher": "BOOM! Studios",
         "description": "A STAND-ALONE ISSUE LEADING INTO THE NEW ARC! A PERFECT JUMPING-ON POINT FOR NEW READERS! Join Jake the Dog and Finn the Human in this totally topsy-turvy take on the land of Ooo! The best all-ages series of 2012 continues!...",
         "releaseDate": "2013-04-17",
-        "price": "$3.99"
+        "price": "$3.99",
+        "diamondSku": "FEB130836",
+        "userMetrics": {
+            "pulled": null,
+            "added": 64,
+            "consensusVote": null,
+            "pickOfTheWeekVote": null
+        }
     },
     {
         "id": "6416927",
+        "variantId": null,
+        "url": "https://leagueofcomicgeeks.com/comic/6416927/adventure-time-16",
         "name": "Adventure Time #16",
-        "cover": "https://leagueofcomicgeeks.com/comics/covers/medium/6416927-adventure-time-16.jpg?1369266937",
+        "cover": "https://leagueofcomicgeeks.com/comics/covers/medium/6416927-adventure-time-16.jpg",
         "publisher": "BOOM! Studios",
         "description": "THE FIRST ISSUE OF A NEW ARC AND THE PERFECT JUMPING-ON POINT FOR NEW READERS! It's an all-new adventure for Finn, Jake and the gang from critically acclaimed writer Ryan North! The best all-ages series of 2012 continues!",
         "releaseDate": "2013-05-22",
-        "price": "$3.99"
+        "price": "$3.99",
+        "diamondSku": "MAR130943",
+        "userMetrics": {
+            "pulled": null,
+            "added": 59,
+            "consensusVote": null,
+            "pickOfTheWeekVote": null
+        }
     },
     {
         "id": "8765342",
+        "variantId": null,
+        "url": "https://leagueofcomicgeeks.com/comic/8765342/adventure-time-17",
         "name": "Adventure Time #17",
-        "cover": "https://leagueofcomicgeeks.com/comics/covers/medium/8765342-adventure-time-17.jpg?1372825975",
+        "cover": "https://leagueofcomicgeeks.com/comics/covers/medium/8765342-adventure-time-17.jpg",
         "publisher": "BOOM! Studios",
         "description": "It's a new TOTALLY MATH adventure for Finn and Jake, everyone's favorite boy and his dog! And this time, we mean that",
         "releaseDate": "2013-06-26",
-        "price": "$3.99"
+        "price": "$3.99",
+        "diamondSku": "APR130968",
+        "userMetrics": {
+            "pulled": null,
+            "added": 65,
+            "consensusVote": null,
+            "pickOfTheWeekVote": null
+        }
     },
     {
         "id": "3518528",
+        "variantId": null,
+        "url": "https://leagueofcomicgeeks.com/comic/3518528/adventure-time-18",
         "name": "Adventure Time #18",
-        "cover": "https://leagueofcomicgeeks.com/comics/covers/medium/3518528-adventure-time-18.jpg?1374034658",
+        "cover": "https://leagueofcomicgeeks.com/comics/covers/medium/3518528-adventure-time-18.jpg",
         "publisher": "BOOM! Studios",
         "description": "The TOTALLY MATH adventure continues with Finn and Jake, everyone's favorite human and dog duo! Will the guys find a way out of their dungeon despair, or will they have to settle for hanging with some tops blooby skeleton...",
         "releaseDate": "2013-07-17",
-        "price": "$3.99"
+        "price": "$3.99",
+        "diamondSku": "MAY130960",
+        "userMetrics": {
+            "pulled": null,
+            "added": 69,
+            "consensusVote": null,
+            "pickOfTheWeekVote": null
+        }
     },
     {
         "id": "8840442",
+        "variantId": null,
+        "url": "https://leagueofcomicgeeks.com/comic/8840442/adventure-time-19",
         "name": "Adventure Time #19",
-        "cover": "https://leagueofcomicgeeks.com/comics/covers/medium/8840442-adventure-time-19.jpg?1460122646",
+        "cover": "https://leagueofcomicgeeks.com/comics/covers/medium/8840442-adventure-time-19.jpg",
         "publisher": "BOOM! Studios",
         "description": "The TOTALLY MATH adventure continues with Finn and Jake, everyone's favorite human and his dog! And this arc, things are getting literally mathematical for our heroes... The newest issue of the hottest allages book on...",
         "releaseDate": "2013-08-21",
-        "price": "$3.99"
+        "price": "$3.99",
+        "diamondSku": "JUN130920",
+        "userMetrics": {
+            "pulled": null,
+            "added": 58,
+            "consensusVote": null,
+            "pickOfTheWeekVote": null
+        }
     },
     {
         "id": "5232458",
+        "variantId": null,
+        "url": "https://leagueofcomicgeeks.com/comic/5232458/adventure-time-2",
         "name": "Adventure Time #2",
-        "cover": "https://leagueofcomicgeeks.com/comics/covers/medium/5232458-adventure-time-2.jpg?1351042771",
+        "cover": "https://leagueofcomicgeeks.com/comics/covers/medium/5232458-adventure-time-2.jpg",
         "publisher": "BOOM! Studios",
         "description": "It's Totally Mathematical! Join Finn, Jake, and all of their friends in this second issue of the ongoing comic book series showcasing all-new adventures through the magical Land of Ooo. The boys have embarked on another...",
         "releaseDate": "2012-03-14",
-        "price": "$3.99"
+        "price": "$3.99",
+        "diamondSku": "JAN120971",
+        "userMetrics": {
+            "pulled": null,
+            "added": 71,
+            "consensusVote": 84,
+            "pickOfTheWeekVote": null
+        }
     },
     {
         "id": "3124065",
+        "variantId": null,
+        "url": "https://leagueofcomicgeeks.com/comic/3124065/adventure-time-20",
         "name": "Adventure Time #20",
-        "cover": "https://leagueofcomicgeeks.com/comics/covers/medium/3124065-adventure-time-20.jpg?1460122780",
+        "cover": "https://leagueofcomicgeeks.com/comics/covers/medium/3124065-adventure-time-20.jpg",
         "publisher": "BOOM! Studios",
         "description": "Finn and Jake have endured the Ice King's weird emotional dungeon adventure, and the fiery pits created by Marceline's dad...what will their final dungeon adventure bring? A great jumping-on point for dungeon masters...",
         "releaseDate": "2013-09-18",
-        "price": "$3.99"
+        "price": "$3.99",
+        "diamondSku": "JUL130958",
+        "userMetrics": {
+            "pulled": null,
+            "added": 61,
+            "consensusVote": null,
+            "pickOfTheWeekVote": null
+        }
     },
     {
         "id": "2882322",
+        "variantId": null,
+        "url": "https://leagueofcomicgeeks.com/comic/2882322/adventure-time-21",
         "name": "Adventure Time #21",
-        "cover": "https://leagueofcomicgeeks.com/comics/covers/medium/2882322-adventure-time-21.jpg?1520834561",
+        "cover": "https://leagueofcomicgeeks.com/comics/covers/medium/2882322-adventure-time-21.jpg",
         "publisher": "BOOM! Studios",
         "description": "It doesn't matter how many episodes or issues you get your hands on for ADVENTURE TIME, there will always be something new and amazing waiting for you behind every corner. The comic is a great read for allages and it's...",
         "releaseDate": "2013-10-16",
-        "price": "$3.99"
+        "price": "$3.99",
+        "diamondSku": "AUG131132",
+        "userMetrics": {
+            "pulled": null,
+            "added": 63,
+            "consensusVote": null,
+            "pickOfTheWeekVote": null
+        }
     },
     {
         "id": "8724783",
+        "variantId": null,
+        "url": "https://leagueofcomicgeeks.com/comic/8724783/adventure-time-22",
         "name": "Adventure Time #22",
-        "cover": "https://leagueofcomicgeeks.com/comics/covers/medium/8724783-adventure-time-22.jpg?1384793037",
+        "cover": "https://leagueofcomicgeeks.com/comics/covers/medium/8724783-adventure-time-22.jpg",
         "publisher": "BOOM! Studios",
         "description": "Finn and Jake find themselves in a sticky situation when Princess Bubblegum's experiments searching for the origin of life...specifically, her life...go horribly wrong, overcoming the Candy Kingdom! What sour weapon can...",
         "releaseDate": "2013-11-20",
-        "price": "$3.99"
+        "price": "$3.99",
+        "diamondSku": "SEP131006",
+        "userMetrics": {
+            "pulled": null,
+            "added": 57,
+            "consensusVote": null,
+            "pickOfTheWeekVote": null
+        }
     },
     {
         "id": "2129061",
+        "variantId": null,
+        "url": "https://leagueofcomicgeeks.com/comic/2129061/adventure-time-23",
         "name": "Adventure Time #23",
-        "cover": "https://leagueofcomicgeeks.com/comics/covers/medium/2129061-adventure-time-23.jpg?1387326787",
+        "cover": "https://leagueofcomicgeeks.com/comics/covers/medium/2129061-adventure-time-23.jpg",
         "publisher": "BOOM! Studios",
         "description": "Will Princess Bubblegum be able to stop her creation from spreading, or is already too late for the Kingdom of Ooo?! With the Kingdoms Heroes under it's influence it leaves Marceline and Princess Bubblegum in a race again...",
         "releaseDate": "2013-12-18",
-        "price": "$3.99"
+        "price": "$3.99",
+        "diamondSku": "OCT130970",
+        "userMetrics": {
+            "pulled": null,
+            "added": 57,
+            "consensusVote": null,
+            "pickOfTheWeekVote": null
+        }
     },
     {
         "id": "6924403",
+        "variantId": null,
+        "url": "https://leagueofcomicgeeks.com/comic/6924403/adventure-time-24",
         "name": "Adventure Time #24",
-        "cover": "https://leagueofcomicgeeks.com/comics/covers/medium/6924403-adventure-time-24.jpg?1389677954",
+        "cover": "https://leagueofcomicgeeks.com/comics/covers/medium/6924403-adventure-time-24.jpg",
         "publisher": "BOOM! Studios",
         "description": "Princess Bubblegum faces the consequences of her science experiment gone wrong as she finally finds a way to save the day! But is it too late? Find out if Princess Bubblegum is able to right all her wrongs or if her friends...",
         "releaseDate": "2014-01-15",
-        "price": "$3.99"
+        "price": "$3.99",
+        "diamondSku": "NOV130913",
+        "userMetrics": {
+            "pulled": null,
+            "added": 53,
+            "consensusVote": 100,
+            "pickOfTheWeekVote": null
+        }
     },
     {
         "id": "7210049",
+        "variantId": null,
+        "url": "https://leagueofcomicgeeks.com/comic/7210049/adventure-time-25",
         "name": "Adventure Time #25",
-        "cover": "https://leagueofcomicgeeks.com/comics/covers/medium/7210049-adventure-time-25.jpg?1392695358",
+        "cover": "https://leagueofcomicgeeks.com/comics/covers/medium/7210049-adventure-time-25.jpg",
         "publisher": "BOOM! Studios",
         "description": "Ever have a favorite item? Something that you plan to keep with you always? Something that has a history back further than you can remember? Something precious...cherished...that will continue on after you've left on your...",
         "releaseDate": "2014-02-19",
-        "price": "$4.99"
+        "price": "$4.99",
+        "diamondSku": "DEC130999",
+        "userMetrics": {
+            "pulled": null,
+            "added": 58,
+            "consensusVote": null,
+            "pickOfTheWeekVote": null
+        }
     },
     {
         "id": "8151285",
+        "variantId": null,
+        "url": "https://leagueofcomicgeeks.com/comic/8151285/adventure-time-26",
         "name": "Adventure Time #26",
-        "cover": "https://leagueofcomicgeeks.com/comics/covers/medium/8151285-adventure-time-26.jpg?1395203506",
+        "cover": "https://leagueofcomicgeeks.com/comics/covers/medium/8151285-adventure-time-26.jpg",
         "publisher": "BOOM! Studios",
         "description": "Cover A: Mike Holmes Cover B: Craig Arndt Finn and Jake have always been best buds; they are always together, it's just something best buds do. But what happens when these two friends get separated on a crazy adventure...",
         "releaseDate": "2014-03-19",
-        "price": "$3.99"
+        "price": "$3.99",
+        "diamondSku": "JAN141015",
+        "userMetrics": {
+            "pulled": null,
+            "added": 51,
+            "consensusVote": null,
+            "pickOfTheWeekVote": null
+        }
     },
     {
         "id": "2895692",
+        "variantId": null,
+        "url": "https://leagueofcomicgeeks.com/comic/2895692/adventure-time-27",
         "name": "Adventure Time #27",
-        "cover": "https://leagueofcomicgeeks.com/comics/covers/medium/2895692-adventure-time-27.jpg?1397528834",
+        "cover": "https://leagueofcomicgeeks.com/comics/covers/medium/2895692-adventure-time-27.jpg",
         "publisher": "BOOM! Studios",
         "description": "This special arc with guest artist Jim Rugg continues!! Finn and Jake might have finally met their match. but what will happen with it turns out that the match isn't a match at all? Things are getting crazy in the land of...",
         "releaseDate": "2014-04-16",
-        "price": "$3.99"
+        "price": "$3.99",
+        "diamondSku": "FEB141084",
+        "userMetrics": {
+            "pulled": null,
+            "added": 58,
+            "consensusVote": null,
+            "pickOfTheWeekVote": null
+        }
     },
     {
         "id": "7033633",
+        "variantId": null,
+        "url": "https://leagueofcomicgeeks.com/comic/7033633/adventure-time-28",
         "name": "Adventure Time #28",
-        "cover": "https://leagueofcomicgeeks.com/comics/covers/medium/7033633-adventure-time-28.jpg?1400556502",
+        "cover": "https://leagueofcomicgeeks.com/comics/covers/medium/7033633-adventure-time-28.jpg",
         "publisher": "BOOM! Studios",
         "description": "With one answer, there is always a million questions. Finn and Jake find themselves out of one problem and into another. It looks like it's going to be a race to the finish as our heroes discover what it really means...",
         "releaseDate": "2014-05-21",
-        "price": "$3.99"
+        "price": "$3.99",
+        "diamondSku": "MAR140988",
+        "userMetrics": {
+            "pulled": null,
+            "added": 52,
+            "consensusVote": 75,
+            "pickOfTheWeekVote": null
+        }
     },
     {
         "id": "5910531",
+        "variantId": null,
+        "url": "https://leagueofcomicgeeks.com/comic/5910531/adventure-time-29",
         "name": "Adventure Time #29",
-        "cover": "https://leagueofcomicgeeks.com/comics/covers/medium/5910531-adventure-time-29.jpg?1402959711",
+        "cover": "https://leagueofcomicgeeks.com/comics/covers/medium/5910531-adventure-time-29.jpg",
         "publisher": "BOOM! Studios",
         "description": "Finn and Jake are back in their bodies, but it looks like the damage is done. Will our heroes be able to right everything they've done or is Ooo finally lost? With the help of an unlikely source, this day might be saved....",
         "releaseDate": "2014-06-18",
-        "price": "$3.99"
+        "price": "$3.99",
+        "diamondSku": "APR141004",
+        "userMetrics": {
+            "pulled": null,
+            "added": 46,
+            "consensusVote": null,
+            "pickOfTheWeekVote": null
+        }
     },
     {
         "id": "3714650",
+        "variantId": null,
+        "url": "https://leagueofcomicgeeks.com/comic/3714650/adventure-time-3",
         "name": "Adventure Time #3",
-        "cover": "https://leagueofcomicgeeks.com/comics/covers/medium/3714650-adventure-time-3.jpg?1351042767",
+        "cover": "https://leagueofcomicgeeks.com/comics/covers/medium/3714650-adventure-time-3.jpg",
         "publisher": "BOOM! Studios",
         "description": "Algebraic! Don't miss Finn, Jake, and all of their friends on their biggest adventure yet! Trapped by the dreaded Lich, the guys gotta stop all of Ooo from being sucked away forever - and rescue a bunch of wayward Princesses....",
         "releaseDate": "2012-04-11",
-        "price": "$3.99"
+        "price": "$3.99",
+        "diamondSku": "FEB120869",
+        "userMetrics": {
+            "pulled": null,
+            "added": 76,
+            "consensusVote": 84,
+            "pickOfTheWeekVote": null
+        }
     },
     {
         "id": "2730049",
+        "variantId": null,
+        "url": "https://leagueofcomicgeeks.com/comic/2730049/adventure-time-30",
         "name": "Adventure Time #30",
-        "cover": "https://leagueofcomicgeeks.com/comics/covers/medium/2730049-adventure-time-30.jpg?1471030019",
+        "cover": "https://leagueofcomicgeeks.com/comics/covers/medium/2730049-adventure-time-30.jpg",
         "publisher": "BOOM! Studios",
         "description": "It's a rad stand-alone ZINE Special! Enjoy this crazy special as the citizens of Ooo create their own zines to share. Marceline has a lot to say about her music, Peppermint Butler has a few life tips for anyone who will...",
         "releaseDate": "2014-07-16",
-        "price": "$3.99"
+        "price": "$3.99",
+        "diamondSku": "MAY141187",
+        "userMetrics": {
+            "pulled": null,
+            "added": 58,
+            "consensusVote": null,
+            "pickOfTheWeekVote": null
+        }
     },
     {
         "id": "4699308",
+        "variantId": null,
+        "url": "https://leagueofcomicgeeks.com/comic/4699308/adventure-time-31",
         "name": "Adventure Time #31",
-        "cover": "https://leagueofcomicgeeks.com/comics/covers/medium/4699308-adventure-time-31.jpg?1408394978",
+        "cover": "https://leagueofcomicgeeks.com/comics/covers/medium/4699308-adventure-time-31.jpg",
         "publisher": "BOOM! Studios",
         "description": "When Princess Bubblegum and Marceline get their driver’s licenses, they have the perfect plan—build a giant ramp and drive off of it! It’s gonna be so much fun…wait, who’s the Mnemonoid, and...",
         "releaseDate": "2014-08-20",
-        "price": "$3.99"
+        "price": "$3.99",
+        "diamondSku": "JUN140983",
+        "userMetrics": {
+            "pulled": null,
+            "added": 62,
+            "consensusVote": null,
+            "pickOfTheWeekVote": null
+        }
     },
     {
         "id": "7201061",
+        "variantId": null,
+        "url": "https://leagueofcomicgeeks.com/comic/7201061/adventure-time-32",
         "name": "Adventure Time #32",
-        "cover": "https://leagueofcomicgeeks.com/comics/covers/medium/7201061-adventure-time-32.jpg?1414443719",
+        "cover": "https://leagueofcomicgeeks.com/comics/covers/medium/7201061-adventure-time-32.jpg",
         "publisher": "BOOM! Studios",
         "description": "Finn is on an impossible mission to break Mnemonoid’s curse so that he can finally live his life…and remember it! It’s going to take a lot of pal time and a lot of help from the best of friends but this...",
         "releaseDate": "2014-10-01",
-        "price": "$3.99"
+        "price": "$3.99",
+        "diamondSku": "JUL141004",
+        "userMetrics": {
+            "pulled": null,
+            "added": 51,
+            "consensusVote": null,
+            "pickOfTheWeekVote": null
+        }
     },
     {
         "id": "2543079",
+        "variantId": null,
+        "url": "https://leagueofcomicgeeks.com/comic/2543079/adventure-time-33",
         "name": "Adventure Time #33",
-        "cover": "https://leagueofcomicgeeks.com/comics/covers/medium/2543079-adventure-time-33.jpg?1523934589",
+        "cover": "https://leagueofcomicgeeks.com/comics/covers/medium/2543079-adventure-time-33.jpg",
         "publisher": "BOOM! Studios",
         "description": "Magic Man's hold on Finn is proving to be stronger than anyone had thought and it's taking the whole crew to band together to help their friend, only this time, there really might be nothing they can do. It's...",
         "releaseDate": "2014-10-29",
-        "price": "$3.99"
+        "price": "$3.99",
+        "diamondSku": "AUG141192",
+        "userMetrics": {
+            "pulled": null,
+            "added": 51,
+            "consensusVote": null,
+            "pickOfTheWeekVote": null
+        }
     },
     {
         "id": "4348530",
+        "variantId": null,
+        "url": "https://leagueofcomicgeeks.com/comic/4348530/adventure-time-34",
         "name": "Adventure Time #34",
-        "cover": "https://leagueofcomicgeeks.com/comics/covers/medium/4348530-adventure-time-34.jpg?1417484527",
+        "cover": "https://leagueofcomicgeeks.com/comics/covers/medium/4348530-adventure-time-34.jpg",
         "publisher": "BOOM! Studios",
         "description": "Finn has made it to Magic Man at last! It's time for this adventure to end and for Finn to finally get his memory back. It might seem like an easy end, but it looks like there is still one more trick up Magic Man's sleeve.",
         "releaseDate": "2014-12-03",
-        "price": "$3.99"
+        "price": "$3.99",
+        "diamondSku": "SEP141181",
+        "userMetrics": {
+            "pulled": null,
+            "added": 47,
+            "consensusVote": null,
+            "pickOfTheWeekVote": null
+        }
     },
     {
         "id": "8276925",
+        "variantId": null,
+        "url": "https://leagueofcomicgeeks.com/comic/8276925/adventure-time-35",
         "name": "Adventure Time #35",
-        "cover": "https://leagueofcomicgeeks.com/comics/covers/medium/8276925-adventure-time-35.jpg?1419292401",
+        "cover": "https://leagueofcomicgeeks.com/comics/covers/medium/8276925-adventure-time-35.jpg",
         "publisher": "BOOM! Studios",
         "description": "It's the end of an era...the last ADVENTURE TIME issue featuring the Eisner Awardteam of Ryan North, Shelli Paroline, and Braden Lamb. It's your chance to say goodbye, and experience an adventure you'll never forget.",
         "releaseDate": "2014-12-24",
-        "price": "$3.99"
+        "price": "$3.99",
+        "diamondSku": "OCT141197",
+        "userMetrics": {
+            "pulled": null,
+            "added": 52,
+            "consensusVote": null,
+            "pickOfTheWeekVote": null
+        }
     },
     {
         "id": "4821132",
+        "variantId": null,
+        "url": "https://leagueofcomicgeeks.com/comic/4821132/adventure-time-36",
         "name": "Adventure Time #36",
-        "cover": "https://leagueofcomicgeeks.com/comics/covers/medium/4821132-adventure-time-36.jpg?1422364205",
+        "cover": "https://leagueofcomicgeeks.com/comics/covers/medium/4821132-adventure-time-36.jpg",
         "publisher": "BOOM! Studios",
         "description": "It's the first Adventure Time starring its new creative team! With indie all-star Chris Hastings writing and the amazingly talented Zachary Sterling on art, these mathematical adventures are only going to get more algebraic!...",
         "releaseDate": "2015-01-28",
-        "price": "$3.99"
+        "price": "$3.99",
+        "diamondSku": "NOV141132",
+        "userMetrics": {
+            "pulled": null,
+            "added": 47,
+            "consensusVote": null,
+            "pickOfTheWeekVote": null
+        }
     },
     {
         "id": "2724168",
+        "variantId": null,
+        "url": "https://leagueofcomicgeeks.com/comic/2724168/adventure-time-37",
         "name": "Adventure Time #37",
-        "cover": "https://leagueofcomicgeeks.com/comics/covers/medium/2724168-adventure-time-37.jpg?1425342592",
+        "cover": "https://leagueofcomicgeeks.com/comics/covers/medium/2724168-adventure-time-37.jpg",
         "publisher": "BOOM! Studios",
         "description": "Finn and Jake might have finally met their match in the EPIC THUMB WAR COMPETITION FOR BAKED GOODS, but it looks like their battle is just beginning as these two pals get ready for their biggest challenge yet.",
         "releaseDate": "2015-02-25",
-        "price": "$3.99"
+        "price": "$3.99",
+        "diamondSku": "DEC141239",
+        "userMetrics": {
+            "pulled": null,
+            "added": 44,
+            "consensusVote": null,
+            "pickOfTheWeekVote": null
+        }
     },
     {
         "id": "1233990",
+        "variantId": null,
+        "url": "https://leagueofcomicgeeks.com/comic/1233990/adventure-time-38",
         "name": "Adventure Time #38",
-        "cover": "https://leagueofcomicgeeks.com/comics/covers/medium/1233990-adventure-time-38.jpg?1427152708",
+        "cover": "https://leagueofcomicgeeks.com/comics/covers/medium/1233990-adventure-time-38.jpg",
         "publisher": "BOOM! Studios",
         "description": "Everyone is hungry, but there isn't enough food to go around. Things get a little dicey as Finn and Jake try to figure out what is up with their friends, and why does this little witch keep coming back? Glob, she's really...",
         "releaseDate": "2015-03-25",
-        "price": "$3.99"
+        "price": "$3.99",
+        "diamondSku": "JAN151187",
+        "userMetrics": {
+            "pulled": null,
+            "added": 45,
+            "consensusVote": null,
+            "pickOfTheWeekVote": null
+        }
     },
     {
         "id": "3199536",
+        "variantId": null,
+        "url": "https://leagueofcomicgeeks.com/comic/3199536/adventure-time-39",
         "name": "Adventure Time #39",
-        "cover": "https://leagueofcomicgeeks.com/comics/covers/medium/3199536-adventure-time-39.jpg?1429615279",
+        "cover": "https://leagueofcomicgeeks.com/comics/covers/medium/3199536-adventure-time-39.jpg",
         "publisher": "BOOM! Studios",
         "description": "The entire world of Ooo is not able to cook but Jake comes through and saves the day with his sandwiches. It's not over yet, though, as the witch is gonna summon her ultimate monster baddie.",
         "releaseDate": "2015-04-22",
-        "price": "$3.99"
+        "price": "$3.99",
+        "diamondSku": "FEB151188",
+        "userMetrics": {
+            "pulled": null,
+            "added": 43,
+            "consensusVote": null,
+            "pickOfTheWeekVote": null
+        }
     },
     {
         "id": "5195551",
+        "variantId": null,
+        "url": "https://leagueofcomicgeeks.com/comic/5195551/adventure-time-4",
         "name": "Adventure Time #4",
-        "cover": "https://leagueofcomicgeeks.com/comics/covers/medium/5195551-adventure-time-4.jpg?1460121462",
+        "cover": "https://leagueofcomicgeeks.com/comics/covers/medium/5195551-adventure-time-4.jpg",
         "publisher": "BOOM! Studios",
         "description": "Oh My Glob! The Latest Super-Cool Issue of the Hit Series! Finn, Jake, Marceline, Princess Bubblegum and even Lumpy Space Princess have banded together to stop that jerk the Lich from throwing all of Ooo into the sun! It's...",
         "releaseDate": "2012-05-16",
-        "price": "$3.99"
+        "price": "$3.99",
+        "diamondSku": "MAR120884",
+        "userMetrics": {
+            "pulled": null,
+            "added": 69,
+            "consensusVote": 100,
+            "pickOfTheWeekVote": null
+        }
     },
     {
         "id": "4343201",
+        "variantId": null,
+        "url": "https://leagueofcomicgeeks.com/comic/4343201/adventure-time-40",
         "name": "Adventure Time #40",
-        "cover": "https://leagueofcomicgeeks.com/comics/covers/medium/4343201-adventure-time-40.jpg?1432686418",
+        "cover": "https://leagueofcomicgeeks.com/comics/covers/medium/4343201-adventure-time-40.jpg",
         "publisher": "BOOM! Studios",
         "description": "It's a special interactive, one-shot issue! Magic Man plans to use the reader to help beat Finn and Jake, but can our heroes turn the tables? Features a special short written by debut writer Henry Leo and Matt Fraction (Hawkeye)!",
         "releaseDate": "2015-05-27",
-        "price": "$3.99"
+        "price": "$3.99",
+        "diamondSku": "MAR151093",
+        "userMetrics": {
+            "pulled": null,
+            "added": 45,
+            "consensusVote": null,
+            "pickOfTheWeekVote": null
+        }
     },
     {
         "id": "3374523",
+        "variantId": null,
+        "url": "https://leagueofcomicgeeks.com/comic/3374523/adventure-time-41",
         "name": "Adventure Time #41",
-        "cover": "https://leagueofcomicgeeks.com/comics/covers/medium/3374523-adventure-time-41.jpg?1435005009",
+        "cover": "https://leagueofcomicgeeks.com/comics/covers/medium/3374523-adventure-time-41.jpg",
         "publisher": "BOOM! Studios",
         "description": "New story arc! Peppermint Butler is one of the most mysterious dudes in Ooo. When he approaches Finn and Jake to recruit them for the secret agency he runs, they've just gotta join and see what's going on!",
         "releaseDate": "2015-06-24",
-        "price": "$3.99"
+        "price": "$3.99",
+        "diamondSku": "APR151254",
+        "userMetrics": {
+            "pulled": null,
+            "added": 43,
+            "consensusVote": null,
+            "pickOfTheWeekVote": null
+        }
     },
     {
         "id": "3708126",
+        "variantId": null,
+        "url": "https://leagueofcomicgeeks.com/comic/3708126/adventure-time-42",
         "name": "Adventure Time #42",
-        "cover": "https://leagueofcomicgeeks.com/comics/covers/medium/3708126-adventure-time-42.jpg?1437449978",
+        "cover": "https://leagueofcomicgeeks.com/comics/covers/medium/3708126-adventure-time-42.jpg",
         "publisher": "BOOM! Studios",
         "description": "Finn and Jake are on the run, trying to figure out who on the inside framed them for the destruction of Peppermint Butler's secret security team.",
         "releaseDate": "2015-07-22",
-        "price": "$3.99"
+        "price": "$3.99",
+        "diamondSku": "MAY151155",
+        "userMetrics": {
+            "pulled": null,
+            "added": 48,
+            "consensusVote": null,
+            "pickOfTheWeekVote": null
+        }
     },
     {
         "id": "3672337",
+        "variantId": null,
+        "url": "https://leagueofcomicgeeks.com/comic/3672337/adventure-time-43",
         "name": "Adventure Time #43",
-        "cover": "https://leagueofcomicgeeks.com/comics/covers/medium/3672337-adventure-time-43.jpg?1440457595",
+        "cover": "https://leagueofcomicgeeks.com/comics/covers/medium/3672337-adventure-time-43.jpg",
         "publisher": "BOOM! Studios",
         "description": "Finn and Jake break into Party God's yacht to try and clear their names!",
         "releaseDate": "2015-08-26",
-        "price": "$3.99"
+        "price": "$3.99",
+        "diamondSku": "JUN151150",
+        "userMetrics": {
+            "pulled": null,
+            "added": 52,
+            "consensusVote": null,
+            "pickOfTheWeekVote": null
+        }
     },
     {
         "id": "2522194",
+        "variantId": null,
+        "url": "https://leagueofcomicgeeks.com/comic/2522194/adventure-time-44",
         "name": "Adventure Time #44",
-        "cover": "https://leagueofcomicgeeks.com/comics/covers/medium/2522194-adventure-time-44.jpg?1442884497",
+        "cover": "https://leagueofcomicgeeks.com/comics/covers/medium/2522194-adventure-time-44.jpg",
         "publisher": "BOOM! Studios",
         "description": "Finn and Jake are pretty sure the King of Ooo's big conference is a trap and have to sneak in to stop it!",
         "releaseDate": "2015-09-23",
-        "price": "$3.99"
+        "price": "$3.99",
+        "diamondSku": "JUL151140",
+        "userMetrics": {
+            "pulled": null,
+            "added": 50,
+            "consensusVote": null,
+            "pickOfTheWeekVote": null
+        }
     },
     {
         "id": "2106538",
+        "variantId": null,
+        "url": "https://leagueofcomicgeeks.com/comic/2106538/adventure-time-45",
         "name": "Adventure Time #45",
-        "cover": "https://leagueofcomicgeeks.com/comics/covers/medium/2106538-adventure-time-45.jpg?1444738138",
+        "cover": "https://leagueofcomicgeeks.com/comics/covers/medium/2106538-adventure-time-45.jpg",
         "publisher": "BOOM! Studios",
         "description": "Special one-shot issue! Princess Bubblegum needs Lemongrab's help, but that means she needs to do things his way for once.",
         "releaseDate": "2015-10-14",
-        "price": "$3.99"
+        "price": "$3.99",
+        "diamondSku": "AUG151256",
+        "userMetrics": {
+            "pulled": null,
+            "added": 43,
+            "consensusVote": null,
+            "pickOfTheWeekVote": null
+        }
     },
     {
         "id": "6610160",
+        "variantId": null,
+        "url": "https://leagueofcomicgeeks.com/comic/6610160/adventure-time-46",
         "name": "Adventure Time #46",
-        "cover": "https://leagueofcomicgeeks.com/comics/covers/medium/6610160-adventure-time-46.jpg?1447155019",
+        "cover": "https://leagueofcomicgeeks.com/comics/covers/medium/6610160-adventure-time-46.jpg",
         "publisher": "BOOM! Studios",
         "description": "When one of Joshua's old spells wears off, Finn and Jake find themselves facing an old childhood friend that neither of them can remember!",
         "releaseDate": "2015-11-11",
-        "price": "$3.99"
+        "price": "$3.99",
+        "diamondSku": "SEP151156",
+        "userMetrics": {
+            "pulled": null,
+            "added": 47,
+            "consensusVote": null,
+            "pickOfTheWeekVote": null
+        }
     },
     {
         "id": "7736591",
+        "variantId": null,
+        "url": "https://leagueofcomicgeeks.com/comic/7736591/adventure-time-47",
         "name": "Adventure Time #47",
-        "cover": "https://leagueofcomicgeeks.com/comics/covers/medium/7736591-adventure-time-47.jpg?1449541064",
+        "cover": "https://leagueofcomicgeeks.com/comics/covers/medium/7736591-adventure-time-47.jpg",
         "publisher": "BOOM! Studios",
         "description": "Finn, Jake, and their mysterious “old friend” travel to Jake’s parents’ old apartment in the city to figure out what’s going on!",
         "releaseDate": "2015-12-09",
-        "price": "$3.99"
+        "price": "$3.99",
+        "diamondSku": "OCT151261",
+        "userMetrics": {
+            "pulled": null,
+            "added": 47,
+            "consensusVote": null,
+            "pickOfTheWeekVote": null
+        }
     },
     {
         "id": "8837436",
+        "variantId": null,
+        "url": "https://leagueofcomicgeeks.com/comic/8837436/adventure-time-48",
         "name": "Adventure Time #48",
-        "cover": "https://leagueofcomicgeeks.com/comics/covers/medium/8837436-adventure-time-48.jpg?1452555723",
+        "cover": "https://leagueofcomicgeeks.com/comics/covers/medium/8837436-adventure-time-48.jpg",
         "publisher": "BOOM! Studios",
         "description": "Finn and Jake learn the truth about their mysterious old friend and his connection to Joshua’s spell.",
         "releaseDate": "2016-01-13",
-        "price": "$3.99"
+        "price": "$3.99",
+        "diamondSku": "NOV151191",
+        "userMetrics": {
+            "pulled": null,
+            "added": 50,
+            "consensusVote": null,
+            "pickOfTheWeekVote": null
+        }
     },
     {
         "id": "3076848",
+        "variantId": null,
+        "url": "https://leagueofcomicgeeks.com/comic/3076848/adventure-time-49",
         "name": "Adventure Time #49",
-        "cover": "https://leagueofcomicgeeks.com/comics/covers/medium/3076848-adventure-time-49.jpg?1455539650",
+        "cover": "https://leagueofcomicgeeks.com/comics/covers/medium/3076848-adventure-time-49.jpg",
         "publisher": "BOOM! Studios",
         "description": "Finn and Jake must re-banish their old friend from reality in order to defeat a monstrous threat.",
         "releaseDate": "2016-02-10",
-        "price": "$3.99"
+        "price": "$3.99",
+        "diamondSku": "DEC151157",
+        "userMetrics": {
+            "pulled": null,
+            "added": 52,
+            "consensusVote": null,
+            "pickOfTheWeekVote": null
+        }
     },
     {
         "id": "7381906",
+        "variantId": null,
+        "url": "https://leagueofcomicgeeks.com/comic/7381906/adventure-time-5",
         "name": "Adventure Time #5",
-        "cover": "https://leagueofcomicgeeks.com/comics/covers/medium/7381906-adventure-time-5.jpg?1517173138",
+        "cover": "https://leagueofcomicgeeks.com/comics/covers/medium/7381906-adventure-time-5.jpg",
         "publisher": "BOOM! Studios",
         "description": "Don't miss the beginning of the new arc of this totally rhombus series! The totally sick gang of Finn, Jake, Marceline, Princess Bubblegum, and the Ice King are back in this new arc of the incredibly popular all-ages...",
         "releaseDate": "2012-06-20",
-        "price": "$3.99"
+        "price": "$3.99",
+        "diamondSku": "APR120950",
+        "userMetrics": {
+            "pulled": null,
+            "added": 72,
+            "consensusVote": 100,
+            "pickOfTheWeekVote": null
+        }
     },
     {
         "id": "8363231",
+        "variantId": null,
+        "url": "https://leagueofcomicgeeks.com/comic/8363231/adventure-time-50",
         "name": "Adventure Time #50",
-        "cover": "https://leagueofcomicgeeks.com/comics/covers/medium/8363231-adventure-time-50.jpg?1457393400",
+        "cover": "https://leagueofcomicgeeks.com/comics/covers/medium/8363231-adventure-time-50.jpg",
         "publisher": "BOOM! Studios",
         "description": "Fourth anniversary issue! This special oversized one-shot issue introduces new series artist Ian McGinty (Welcome to Showside, Bravest Warriors)! Finn takes a tour of his past lives when he astral projects through an old...",
         "releaseDate": "2016-03-09",
-        "price": "$4.99"
+        "price": "$4.99",
+        "diamondSku": "JAN161198",
+        "userMetrics": {
+            "pulled": null,
+            "added": 51,
+            "consensusVote": null,
+            "pickOfTheWeekVote": null
+        }
     },
     {
         "id": "6435163",
+        "variantId": null,
+        "url": "https://leagueofcomicgeeks.com/comic/6435163/adventure-time-51",
         "name": "Adventure Time #51",
-        "cover": "https://leagueofcomicgeeks.com/comics/covers/medium/6435163-adventure-time-51.jpg?1462530698",
+        "cover": "https://leagueofcomicgeeks.com/comics/covers/medium/6435163-adventure-time-51.jpg",
         "publisher": "BOOM! Studios",
         "description": "After too many back-to-back quests, Jake and Finn disagree on how important doing this hero stuff really is.",
         "releaseDate": "2016-04-13",
-        "price": "$3.99"
+        "price": "$3.99",
+        "diamondSku": "FEB161263",
+        "userMetrics": {
+            "pulled": null,
+            "added": 48,
+            "consensusVote": null,
+            "pickOfTheWeekVote": null
+        }
     },
     {
         "id": "3246610",
+        "variantId": null,
+        "url": "https://leagueofcomicgeeks.com/comic/3246610/adventure-time-52",
         "name": "Adventure Time #52",
-        "cover": "https://leagueofcomicgeeks.com/comics/covers/medium/3246610-adventure-time-52.jpg?1462816613",
+        "cover": "https://leagueofcomicgeeks.com/comics/covers/medium/3246610-adventure-time-52.jpg",
         "publisher": "BOOM! Studios",
         "description": "In the ghost realm, Jake is met with some pretty familiar challenges to overcome.",
         "releaseDate": "2016-05-11",
-        "price": "$3.99"
+        "price": "$3.99",
+        "diamondSku": "MAR161238",
+        "userMetrics": {
+            "pulled": null,
+            "added": 44,
+            "consensusVote": null,
+            "pickOfTheWeekVote": null
+        }
     },
     {
         "id": "5354669",
+        "variantId": null,
+        "url": "https://leagueofcomicgeeks.com/comic/5354669/adventure-time-53",
         "name": "Adventure Time #53",
-        "cover": "https://leagueofcomicgeeks.com/comics/covers/medium/5354669-adventure-time-53.jpg?1465299815",
+        "cover": "https://leagueofcomicgeeks.com/comics/covers/medium/5354669-adventure-time-53.jpg",
         "publisher": "BOOM! Studios",
         "description": "Jake successfully fools King Ghost of the ghost realm and must escape with the cure for Finn, but could this have been a ruse all along to teach Jake a lesson?",
         "releaseDate": "2016-06-08",
-        "price": "$3.99"
+        "price": "$3.99",
+        "diamondSku": "APR161420",
+        "userMetrics": {
+            "pulled": null,
+            "added": 44,
+            "consensusVote": null,
+            "pickOfTheWeekVote": null
+        }
     },
     {
         "id": "7072449",
+        "variantId": null,
+        "url": "https://leagueofcomicgeeks.com/comic/7072449/adventure-time-54",
         "name": "Adventure Time #54",
-        "cover": "https://leagueofcomicgeeks.com/comics/covers/medium/7072449-adventure-time-54.jpg?1468327148",
+        "cover": "https://leagueofcomicgeeks.com/comics/covers/medium/7072449-adventure-time-54.jpg",
         "publisher": "BOOM! Studios",
         "description": "Finn and Jake are sheriff and deputy of a wild west town...or are they? Is this even real?!",
         "releaseDate": "2016-07-13",
-        "price": "$3.99"
+        "price": "$3.99",
+        "diamondSku": "MAY161295",
+        "userMetrics": {
+            "pulled": null,
+            "added": 38,
+            "consensusVote": null,
+            "pickOfTheWeekVote": null
+        }
     },
     {
         "id": "5074403",
+        "variantId": null,
+        "url": "https://leagueofcomicgeeks.com/comic/5074403/adventure-time-55",
         "name": "Adventure Time #55",
-        "cover": "https://leagueofcomicgeeks.com/comics/covers/medium/5074403-adventure-time-55.jpg?1470743792",
+        "cover": "https://leagueofcomicgeeks.com/comics/covers/medium/5074403-adventure-time-55.jpg",
         "publisher": "BOOM! Studios",
         "description": "Finn and Jake discover that it's not just them-everyone in Ooo is trapped in their own little realities!",
         "releaseDate": "2016-08-10",
-        "price": "$3.99"
+        "price": "$3.99",
+        "diamondSku": "JUN161298",
+        "userMetrics": {
+            "pulled": null,
+            "added": 35,
+            "consensusVote": null,
+            "pickOfTheWeekVote": null
+        }
     },
     {
         "id": "3389427",
+        "variantId": null,
+        "url": "https://leagueofcomicgeeks.com/comic/3389427/adventure-time-56",
         "name": "Adventure Time #56",
-        "cover": "https://leagueofcomicgeeks.com/comics/covers/medium/3389427-adventure-time-56.jpg?1473721703",
+        "cover": "https://leagueofcomicgeeks.com/comics/covers/medium/3389427-adventure-time-56.jpg",
         "publisher": "BOOM! Studios",
         "description": "Finn and Jake look for BMO in order to break free of the fantasies they're trapped in!",
         "releaseDate": "2016-09-14",
-        "price": "$3.99"
+        "price": "$3.99",
+        "diamondSku": "JUL161400",
+        "userMetrics": {
+            "pulled": null,
+            "added": 30,
+            "consensusVote": null,
+            "pickOfTheWeekVote": null
+        }
     },
     {
         "id": "3049657",
+        "variantId": null,
+        "url": "https://leagueofcomicgeeks.com/comic/3049657/adventure-time-57",
         "name": "Adventure Time #57",
-        "cover": "https://leagueofcomicgeeks.com/comics/covers/medium/3049657-adventure-time-57.jpg?1476232939",
+        "cover": "https://leagueofcomicgeeks.com/comics/covers/medium/3049657-adventure-time-57.jpg",
         "publisher": "BOOM! Studios",
         "description": "Finn and Jake make it to the core of BMOWORLD and confront the real culprit behind this mess!",
         "releaseDate": "2016-10-12",
-        "price": "$3.99"
+        "price": "$3.99",
+        "diamondSku": "AUG161394",
+        "userMetrics": {
+            "pulled": null,
+            "added": 28,
+            "consensusVote": null,
+            "pickOfTheWeekVote": null
+        }
     },
     {
         "id": "7801919",
+        "variantId": null,
+        "url": "https://leagueofcomicgeeks.com/comic/7801919/adventure-time-58",
         "name": "Adventure Time #58",
-        "cover": "https://leagueofcomicgeeks.com/comics/covers/medium/7801919-adventure-time-58.jpg?1478571909",
+        "cover": "https://leagueofcomicgeeks.com/comics/covers/medium/7801919-adventure-time-58.jpg",
         "publisher": "BOOM! Studios",
         "description": "Finn decides to become a dungeon master like his father figure Joshua was!",
         "releaseDate": "2016-11-09",
-        "price": "$3.99"
+        "price": "$3.99",
+        "diamondSku": "SEP161456",
+        "userMetrics": {
+            "pulled": null,
+            "added": 27,
+            "consensusVote": null,
+            "pickOfTheWeekVote": null
+        }
     },
     {
         "id": "9517783",
+        "variantId": null,
+        "url": "https://leagueofcomicgeeks.com/comic/9517783/adventure-time-59",
         "name": "Adventure Time #59",
-        "cover": "https://leagueofcomicgeeks.com/comics/covers/medium/9517783-adventure-time-59.jpg?1480952025",
+        "cover": "https://leagueofcomicgeeks.com/comics/covers/medium/9517783-adventure-time-59.jpg",
         "publisher": "BOOM! Studios",
         "description": "Finn finds his current adventure to be a bit more than he expected, but he's getting really into it. It's kind of like how someone approaches taking over their basement with a model train set.",
         "releaseDate": "2016-12-07",
-        "price": "$3.99"
+        "price": "$3.99",
+        "diamondSku": "OCT161333",
+        "userMetrics": {
+            "pulled": null,
+            "added": 25,
+            "consensusVote": null,
+            "pickOfTheWeekVote": null
+        }
     },
     {
         "id": "2705608",
+        "variantId": null,
+        "url": "https://leagueofcomicgeeks.com/comic/2705608/adventure-time-6",
         "name": "Adventure Time #6",
-        "cover": "https://leagueofcomicgeeks.com/comics/covers/medium/2705608-adventure-time-6.jpg?1351042750",
+        "cover": "https://leagueofcomicgeeks.com/comics/covers/medium/2705608-adventure-time-6.jpg",
         "publisher": "BOOM! Studios",
         "description": "THE FUN WILL NEVER END IN THIS HOT ALL-AGES SERIES! The awesome adventures of Finn, Jake, Marceline, Princess Bubblegum and the Ice King continue in the latest issue of this critically-acclaimed, on-going series! Demand...",
         "releaseDate": "2012-07-18",
-        "price": "$3.99"
+        "price": "$3.99",
+        "diamondSku": "MAY120994",
+        "userMetrics": {
+            "pulled": null,
+            "added": 67,
+            "consensusVote": null,
+            "pickOfTheWeekVote": null
+        }
     },
     {
         "id": "8903990",
+        "variantId": null,
+        "url": "https://leagueofcomicgeeks.com/comic/8903990/adventure-time-60",
         "name": "Adventure Time #60",
-        "cover": "https://leagueofcomicgeeks.com/comics/covers/medium/8903990-adventure-time-60.jpg?1483491252",
+        "cover": "https://leagueofcomicgeeks.com/comics/covers/medium/8903990-adventure-time-60.jpg",
         "publisher": "BOOM! Studios",
         "description": "Finn gets into the dungeon-making scene and meets fellow dungeon masters, some of whom are villains from Finn's past!",
         "releaseDate": "2017-01-04",
-        "price": "$3.99"
+        "price": "$3.99",
+        "diamondSku": "NOV161284",
+        "userMetrics": {
+            "pulled": null,
+            "added": 28,
+            "consensusVote": null,
+            "pickOfTheWeekVote": null
+        }
     },
     {
         "id": "4168107",
+        "variantId": null,
+        "url": "https://leagueofcomicgeeks.com/comic/4168107/adventure-time-61",
         "name": "Adventure Time #61",
-        "cover": "https://leagueofcomicgeeks.com/comics/covers/medium/4168107-adventure-time-61.jpg?1485819569",
+        "cover": "https://leagueofcomicgeeks.com/comics/covers/medium/4168107-adventure-time-61.jpg",
         "publisher": "BOOM! Studios",
         "description": "Finn becomes a bit obsessed with building his perfect dungeon, losing the plot a bit, and toys with terrible and great evil forces to build his ideal dungeon understand Joshua better through dungeoncraft.",
         "releaseDate": "2017-02-01",
-        "price": "$3.99"
+        "price": "$3.99",
+        "diamondSku": "DEC161434",
+        "userMetrics": {
+            "pulled": null,
+            "added": 27,
+            "consensusVote": null,
+            "pickOfTheWeekVote": null
+        }
     },
     {
         "id": "6562940",
+        "variantId": null,
+        "url": "https://leagueofcomicgeeks.com/comic/6562940/adventure-time-62",
         "name": "Adventure Time #62",
-        "cover": "https://leagueofcomicgeeks.com/comics/covers/medium/6562940-adventure-time-62.jpg?1488242590",
+        "cover": "https://leagueofcomicgeeks.com/comics/covers/medium/6562940-adventure-time-62.jpg",
         "publisher": "BOOM! Studios",
         "description": "A contest is started to see who is the best Princess in all of Ooo!",
         "releaseDate": "2017-03-01",
-        "price": "$3.99"
+        "price": "$3.99",
+        "diamondSku": "JAN171486",
+        "userMetrics": {
+            "pulled": null,
+            "added": 24,
+            "consensusVote": null,
+            "pickOfTheWeekVote": null
+        }
     },
     {
         "id": "5428363",
+        "variantId": null,
+        "url": "https://leagueofcomicgeeks.com/comic/5428363/adventure-time-63",
         "name": "Adventure Time #63",
-        "cover": "https://leagueofcomicgeeks.com/comics/covers/medium/5428363-adventure-time-63.jpg?1491351176",
+        "cover": "https://leagueofcomicgeeks.com/comics/covers/medium/5428363-adventure-time-63.jpg",
         "publisher": "BOOM! Studios",
         "description": "The Princess competition continues with everyone trying to do their best despite the prankster trying to ruin their fun.",
         "releaseDate": "2017-04-05",
-        "price": "$3.99"
+        "price": "$3.99",
+        "diamondSku": "FEB171363",
+        "userMetrics": {
+            "pulled": null,
+            "added": 29,
+            "consensusVote": null,
+            "pickOfTheWeekVote": null
+        }
     },
     {
         "id": "1205249",
+        "variantId": null,
+        "url": "https://leagueofcomicgeeks.com/comic/1205249/adventure-time-7",
         "name": "Adventure Time #7",
-        "cover": "https://leagueofcomicgeeks.com/comics/covers/medium/1205249-adventure-time-7.jpg?1517173639",
+        "cover": "https://leagueofcomicgeeks.com/comics/covers/medium/1205249-adventure-time-7.jpg",
         "publisher": "BOOM! Studios",
         "description": "JOIN JAKE THE DOG AND FINN THE HUMAN AS THE HOTTEST ALL-AGES COMIC BOOK ON THE STANDS CONTINUES! The totally mathematical adventure continues in this latest time-bending issue of ADVENTURE TIME! Order early -- issue #1 went...",
         "releaseDate": "2012-08-22",
-        "price": "$3.99"
+        "price": "$3.99",
+        "diamondSku": "JUN120949",
+        "userMetrics": {
+            "pulled": null,
+            "added": 80,
+            "consensusVote": 100,
+            "pickOfTheWeekVote": null
+        }
     },
     {
         "id": "6538129",
+        "variantId": null,
+        "url": "https://leagueofcomicgeeks.com/comic/6538129/adventure-time-8",
         "name": "Adventure Time #8",
-        "cover": "https://leagueofcomicgeeks.com/comics/covers/medium/6538129-adventure-time-8.jpg?1481309427",
+        "cover": "https://leagueofcomicgeeks.com/comics/covers/medium/6538129-adventure-time-8.jpg",
         "publisher": "BOOM! Studios",
         "description": "THE MOST POPULAR AND TOTALLY RHOMBUS ALL-AGES COMIC ON THE STANDS TODAY! Join Jake the Dog and Finn the Human in another awesome issue of this all-ages classic! With Ooo in the grips of a Jake-caused time paradox, there's...",
         "releaseDate": "2012-09-26",
-        "price": "$3.99"
+        "price": "$3.99",
+        "diamondSku": "JUL120908",
+        "userMetrics": {
+            "pulled": null,
+            "added": 72,
+            "consensusVote": null,
+            "pickOfTheWeekVote": null
+        }
     },
     {
         "id": "2494536",
+        "variantId": null,
+        "url": "https://leagueofcomicgeeks.com/comic/2494536/adventure-time-9",
         "name": "Adventure Time #9",
-        "cover": "https://leagueofcomicgeeks.com/comics/covers/medium/2494536-adventure-time-9.jpg?1351399683",
+        "cover": "https://leagueofcomicgeeks.com/comics/covers/medium/2494536-adventure-time-9.jpg",
         "publisher": "BOOM! Studios",
         "description": "BRAND-NEW STORY ARC! PERFECT JUMPING-ON POINT FOR NEW READERS! Join Jake the Dog and Finn the Human as they try to right the wrongs of a Jake-caused TIME PARADOX! If you haven't checked out the comic book adaptation of the...",
         "releaseDate": "2012-10-24",
-        "price": "$3.99"
+        "price": "$3.99",
+        "diamondSku": "AUG120938",
+        "userMetrics": {
+            "pulled": null,
+            "added": 67,
+            "consensusVote": 100,
+            "pickOfTheWeekVote": null
+        }
     },
     {
         "id": "8361841",
+        "variantId": null,
+        "url": "https://leagueofcomicgeeks.com/comic/8361841/adventure-time-2013-annual-1",
         "name": "Adventure Time 2013 Annual #1",
-        "cover": "https://leagueofcomicgeeks.com/comics/covers/medium/8361841-adventure-time-2013-annual-1.jpg?1452289382",
+        "cover": "https://leagueofcomicgeeks.com/comics/covers/medium/8361841-adventure-time-2013-annual-1.jpg",
         "publisher": "BOOM! Studios",
         "description": "THE FUN WILL NEVER END IN THIS SPECIAL EXPANDED ADVENTURE TIME ANNUAL! Featuring some of the hottest talent in comics today putting their creative spin on the land of Ooo! A great tool for bringing readers into the series...",
         "releaseDate": "2013-05-29",
-        "price": "$4.99"
+        "price": "$4.99",
+        "diamondSku": null,
+        "userMetrics": {
+            "pulled": null,
+            "added": 21,
+            "consensusVote": null,
+            "pickOfTheWeekVote": null
+        }
     },
     {
         "id": "9733561",
+        "variantId": null,
+        "url": "https://leagueofcomicgeeks.com/comic/9733561/adventure-time-2014-annual-1",
         "name": "Adventure Time 2014 Annual #1",
-        "cover": "https://leagueofcomicgeeks.com/comics/covers/medium/9733561-adventure-time-2014-annual-1.jpg?1481241466",
+        "cover": "https://leagueofcomicgeeks.com/comics/covers/medium/9733561-adventure-time-2014-annual-1.jpg",
         "publisher": "BOOM! Studios",
         "description": "WHY WE LOVE IT: A very special issue by dynamite creators Becky Dreistdat and Frank Gibson bring you the cutest thing imaginable...Baby Fionna and Cake! WHY YOU'LL LOVE IT: Not only does this issue feature fully painted...",
         "releaseDate": "2014-04-30",
-        "price": "$4.99"
+        "price": "$4.99",
+        "diamondSku": "FEB141087",
+        "userMetrics": {
+            "pulled": null,
+            "added": 53,
+            "consensusVote": 100,
+            "pickOfTheWeekVote": null
+        }
     },
     {
         "id": "1094288",
+        "variantId": null,
+        "url": "https://leagueofcomicgeeks.com/comic/1094288/paper-girls-1",
         "name": "Paper Girls #1",
-        "cover": "https://leagueofcomicgeeks.com/comics/covers/medium/1094288-paper-girls-1.jpg?1499100915",
+        "cover": "https://leagueofcomicgeeks.com/comics/covers/medium/1094288-paper-girls-1.jpg",
         "publisher": "Image Comics",
         "description": "SAGA writer BRIAN K. VAUGHAN launches a brand-new ONGOING SERIES with superstar Wonder Woman artist CLIFF CHIANG! In the early hours after Halloween of 1988, four 12-year-old newspaper delivery girls uncover the most important...",
         "releaseDate": "2015-10-07",
-        "price": "$2.99"
+        "price": "$2.99",
+        "diamondSku": "AUG150476",
+        "userMetrics": {
+            "pulled": null,
+            "added": 1368,
+            "consensusVote": 98,
+            "pickOfTheWeekVote": null
+        }
     },
     {
         "id": "5900157",
+        "variantId": null,
+        "url": "https://leagueofcomicgeeks.com/comic/5900157/paper-girls-10",
         "name": "Paper Girls #10",
-        "cover": "https://leagueofcomicgeeks.com/comics/covers/medium/5900157-paper-girls-10.jpg?1499101225",
+        "cover": "https://leagueofcomicgeeks.com/comics/covers/medium/5900157-paper-girls-10.jpg",
         "publisher": "Image Comics",
         "description": "The second arc of the smash-hit ongoing series concludes with the Paper Girls risking everything to escape the 21st Century… but if any survive, where will they end up next?",
         "releaseDate": "2016-10-05",
-        "price": "$2.99"
+        "price": "$2.99",
+        "diamondSku": "AUG160651",
+        "userMetrics": {
+            "pulled": null,
+            "added": 782,
+            "consensusVote": 98,
+            "pickOfTheWeekVote": null
+        }
     },
     {
         "id": "5996813",
+        "variantId": null,
+        "url": "https://leagueofcomicgeeks.com/comic/5996813/paper-girls-11",
         "name": "Paper Girls #11",
-        "cover": "https://leagueofcomicgeeks.com/comics/covers/medium/5996813-paper-girls-11.jpg?1499101281",
+        "cover": "https://leagueofcomicgeeks.com/comics/covers/medium/5996813-paper-girls-11.jpg",
         "publisher": "Image Comics",
         "description": "A BOLD NEW STORYLINE STARTS HERE! The Eisner and Harvey Award-winning “Best New Series\" from BRIAN K. VAUGHAN andCLIFF CHIANG returns, as Erin, Mac, and Tiffany finally reunite with their long-lost friend KJ…only...",
         "releaseDate": "2017-02-01",
-        "price": "$2.99"
+        "price": "$2.99",
+        "diamondSku": "DEC160678",
+        "userMetrics": {
+            "pulled": null,
+            "added": 689,
+            "consensusVote": 96,
+            "pickOfTheWeekVote": null
+        }
     },
     {
         "id": "8972309",
+        "variantId": null,
+        "url": "https://leagueofcomicgeeks.com/comic/8972309/paper-girls-12",
         "name": "Paper Girls #12",
-        "cover": "https://leagueofcomicgeeks.com/comics/covers/medium/8972309-paper-girls-12.jpg?1499101304",
+        "cover": "https://leagueofcomicgeeks.com/comics/covers/medium/8972309-paper-girls-12.jpg",
         "publisher": "Image Comics",
         "description": "Growing up can be deadly.",
         "releaseDate": "2017-03-01",
-        "price": "$2.99"
+        "price": "$2.99",
+        "diamondSku": "JAN170750",
+        "userMetrics": {
+            "pulled": null,
+            "added": 648,
+            "consensusVote": 95,
+            "pickOfTheWeekVote": null
+        }
     },
     {
         "id": "8471271",
+        "variantId": null,
+        "url": "https://leagueofcomicgeeks.com/comic/8471271/paper-girls-13",
         "name": "Paper Girls #13",
-        "cover": "https://leagueofcomicgeeks.com/comics/covers/medium/8471271-paper-girls-13.jpg?1499101488",
+        "cover": "https://leagueofcomicgeeks.com/comics/covers/medium/8471271-paper-girls-13.jpg",
         "publisher": "Image Comics",
         "description": "Trapped in the distant past, KJ discovers something shocking about the future.",
         "releaseDate": "2017-04-05",
-        "price": "$2.99"
+        "price": "$2.99",
+        "diamondSku": "FEB170668",
+        "userMetrics": {
+            "pulled": null,
+            "added": 621,
+            "consensusVote": 96,
+            "pickOfTheWeekVote": null
+        }
     },
     {
         "id": "5947148",
+        "variantId": null,
+        "url": "https://leagueofcomicgeeks.com/comic/5947148/paper-girls-2",
         "name": "Paper Girls #2",
-        "cover": "https://leagueofcomicgeeks.com/comics/covers/medium/5947148-paper-girls-2.jpg?1446597882",
+        "cover": "https://leagueofcomicgeeks.com/comics/covers/medium/5947148-paper-girls-2.jpg",
         "publisher": "Image Comics",
         "description": "The hottest new ongoing series of the year continues, as the Paper Girls witness the impossible.",
         "releaseDate": "2015-11-04",
-        "price": "$2.99"
+        "price": "$2.99",
+        "diamondSku": "SEP150512",
+        "userMetrics": {
+            "pulled": null,
+            "added": 1175,
+            "consensusVote": 97,
+            "pickOfTheWeekVote": null
+        }
     },
     {
         "id": "8137536",
+        "variantId": null,
+        "url": "https://leagueofcomicgeeks.com/comic/8137536/paper-girls-3",
         "name": "Paper Girls #3",
-        "cover": "https://leagueofcomicgeeks.com/comics/covers/medium/8137536-paper-girls-3.jpg?1448973082",
+        "cover": "https://leagueofcomicgeeks.com/comics/covers/medium/8137536-paper-girls-3.jpg",
         "publisher": "Image Comics",
         "description": "The ongoing mystery series from BRIAN K. VAUGHAN & CLIFF CHIANG charges ahead, as the girls have a close encounter with an unexpected visitor.",
         "releaseDate": "2015-12-02",
-        "price": "$2.99"
+        "price": "$2.99",
+        "diamondSku": "OCT150500",
+        "userMetrics": {
+            "pulled": null,
+            "added": 1094,
+            "consensusVote": 96,
+            "pickOfTheWeekVote": null
+        }
     },
     {
         "id": "3173369",
+        "variantId": null,
+        "url": "https://leagueofcomicgeeks.com/comic/3173369/paper-girls-4",
         "name": "Paper Girls #4",
-        "cover": "https://leagueofcomicgeeks.com/comics/covers/medium/3173369-paper-girls-4.jpg?1499100978",
+        "cover": "https://leagueofcomicgeeks.com/comics/covers/medium/3173369-paper-girls-4.jpg",
         "publisher": "Image Comics",
         "description": "What lurks beneath the streets of Stony Stream?",
         "releaseDate": "2016-01-06",
-        "price": "$2.99"
+        "price": "$2.99",
+        "diamondSku": "NOV150626",
+        "userMetrics": {
+            "pulled": null,
+            "added": 1041,
+            "consensusVote": 97,
+            "pickOfTheWeekVote": null
+        }
     },
     {
         "id": "1462701",
+        "variantId": null,
+        "url": "https://leagueofcomicgeeks.com/comic/1462701/paper-girls-5",
         "name": "Paper Girls #5",
-        "cover": "https://leagueofcomicgeeks.com/comics/covers/medium/1462701-paper-girls-5.jpg?1499101022",
+        "cover": "https://leagueofcomicgeeks.com/comics/covers/medium/1462701-paper-girls-5.jpg",
         "publisher": "Image Comics",
         "description": "The first arc of the smash-hit ongoing series concludes with major revelations and another game-changing cliffhanger.",
         "releaseDate": "2016-02-03",
-        "price": "$2.99"
+        "price": "$2.99",
+        "diamondSku": "DEC150603",
+        "userMetrics": {
+            "pulled": null,
+            "added": 995,
+            "consensusVote": 96,
+            "pickOfTheWeekVote": null
+        }
     },
     {
         "id": "2519140",
+        "variantId": null,
+        "url": "https://leagueofcomicgeeks.com/comic/2519140/paper-girls-6",
         "name": "Paper Girls #6",
-        "cover": "https://leagueofcomicgeeks.com/comics/covers/medium/2519140-paper-girls-6.jpg?1499101070",
+        "cover": "https://leagueofcomicgeeks.com/comics/covers/medium/2519140-paper-girls-6.jpg",
         "publisher": "Image Comics",
         "description": "The smash-hit ongoing series returns with a bold new direction, as Erin, Mac, and Tiffany find themselves launched from 1988 to a distant and terrifying future.",
         "releaseDate": "2016-06-01",
-        "price": "$2.99"
+        "price": "$2.99",
+        "diamondSku": "APR160718",
+        "userMetrics": {
+            "pulled": null,
+            "added": 933,
+            "consensusVote": 95,
+            "pickOfTheWeekVote": null
+        }
     },
     {
         "id": "3429543",
+        "variantId": null,
+        "url": "https://leagueofcomicgeeks.com/comic/3429543/paper-girls-7",
         "name": "Paper Girls #7",
-        "cover": "https://leagueofcomicgeeks.com/comics/covers/medium/3429543-paper-girls-7.jpg?1467847159",
+        "cover": "https://leagueofcomicgeeks.com/comics/covers/medium/3429543-paper-girls-7.jpg",
         "publisher": "Image Comics",
         "description": "Trapped in a dark future, Erin and her fellow deliverers from 1988 uncover shocking truths about their own fates.",
         "releaseDate": "2016-07-06",
-        "price": "$2.99"
+        "price": "$2.99",
+        "diamondSku": "MAY160649",
+        "userMetrics": {
+            "pulled": null,
+            "added": 891,
+            "consensusVote": 96,
+            "pickOfTheWeekVote": null
+        }
     },
     {
         "id": "9240446",
+        "variantId": null,
+        "url": "https://leagueofcomicgeeks.com/comic/9240446/paper-girls-8",
         "name": "Paper Girls #8",
-        "cover": "https://leagueofcomicgeeks.com/comics/covers/medium/9240446-paper-girls-8.jpg?1499101100",
+        "cover": "https://leagueofcomicgeeks.com/comics/covers/medium/9240446-paper-girls-8.jpg",
         "publisher": "Image Comics",
         "description": "Three young heroes from 1988 have been catapulted to the twenty-first century, and to make matters worse, something horrible has followed them there.",
         "releaseDate": "2016-08-03",
-        "price": "$2.99"
+        "price": "$2.99",
+        "diamondSku": "JUN160647",
+        "userMetrics": {
+            "pulled": null,
+            "added": 840,
+            "consensusVote": 95,
+            "pickOfTheWeekVote": null
+        }
     },
     {
         "id": "4148513",
+        "variantId": null,
+        "url": "https://leagueofcomicgeeks.com/comic/4148513/paper-girls-9",
         "name": "Paper Girls #9",
-        "cover": "https://leagueofcomicgeeks.com/comics/covers/medium/4148513-paper-girls-9.jpg?1499101124",
+        "cover": "https://leagueofcomicgeeks.com/comics/covers/medium/4148513-paper-girls-9.jpg",
         "publisher": "Image Comics",
         "description": "The future collides with the past in our present- day 2016, and the Paper Girls must make a difficult decision about who to trust.",
         "releaseDate": "2016-09-07",
-        "price": "$2.99"
+        "price": "$2.99",
+        "diamondSku": "JUL160767",
+        "userMetrics": {
+            "pulled": null,
+            "added": 804,
+            "consensusVote": 94,
+            "pickOfTheWeekVote": null
+        }
     },
     {
         "id": "8374448",
+        "variantId": null,
+        "url": "https://leagueofcomicgeeks.com/comic/8374448/the-unbeatable-squirrel-girl-1",
         "name": "The Unbeatable Squirrel Girl #1",
-        "cover": "https://leagueofcomicgeeks.com/comics/covers/medium/8374448-the-unbeatable-squirrel-girl-1.jpg?1420501293",
+        "cover": "https://leagueofcomicgeeks.com/comics/covers/medium/8374448-the-unbeatable-squirrel-girl-1.jpg",
         "publisher": "Marvel Comics",
         "description": "Wolverine, Deadpool, Doctor Doom, Thanos: There's one hero that's beaten them all-and now she's got her own ongoing series! (Not that she's bragging.) That's right, you asked for it, you got it, it's...",
         "releaseDate": "2015-01-07",
-        "price": "$3.99"
+        "price": "$3.99",
+        "diamondSku": "NOV140732",
+        "userMetrics": {
+            "pulled": null,
+            "added": 437,
+            "consensusVote": 82,
+            "pickOfTheWeekVote": null
+        }
     },
     {
         "id": "6677681",
+        "variantId": null,
+        "url": "https://leagueofcomicgeeks.com/comic/6677681/the-unbeatable-squirrel-girl-2",
         "name": "The Unbeatable Squirrel Girl #2",
-        "cover": "https://leagueofcomicgeeks.com/comics/covers/medium/6677681-the-unbeatable-squirrel-girl-2.jpg?1422921950",
+        "cover": "https://leagueofcomicgeeks.com/comics/covers/medium/6677681-the-unbeatable-squirrel-girl-2.jpg",
         "publisher": "Marvel Comics",
         "description": "Starting college is hard enough, but now Squirrel Girl has to deal with Galactus too? The fate of the entire planet hangs in the balance, and only Squirrel Girl can save it! Also, her squirrel friend Tippy Toe. She can help...",
         "releaseDate": "2015-02-04",
-        "price": "$3.99"
+        "price": "$3.99",
+        "diamondSku": "DEC140883",
+        "userMetrics": {
+            "pulled": null,
+            "added": 391,
+            "consensusVote": 81,
+            "pickOfTheWeekVote": null
+        }
     },
     {
         "id": "2790619",
+        "variantId": null,
+        "url": "https://leagueofcomicgeeks.com/comic/2790619/the-unbeatable-squirrel-girl-3",
         "name": "The Unbeatable Squirrel Girl #3",
-        "cover": "https://leagueofcomicgeeks.com/comics/covers/medium/2790619-the-unbeatable-squirrel-girl-3.jpg?1426546075",
+        "cover": "https://leagueofcomicgeeks.com/comics/covers/medium/2790619-the-unbeatable-squirrel-girl-3.jpg",
         "publisher": "Marvel Comics",
         "description": "Time is running out, and the only way for Squirrel Girl to stop Galactus is to get to the moon... you know, somehow?? See the unveiling of Squirrel Girl's new Flying Squirrel Suit... that she maaaaybe borrowed from Iron...",
         "releaseDate": "2015-03-18",
-        "price": "$3.99"
+        "price": "$3.99",
+        "diamondSku": "JAN150832",
+        "userMetrics": {
+            "pulled": null,
+            "added": 355,
+            "consensusVote": 89,
+            "pickOfTheWeekVote": null
+        }
     },
     {
         "id": "4859051",
+        "variantId": null,
+        "url": "https://leagueofcomicgeeks.com/comic/4859051/the-unbeatable-squirrel-girl-4",
         "name": "The Unbeatable Squirrel Girl #4",
-        "cover": "https://leagueofcomicgeeks.com/comics/covers/medium/4859051-the-unbeatable-squirrel-girl-4.jpg?1429615279",
+        "cover": "https://leagueofcomicgeeks.com/comics/covers/medium/4859051-the-unbeatable-squirrel-girl-4.jpg",
         "publisher": "Marvel Comics",
         "description": "The final showdown between Galactus and Squirrel Girl is here! It's the Power Cosmic versus the Power Chestnut: WHO WILL WIN? Also, Squirrel Girl is late for class. So there's TWO disasters coming!!",
         "releaseDate": "2015-04-22",
-        "price": "$3.99"
+        "price": "$3.99",
+        "diamondSku": "FEB150779",
+        "userMetrics": {
+            "pulled": null,
+            "added": 358,
+            "consensusVote": 91,
+            "pickOfTheWeekVote": null
+        }
     },
     {
         "id": "8229407",
+        "variantId": null,
+        "url": "https://leagueofcomicgeeks.com/comic/8229407/the-unbeatable-squirrel-girl-5",
         "name": "The Unbeatable Squirrel Girl #5",
-        "cover": "https://leagueofcomicgeeks.com/comics/covers/medium/8229407-the-unbeatable-squirrel-girl-5.jpg?1430774737",
+        "cover": "https://leagueofcomicgeeks.com/comics/covers/medium/8229407-the-unbeatable-squirrel-girl-5.jpg",
         "publisher": "Marvel Comics",
         "description": "The breakout character of 2015 continues her one-woman crusade against injustice and jerks in this standalone issue, a perfect jumping-on point for new readers! These TAILS of the Squirrel Girl will show you the Marvel Universe's...",
         "releaseDate": "2015-05-06",
-        "price": "$3.99"
+        "price": "$3.99",
+        "diamondSku": "MAR150721",
+        "userMetrics": {
+            "pulled": null,
+            "added": 336,
+            "consensusVote": 86,
+            "pickOfTheWeekVote": null
+        }
     },
     {
         "id": "9824471",
+        "variantId": null,
+        "url": "https://leagueofcomicgeeks.com/comic/9824471/the-unbeatable-squirrel-girl-6",
         "name": "The Unbeatable Squirrel Girl #6",
-        "cover": "https://leagueofcomicgeeks.com/comics/covers/medium/9824471-the-unbeatable-squirrel-girl-6.jpg?1433249038",
+        "cover": "https://leagueofcomicgeeks.com/comics/covers/medium/9824471-the-unbeatable-squirrel-girl-6.jpg",
         "publisher": "Marvel Comics",
         "description": "The start of a new arc! Squirrel Girl meets some potential new allies, including... GIRL SQUIRREL?? I don't know why we put question marks there; it's actually what happens! Also a hippo named 'Hippo' is...",
         "releaseDate": "2015-06-03",
-        "price": "$3.99"
+        "price": "$3.99",
+        "diamondSku": "APR150890",
+        "userMetrics": {
+            "pulled": null,
+            "added": 331,
+            "consensusVote": 87,
+            "pickOfTheWeekVote": null
+        }
     },
     {
         "id": "5061237",
+        "variantId": null,
+        "url": "https://leagueofcomicgeeks.com/comic/5061237/the-unbeatable-squirrel-girl-7",
         "name": "The Unbeatable Squirrel Girl #7",
-        "cover": "https://leagueofcomicgeeks.com/comics/covers/medium/5061237-the-unbeatable-squirrel-girl-7.jpg?1436163711",
+        "cover": "https://leagueofcomicgeeks.com/comics/covers/medium/5061237-the-unbeatable-squirrel-girl-7.jpg",
         "publisher": "Marvel Comics",
         "description": "Our friend Squirrel Girl doesn't like our new friend Girl Squirrel! In this issue we'll discover if this dislike is... POTENTIALLY JUSTIFIED?? Also: if you don't care whether or not these two people like each...",
         "releaseDate": "2015-07-01",
-        "price": "$3.99"
+        "price": "$3.99",
+        "diamondSku": "MAY150794",
+        "userMetrics": {
+            "pulled": null,
+            "added": 322,
+            "consensusVote": 84,
+            "pickOfTheWeekVote": null
+        }
     },
     {
         "id": "5724529",
+        "variantId": null,
+        "url": "https://leagueofcomicgeeks.com/comic/5724529/the-unbeatable-squirrel-girl-8",
         "name": "The Unbeatable Squirrel Girl #8",
-        "cover": "https://leagueofcomicgeeks.com/comics/covers/medium/5724529-the-unbeatable-squirrel-girl-8.jpg?1439293069",
+        "cover": "https://leagueofcomicgeeks.com/comics/covers/medium/5724529-the-unbeatable-squirrel-girl-8.jpg",
         "publisher": "Marvel Comics",
         "description": "It's the classic tale of good (squirrel) versus evil (squirrel) as SQUIRREL GIRL fights RATATOSKR, the Norse Squirrel God!  The fate of the world hangs in the balance! And yes, \"Norse Squirrel God\"...",
         "releaseDate": "2015-08-12",
-        "price": "$3.99"
+        "price": "$3.99",
+        "diamondSku": "JUN150808",
+        "userMetrics": {
+            "pulled": null,
+            "added": 306,
+            "consensusVote": 90,
+            "pickOfTheWeekVote": null
+        }
     }
 ]
