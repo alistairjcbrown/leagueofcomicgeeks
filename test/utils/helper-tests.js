@@ -1,26 +1,26 @@
-const _ = require('lodash');
+const _ = require("lodash");
 
-const confirmEmptyFirst = function (resource, additionalArgs, tests) {
-  return function () {
-    describe('list is empty', function () {
+const confirmEmptyFirst = function(resource, additionalArgs, tests) {
+  return function() {
+    describe("list is empty", function() {
       let getErr;
       let getValue;
 
-      beforeAll(function (done) {
-        const callback = function (err, value) {
+      beforeAll(function(done) {
+        const callback = function(err, value) {
           getErr = err;
           getValue = value;
           done();
         };
-        const getArgs = [editableUserId].concat((additionalArgs || []), callback);
+        const getArgs = [editableUserId].concat(additionalArgs || [], callback);
         resource.get(...getArgs);
       });
 
-      it('should not return an error', function () {
+      it("should not return an error", function() {
         expect(getErr).toBeNull();
       });
 
-      it('should be empty list', function () {
+      it("should be empty list", function() {
         expect(getValue).toEqual([]);
       });
 
@@ -29,7 +29,7 @@ const confirmEmptyFirst = function (resource, additionalArgs, tests) {
   };
 };
 
-const testRemovingFromList = function (resource, resourceId, additionalArgs) {
+const testRemovingFromList = function(resource, resourceId, additionalArgs) {
   let removeAdditionalArgs = additionalArgs;
   let getAdditionalArgs = additionalArgs;
 
@@ -39,27 +39,33 @@ const testRemovingFromList = function (resource, resourceId, additionalArgs) {
   }
 
   let removeErr;
-  beforeAll(function (done) {
-    const callback = function (err) {
+  beforeAll(function(done) {
+    const callback = function(err) {
       removeErr = err;
       done();
     };
-    const removeArgs = [resourceId].concat((removeAdditionalArgs || []), callback);
+    const removeArgs = [resourceId].concat(
+      removeAdditionalArgs || [],
+      callback
+    );
     resource.remove(...removeArgs);
   });
 
-  it('should not return an error', function () {
+  it("should not return an error", function() {
     expect(removeErr).toBeNull();
   });
 
-  describe('getting list', function () {
-    it('should be empty', function (done) {
-      const callback = function (err, value) {
+  describe("getting list", function() {
+    it("should be empty", function(done) {
+      const callback = function(err, value) {
         expect(err).toBeNull();
         expect(value).toEqual([]);
         done();
       };
-      const getArgs = [editableUserId].concat((getAdditionalArgs || []), callback);
+      const getArgs = [editableUserId].concat(
+        getAdditionalArgs || [],
+        callback
+      );
       resource.get(...getArgs);
     });
   });

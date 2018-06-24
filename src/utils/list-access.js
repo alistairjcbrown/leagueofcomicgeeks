@@ -1,17 +1,23 @@
-const _ = require('lodash');
-const queryString = require('query-string');
-const request = require('./request');
-const authentication = require('./authentication');
-const extractDataFrom = require('./extract-data-from');
-const getPublisherIds = require('./get-publisher-ids');
-const config = require('../../config');
+const _ = require("lodash");
+const queryString = require("query-string");
+const request = require("./request");
+const authentication = require("./authentication");
+const extractDataFrom = require("./extract-data-from");
+const getPublisherIds = require("./get-publisher-ids");
+const config = require("../../config");
 
-const myListUrl = '/comic/my_list_move';
-const getComicsUrl = '/comic/get_comics';
+const myListUrl = "/comic/my_list_move";
+const getComicsUrl = "/comic/get_comics";
 
-const modifyList = function (comicId, listId, actionId, failureMessage, callback) {
+const modifyList = function(
+  comicId,
+  listId,
+  actionId,
+  failureMessage,
+  callback
+) {
   if (!authentication.isAuthenticated()) {
-    callback(new Error('Not authenticated'));
+    callback(new Error("Not authenticated"));
     return;
   }
 
@@ -31,29 +37,36 @@ const modifyList = function (comicId, listId, actionId, failureMessage, callback
     }
 
     if (response && response.statusCode !== 200) {
-      return callback(new Error(`Unexpected status code ${response.statusCode}`));
+      return callback(
+        new Error(`Unexpected status code ${response.statusCode}`)
+      );
     }
 
     return callback(null);
   });
 };
 
-const getList = function (userId, listId, parameters, options, callback) {
+const getList = function(userId, listId, parameters, options, callback) {
   const viewType = {
-    issue: 'list',
-    series: 'thumbs'
+    issue: "list",
+    series: "thumbs"
   };
 
   const type = options.type || config.defaultType;
-  const urlParameters = _.extend({
-    list: listId,
-    list_option: type,
-    user_id: userId,
-    view: viewType[type] || 'thumbs',
-    order: options.sort || 'alpha-asc',
-    publisher: getPublisherIds(options.publishers)
-  }, parameters);
-  const urlParameterString = queryString.stringify(urlParameters, { arrayFormat: 'bracket' });
+  const urlParameters = _.extend(
+    {
+      list: listId,
+      list_option: type,
+      user_id: userId,
+      view: viewType[type] || "thumbs",
+      order: options.sort || "alpha-asc",
+      publisher: getPublisherIds(options.publishers)
+    },
+    parameters
+  );
+  const urlParameterString = queryString.stringify(urlParameters, {
+    arrayFormat: "bracket"
+  });
 
   const url = `${getComicsUrl}?${urlParameterString}`;
   request.get(url, (error, response, body) => {
@@ -62,18 +75,20 @@ const getList = function (userId, listId, parameters, options, callback) {
     }
 
     if (response && response.statusCode !== 200) {
-      return callback(new Error(`Unexpected status code ${response.statusCode}`));
+      return callback(
+        new Error(`Unexpected status code ${response.statusCode}`)
+      );
     }
 
     let responseJson;
     try {
       responseJson = JSON.parse(body);
     } catch (e) {
-      return callback(new Error('Unable to parse response'));
+      return callback(new Error("Unable to parse response"));
     }
 
     if (!_.isObject(responseJson) || !_.isString(responseJson.list)) {
-      return callback(new Error('Unknown response format'));
+      return callback(new Error("Unknown response format"));
     }
 
     const list = extractDataFrom(responseJson, options);
@@ -81,15 +96,15 @@ const getList = function (userId, listId, parameters, options, callback) {
   });
 };
 
-const addToList = function (comicId, listId, callback) {
+const addToList = function(comicId, listId, callback) {
   const actionId = 1;
-  const failureMessage = 'Unable to add comic to list';
+  const failureMessage = "Unable to add comic to list";
   return modifyList(comicId, listId, actionId, failureMessage, callback);
 };
 
-const removeFromList = function (comicId, listId, callback) {
+const removeFromList = function(comicId, listId, callback) {
   const actionId = 0;
-  const failureMessage = 'Unable to remove comic from list';
+  const failureMessage = "Unable to remove comic from list";
   return modifyList(comicId, listId, actionId, failureMessage, callback);
 };
 

@@ -1,19 +1,19 @@
-const lofcg = require('../../');
-const user = require('../utils/test-credentials');
+const lofcg = require("../../");
+const user = require("../utils/test-credentials");
 
-module.exports = function () {
-  describe('Authentication', function () {
-    afterAll(function (done) {
+module.exports = function() {
+  describe("Authentication", function() {
+    afterAll(function(done) {
       lofcg.session.destroy(() => {
         done();
       });
     });
 
-    describe('get session without creating session', function () {
+    describe("get session without creating session", function() {
       let getErr;
       let getAuthentication;
 
-      beforeAll(function (done) {
+      beforeAll(function(done) {
         lofcg.session.get((err, authentication) => {
           getErr = err;
           getAuthentication = authentication;
@@ -21,19 +21,19 @@ module.exports = function () {
         });
       });
 
-      it('provides null authentication object', function () {
+      it("provides null authentication object", function() {
         expect(getErr).toBeNull();
         expect(getAuthentication).toBeNull();
       });
     });
 
-    describe('create session', function () {
+    describe("create session", function() {
       let createErr;
       let createUserId;
       let validateErr;
       let validateIsValid;
 
-      beforeAll(function (done) {
+      beforeAll(function(done) {
         lofcg.session.create(user.username, user.password, (err, userId) => {
           createErr = err;
           createUserId = userId;
@@ -46,21 +46,21 @@ module.exports = function () {
         });
       });
 
-      it('authenticates for the user', function () {
+      it("authenticates for the user", function() {
         expect(createErr).toBeNull();
         expect(createUserId).toBe(editableUserId);
       });
 
-      it('validates as a session', function () {
+      it("validates as a session", function() {
         expect(validateErr).toBeNull();
         expect(validateIsValid).toBe(true);
       });
 
-      describe('get session', function () {
+      describe("get session", function() {
         let getErr;
         let getAuthentication;
 
-        beforeAll(function (done) {
+        beforeAll(function(done) {
           lofcg.session.get((err, authentication) => {
             getErr = err;
             getAuthentication = authentication;
@@ -68,18 +68,21 @@ module.exports = function () {
           });
         });
 
-        it('provides authentication object', function () {
+        it("provides authentication object", function() {
           expect(getErr).toBeNull();
-          expect(getAuthentication).toBeASessionObject({ id: editableUserId, username: user.username });
+          expect(getAuthentication).toBeASessionObject({
+            id: editableUserId,
+            username: user.username
+          });
         });
 
-        describe('destroy session', function () {
+        describe("destroy session", function() {
           let destroyErr;
           let validateErr2;
           let validateIsValid2;
 
-          beforeAll(function (done) {
-            lofcg.session.destroy((err) => {
+          beforeAll(function(done) {
+            lofcg.session.destroy(err => {
               destroyErr = err;
 
               lofcg.session.validate((err2, isValid) => {
@@ -90,22 +93,22 @@ module.exports = function () {
             });
           });
 
-          it('should not return an error', function () {
+          it("should not return an error", function() {
             expect(destroyErr).toBeNull();
           });
 
-          it('no longer validates as a session', function () {
+          it("no longer validates as a session", function() {
             expect(validateErr2).toBeNull();
             expect(validateIsValid2).toBe(false);
           });
 
-          describe('set existing session', function () {
+          describe("set existing session", function() {
             let setErr;
             let setIsSet;
             let validateErr3;
             let validateIsValid3;
 
-            beforeAll(function (done) {
+            beforeAll(function(done) {
               lofcg.session.set(getAuthentication, (err, isSet) => {
                 setErr = err;
                 setIsSet = isSet;
@@ -118,12 +121,12 @@ module.exports = function () {
               });
             });
 
-            it('sets the session', function () {
+            it("sets the session", function() {
               expect(setErr).toBeNull();
               expect(setIsSet).toBe(true);
             });
 
-            it('validates as a session', function () {
+            it("validates as a session", function() {
               expect(validateErr3).toBeNull();
               expect(validateIsValid3).toBe(true);
             });
