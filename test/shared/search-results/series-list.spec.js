@@ -1,7 +1,4 @@
 const _ = require('lodash');
-const allSeriesSeductionOfTheInnocent = require('./test-data/all-series-seduction-of-the-innocent');
-const filteredSeriesSeductionOfTheInnocent = require('./test-data/filtered-series-seduction-of-the-innocent');
-const sortedSeriesSeductionOfTheInnocent = require('./test-data/sorted-series-seduction-of-the-innocent');
 
 module.exports = function (lofcg, searchTerm) {
   const options = { type: lofcg.types.SERIES };
@@ -12,7 +9,6 @@ module.exports = function (lofcg, searchTerm) {
     it('should provide no results for unknown search term', function (done) {
       lofcg.searchResults.get('foobarbaz', options, (err, searchResults) => {
         expect(err).toBeNull();
-        expect(searchResults.length).toBe(0);
         expect(searchResults).toEqual([]);
         done();
       });
@@ -21,8 +17,7 @@ module.exports = function (lofcg, searchTerm) {
     it('should provide results for known search term', function (done) {
       lofcg.searchResults.get(searchTerm, options, (err, searchResults) => {
         expect(err).toBeNull();
-        expect(searchResults.length).toBe(3);
-        expect(searchResults).toEqual(allSeriesSeductionOfTheInnocent);
+        expect(searchResults).toMatchJsonSnapshot('all-series-seduction-of-the-innocent');
         _.each(searchResults, (comic) => {
           expect(comic).toBeAComicSeries();
         });
@@ -33,8 +28,7 @@ module.exports = function (lofcg, searchTerm) {
     it('should provide a filtered list of search results', function (done) {
       lofcg.searchResults.get(searchTerm, filteredOptions, (err, searchResults) => {
         expect(err).toBeNull();
-        expect(searchResults.length).toBe(1);
-        expect(searchResults).toEqual(filteredSeriesSeductionOfTheInnocent);
+        expect(searchResults).toMatchJsonSnapshot('filtered-series-seduction-of-the-innocent');
         _.each(searchResults, (comic) => {
           expect(comic).toBeAComicSeries();
         });
@@ -45,8 +39,7 @@ module.exports = function (lofcg, searchTerm) {
     it('should provide a sorted list of search results', function (done) {
       lofcg.searchResults.get(searchTerm, sortedOptions, (err, searchResults) => {
         expect(err).toBeNull();
-        expect(searchResults.length).toBe(3);
-        expect(searchResults).toEqual(sortedSeriesSeductionOfTheInnocent);
+        expect(searchResults).toMatchJsonSnapshot('sorted-series-seduction-of-the-innocent');
         _.each(searchResults, (comic) => {
           expect(comic).toBeAComicSeries();
         });

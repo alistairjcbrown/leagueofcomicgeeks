@@ -1,3 +1,5 @@
+const path = require('path');
+const fs = require('fs-extra');
 const _ = require('lodash');
 const moment = require('moment');
 
@@ -23,6 +25,13 @@ const isUrl = function (value) {
 
 const isDate = function (value) {
   return moment(value).isValid();
+};
+
+const snapshotDirectory = 'test-data';
+const getSnapshotPath = function (snapshotName) {
+  const callerPathTrace = new Error().stack.split('\n')[4];
+  const callerPath = callerPathTrace.match(/\s+\(?(\/[^:]+):/)[1];
+  return path.join(path.dirname(callerPath), snapshotDirectory, `${snapshotName}.json`);
 };
 
 module.exports = {
@@ -80,6 +89,32 @@ module.exports = {
         }
 
         return { pass: true };
+      }
+    };
+  },
+
+  toMatchJsonSnapshot() {
+    return {
+      compare(actual, snapshotName) {
+        const snapshotPath = getSnapshotPath(snapshotName);
+        let snapshotData;
+
+        try {
+          // eslint-disable-next-line import/no-dynamic-require
+          snapshotData = require(snapshotPath);
+        } catch (e) {
+          fs.outputJsonSync(snapshotPath, actual, { spaces: 4 });
+          // eslint-disable-next-line no-console
+          console.warn(`Snapshot '${snapshotName}' created. Please re-run the tests.`);
+          return { pass: false, message: () => 'Snapshot missing' };
+        }
+
+        try {
+          expect(actual).toEqual(snapshotData);
+          return { pass: true };
+        } catch (e) {
+          return { pass: false, message: () => e.message };
+        }
       }
     };
   }

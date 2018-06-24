@@ -1,6 +1,5 @@
 const _ = require('lodash');
 const helpers = require('../../utils/helper-tests');
-const allIssuesPullList = require('./test-data/all-issues-pull-list');
 
 module.exports = function (lofcg, pullListDate) {
   const modificationPullListDate = '2017-04-05';
@@ -28,8 +27,7 @@ module.exports = function (lofcg, pullListDate) {
         it('should contain the previously added issue', function (done) {
           lofcg.pullList.get(editableUserId, modificationPullListDate, (err, pullList) => {
             expect(err).toBeNull();
-            expect(pullList.length).toBe(1);
-            expect(pullList).toEqual(allIssuesPullList);
+            expect(pullList).toMatchJsonSnapshot('all-issues-pull-list');
             _.each(pullList, (comic) => {
               expect(comic).toBeAComicIssue();
             });

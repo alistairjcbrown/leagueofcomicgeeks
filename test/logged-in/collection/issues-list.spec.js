@@ -1,6 +1,5 @@
 const _ = require('lodash');
 const helpers = require('../../utils/helper-tests');
-const allIssuesCollection = require('./test-data/all-issues-collection');
 
 module.exports = function (lofcg) {
   const additionalArgs = [];
@@ -27,8 +26,7 @@ module.exports = function (lofcg) {
         it('should contain the previously added issue', function (done) {
           lofcg.collection.get(editableUserId, (err, collection) => {
             expect(err).toBeNull();
-            expect(collection.length).toBe(1);
-            expect(collection).toEqual(allIssuesCollection);
+            expect(collection).toMatchJsonSnapshot('all-issues-collection');
             _.each(collection, (comic) => {
               expect(comic).toBeAComicIssue();
             });

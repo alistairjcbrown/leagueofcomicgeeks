@@ -1,14 +1,10 @@
 const _ = require('lodash');
-const allIssuesReadList = require('./test-data/all-issues-read-list');
-const filteredIssuesReadList = require('./test-data/filtered-issues-read-list');
-const sortedIssuesReadList = require('./test-data/sorted-issues-read-list');
 
 module.exports = function (lofcg) {
   describe('get issues list', function () {
     it('should provide no comics in read list with an invalid user id', function (done) {
       lofcg.readList.get('foo', (err, readList) => {
         expect(err).toBeNull();
-        expect(readList.length).toBe(0);
         expect(readList).toEqual([]);
         done();
       });
@@ -17,8 +13,7 @@ module.exports = function (lofcg) {
     it('should provide a list of comics from a users read list', function (done) {
       lofcg.readList.get(readonlyUserId, (err, readList) => {
         expect(err).toBeNull();
-        expect(readList.length).toBe(34);
-        expect(readList).toEqual(allIssuesReadList);
+        expect(readList).toMatchJsonSnapshot('all-issues-read-list');
         _.each(readList, (comic) => {
           expect(comic).toBeAComicIssue();
         });
@@ -29,8 +24,7 @@ module.exports = function (lofcg) {
     it('should provide a filtered list of comics from a users read list', function (done) {
       lofcg.readList.get(readonlyUserId, { publishers: ['Image Comics'] }, (err, readList) => {
         expect(err).toBeNull();
-        expect(readList.length).toBe(13);
-        expect(readList).toEqual(filteredIssuesReadList);
+        expect(readList).toMatchJsonSnapshot('filtered-issues-read-list');
         _.each(readList, (comic) => {
           expect(comic).toBeAComicIssue();
         });
@@ -41,8 +35,7 @@ module.exports = function (lofcg) {
     it('should provide a sorted list of comics from a users read list', function (done) {
       lofcg.readList.get(readonlyUserId, { sort: 'desc' }, (err, readList) => {
         expect(err).toBeNull();
-        expect(readList.length).toBe(34);
-        expect(readList).toEqual(sortedIssuesReadList);
+        expect(readList).toMatchJsonSnapshot('sorted-issues-read-list');
         _.each(readList, (comic) => {
           expect(comic).toBeAComicIssue();
         });

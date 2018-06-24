@@ -1,6 +1,5 @@
 const _ = require('lodash');
 const helpers = require('../../utils/helper-tests');
-const allSeriesCollection = require('./test-data/all-series-collection');
 
 module.exports = function (lofcg) {
   const additionalArgs = [{ type: lofcg.types.SERIES }];
@@ -27,8 +26,7 @@ module.exports = function (lofcg) {
         it('should contain the previously added series', function (done) {
           lofcg.collection.get(editableUserId, { type: lofcg.types.SERIES }, (err, collection) => {
             expect(err).toBeNull();
-            expect(collection.length).toBe(1);
-            expect(collection).toEqual(allSeriesCollection);
+            expect(collection).toMatchJsonSnapshot('all-series-collection');
             _.each(collection, (comic) => {
               expect(comic).toBeAComicSeries();
             });

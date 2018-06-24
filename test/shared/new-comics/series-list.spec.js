@@ -1,7 +1,4 @@
 const _ = require('lodash');
-const allSeries20160104 = require('./test-data/all-series-2016-01-04');
-const filteredSeries20160104 = require('./test-data/filtered-series-2016-01-04');
-const sortedSeries20160104 = require('./test-data/sorted-series-2016-01-04');
 
 module.exports = function (lofcg, newComicsDate) {
   const options = { type: lofcg.types.SERIES };
@@ -12,7 +9,6 @@ module.exports = function (lofcg, newComicsDate) {
     it('should provide no new comic series', function (done) {
       lofcg.newComics.get('1966-01-01', options, (err, newComics) => {
         expect(err).toBeNull();
-        expect(newComics.length).toBe(0);
         expect(newComics).toEqual([]);
         done();
       });
@@ -21,8 +17,7 @@ module.exports = function (lofcg, newComicsDate) {
     it('should provide a list of new comic series', function (done) {
       lofcg.newComics.get(newComicsDate, options, (err, newComics) => {
         expect(err).toBeNull();
-        expect(newComics.length).toBe(148);
-        expect(newComics).toEqual(allSeries20160104);
+        expect(newComics).toMatchJsonSnapshot('all-series-2016-01-04');
         _.each(newComics, (comic) => {
           expect(comic).toBeAComicSeries();
         });
@@ -33,8 +28,7 @@ module.exports = function (lofcg, newComicsDate) {
     it('should provide a filtered list of new comic series', function (done) {
       lofcg.newComics.get(newComicsDate, filteredOptions, (err, newComics) => {
         expect(err).toBeNull();
-        expect(newComics.length).toBe(11);
-        expect(newComics).toEqual(filteredSeries20160104);
+        expect(newComics).toMatchJsonSnapshot('filtered-series-2016-01-04');
         _.each(newComics, (comic) => {
           expect(comic).toBeAComicSeries();
         });
@@ -45,8 +39,7 @@ module.exports = function (lofcg, newComicsDate) {
     it('should provide a sorted list of new comic series', function (done) {
       lofcg.newComics.get(newComicsDate, sortedOptions, (err, newComics) => {
         expect(err).toBeNull();
-        expect(newComics.length).toBe(148);
-        expect(newComics).toEqual(sortedSeries20160104);
+        expect(newComics).toMatchJsonSnapshot('sorted-series-2016-01-04');
         _.each(newComics, (comic) => {
           expect(comic).toBeAComicSeries();
         });

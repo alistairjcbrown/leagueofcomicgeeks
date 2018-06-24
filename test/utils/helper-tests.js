@@ -21,7 +21,6 @@ const confirmEmptyFirst = function (resource, additionalArgs, tests) {
       });
 
       it('should be empty list', function () {
-        expect(getValue.length).toBe(0);
         expect(getValue).toEqual([]);
       });
 
@@ -57,7 +56,6 @@ const testRemovingFromList = function (resource, resourceId, additionalArgs) {
     it('should be empty', function (done) {
       const callback = function (err, value) {
         expect(err).toBeNull();
-        expect(value.length).toBe(0);
         expect(value).toEqual([]);
         done();
       };
