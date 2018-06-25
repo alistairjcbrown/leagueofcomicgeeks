@@ -95,26 +95,6 @@ Methods on user lists:
 
 ---
 
-## To do
-
- - Tests
-   - [ ] Unit tests
-   - [ ] Travid integration
-     - [x] Periodic run for integration tests
-     - [ ] PR run for unit tests
-
- - Additional functionality
-   - [x] Sorting - A-Z, Z-A
-     - [x] Pull lists can have "most pulled"
-   - List of subscriptions from `/profile/alistairjcbrown/pull-list-subscriptions`
-   - [ ] Format selection - issues, annuals, digital, reprints, trade paperbacks, etc.
-   - [ ] Filtering - owned, not owned, read, not read
-     - [ ] New comics can have "only #1s"
-
- - Get publishers list in / update it periodically?
-   - [ ] Perhaps a publisher module which can be called to get latest, which by default falls back to JSON file
-   - [ ] Without coupling the code, can we use the session check to get the updated list of providers?
-
 ## Who am I?
 
 Just a comic fan and someone who wanted to build on top of the awesome system in place at League of Comic Geeks.
