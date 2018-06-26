@@ -37,14 +37,18 @@ module.exports = function(lofcg, newComicsDate) {
     });
 
     it("should provide a sorted list of new comics", function(done) {
-      lofcg.newComics.get(newComicsDate, { sort: "desc" }, (err, newComics) => {
-        expect(err).toBeNull();
-        expect(newComics).toMatchJsonSnapshot("sorted-issues-2016-01-04");
-        _.each(newComics, comic => {
-          expect(comic).toBeAComicIssue();
-        });
-        done();
-      });
+      lofcg.newComics.get(
+        newComicsDate,
+        { sort: lofcg.sort.DESCENDING },
+        (err, newComics) => {
+          expect(err).toBeNull();
+          expect(newComics).toMatchJsonSnapshot("sorted-issues-2016-01-04");
+          _.each(newComics, comic => {
+            expect(comic).toBeAComicIssue();
+          });
+          done();
+        }
+      );
     });
 
     it("should return an error when provided with an invalid date", function(done) {

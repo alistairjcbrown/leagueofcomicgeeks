@@ -41,7 +41,7 @@ module.exports = function(lofcg, pullListDate) {
       lofcg.pullList.get(
         readonlyUserId,
         pullListDate,
-        { sort: "desc" },
+        { sort: lofcg.sort.DESCENDING },
         (err, pullList) => {
           expect(err).toBeNull();
           expect(pullList).toMatchJsonSnapshot("sorted-issues-pull-list");
@@ -57,7 +57,7 @@ module.exports = function(lofcg, pullListDate) {
       lofcg.pullList.get(
         readonlyUserId,
         pullListDate,
-        { sort: "pulls" },
+        { sort: lofcg.sort.MOST_PULLED },
         (err, pullList) => {
           expect(err).toBeNull();
           // Custom sorting is the same order as descending

@@ -37,14 +37,18 @@ module.exports = function(lofcg) {
     });
 
     it("should provide a sorted list of comics from a users wish list", function(done) {
-      lofcg.wishList.get(readonlyUserId, { sort: "desc" }, (err, wishList) => {
-        expect(err).toBeNull();
-        expect(wishList).toMatchJsonSnapshot("sorted-issues-wish-list");
-        _.each(wishList, comic => {
-          expect(comic).toBeAComicIssue();
-        });
-        done();
-      });
+      lofcg.wishList.get(
+        readonlyUserId,
+        { sort: lofcg.sort.DESCENDING },
+        (err, wishList) => {
+          expect(err).toBeNull();
+          expect(wishList).toMatchJsonSnapshot("sorted-issues-wish-list");
+          _.each(wishList, comic => {
+            expect(comic).toBeAComicIssue();
+          });
+          done();
+        }
+      );
     });
   });
 };

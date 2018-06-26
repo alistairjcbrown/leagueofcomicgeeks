@@ -39,7 +39,7 @@ module.exports = function(lofcg) {
     it("should provide a sorted list of comics from a users collection", function(done) {
       lofcg.collection.get(
         readonlyUserId,
-        { sort: "desc" },
+        { sort: lofcg.sort.DESCENDING },
         (err, collection) => {
           expect(err).toBeNull();
           expect(collection).toMatchJsonSnapshot("sorted-issues-collection");

@@ -150,21 +150,21 @@ module.exports = {
           );
         }
         if (
-          !isNonNegativeNumber(userMetrics.consensusVote) &&
-          !_.isNull(userMetrics.consensusVote)
+          !isNonNegativeNumber(userMetrics.consensusRating) &&
+          !_.isNull(userMetrics.consensusRating)
         ) {
           return createFailure(
             "Invalid consensus vote user metric in comic issue object",
-            userMetrics.consensusVote
+            userMetrics.consensusRating
           );
         }
         if (
-          !isNonNegativeNumber(userMetrics.pickOfTheWeekVote) &&
-          !_.isNull(userMetrics.pickOfTheWeekVote)
+          !isNonNegativeNumber(userMetrics.pickOfTheWeekRating) &&
+          !_.isNull(userMetrics.pickOfTheWeekRating)
         ) {
           return createFailure(
             "Invalid pick of the week vote user metric in comic issue object",
-            userMetrics.pickOfTheWeekVote
+            userMetrics.pickOfTheWeekRating
           );
         }
 
