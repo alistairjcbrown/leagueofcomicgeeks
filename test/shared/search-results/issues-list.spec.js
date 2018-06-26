@@ -23,7 +23,7 @@ module.exports = function(lofcg, searchTerm) {
       });
     });
 
-    it("should provide a filtered list of search results", function(done) {
+    it("should provide a filtered list of search results by publisher", function(done) {
       lofcg.searchResults.get(
         searchTerm,
         { publishers: ["Dynamite"] },
@@ -31,6 +31,23 @@ module.exports = function(lofcg, searchTerm) {
           expect(err).toBeNull();
           expect(searchResults).toMatchJsonSnapshot(
             "filtered-issues-seduction-of-the-innocent"
+          );
+          _.each(searchResults, comic => {
+            expect(comic).toBeAComicIssue();
+          });
+          done();
+        }
+      );
+    });
+
+    it("should provide a filtered list of new comics of only first issues", function(done) {
+      lofcg.searchResults.get(
+        searchTerm,
+        { filter: [lofcg.filters.FIRST_ISSUES] },
+        (err, searchResults) => {
+          expect(err).toBeNull();
+          expect(searchResults).toMatchJsonSnapshot(
+            "first-issues-seduction-of-the-innocent"
           );
           _.each(searchResults, comic => {
             expect(comic).toBeAComicIssue();

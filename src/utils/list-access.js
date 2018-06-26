@@ -4,6 +4,7 @@ const request = require("./request");
 const authentication = require("./authentication");
 const extractDataFrom = require("./extract-data-from");
 const getPublisherIds = require("./get-publisher-ids");
+const filter = require("./filter");
 const config = require("../../config");
 
 const myListUrl = "/comic/my_list_move";
@@ -51,12 +52,17 @@ const getList = function(userId, listId, parameters, options, callback) {
     issue: "list",
     series: "thumbs"
   };
+  const filterOptions = [].concat(options.filter || []);
+  const listRefinement = _.includes(filterOptions, filter.FIRST_ISSUES)
+    ? filter.FIRST_ISSUES
+    : undefined;
 
   const type = options.type || config.defaultType;
   const urlParameters = _.extend(
     {
       list: listId,
       list_option: type,
+      list_refinement: listRefinement,
       user_id: userId,
       view: viewType[type] || "thumbs",
       order: options.sort || "alpha-asc",
