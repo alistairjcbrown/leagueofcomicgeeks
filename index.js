@@ -1,5 +1,6 @@
 const types = require("./src/utils/types");
 const sort = require("./src/utils/sort");
+const filters = require("./src/utils/filter");
 const session = require("./src/session");
 const searchResults = require("./src/search-results");
 const newComics = require("./src/new-comics");
@@ -11,6 +12,7 @@ const readList = require("./src/read-list");
 module.exports = {
   types,
   sort,
+  filters,
   session,
   searchResults,
   newComics,

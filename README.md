@@ -11,13 +11,13 @@ Unofficial Node.js library for interacting with [League of Comic Geeks](https://
 
 ## Resources
 
-1. Session
-1. New Comics
-1. Search Results
-1. Collection
-1. Read List
-1. Wish List
-1. Pull List
+1. Session - `lofcg.session`
+1. New Comics - `lofcg.newComics`
+1. Search Results - `lofcg.searchResults`
+1. Collection - `lofcg.collection`
+1. Read List - `lofcg.readList`
+1. Wish List - `lofcg.wishList`
+1. Pull List - `lofcg.pullList`
 
 All methods on resources are asynchronous and follow the nodejs "error-first callback" pattern. For use with promises, consider using something like [Bluebird's promisification functions](http://bluebirdjs.com/docs/api/promisification.html).
 
@@ -52,6 +52,9 @@ Options support:
      - `lofcg.types.ISSUE` - Single commic issues
      - `lofcg.types.SERIES` - Comic series
  - `publishers` - an array of publisher names to filter on. Defaults to no filtering.
+ - `filter` - Defaults to empty array (`[]`), all data returned.
+   - Use the `lofcg.filters` helper for getting filter values
+     - `lofcg.filters.FIRST_ISSSUES` - Return only first issue comics. __Note:__ This filter only works on the New Comics and Search Results list
  - `sort` - Defaults to ascending (`lofcg.sort.ASCENDING`).
    - Use the `lofcg.sort` helper for getting sort values
      - `lofcg.sort.ASCENDING` - Ascending alphabetically
