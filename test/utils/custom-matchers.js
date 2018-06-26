@@ -235,7 +235,8 @@ module.exports = {
 
   toMatchJsonSnapshot() {
     return {
-      compare(actual, snapshotName) {
+      compare(input, snapshotName) {
+        const actual = _.map(input, value => _.omit(value, "userMetrics"));
         const snapshotPath = getSnapshotPath(snapshotName);
         let snapshotData;
 

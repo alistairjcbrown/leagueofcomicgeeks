@@ -9,12 +9,6 @@
         "description": "Here comes the future!",
         "releaseDate": "2017-05-03",
         "price": "$2.99",
-        "diamondSku": "MAR170767",
-        "userMetrics": {
-            "pulled": null,
-            "added": 615,
-            "consensusVote": 97,
-            "pickOfTheWeekVote": 8
-        }
+        "diamondSku": "MAR170767"
     }
 ]

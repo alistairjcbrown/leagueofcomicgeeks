@@ -9,13 +9,7 @@
         "description": "The Best Princess Ever is finally going to be chosen! Who will it be? And will the prankster finally reveal themselves before they ruin the whole event?",
         "releaseDate": "2017-05-03",
         "price": "$3.99",
-        "diamondSku": "MAR171482",
-        "userMetrics": {
-            "pulled": null,
-            "added": 27,
-            "consensusVote": null,
-            "pickOfTheWeekVote": 0
-        }
+        "diamondSku": "MAR171482"
     },
     {
         "id": "8900134",
@@ -27,12 +21,6 @@
         "description": "Here comes the future!",
         "releaseDate": "2017-05-03",
         "price": "$2.99",
-        "diamondSku": "MAR170767",
-        "userMetrics": {
-            "pulled": null,
-            "added": 615,
-            "consensusVote": 97,
-            "pickOfTheWeekVote": 8
-        }
+        "diamondSku": "MAR170767"
     }
 ]
