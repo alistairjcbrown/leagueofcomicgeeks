@@ -3,7 +3,7 @@ const _ = require("lodash");
 module.exports = function(lofcg, searchTerm) {
   const options = { type: lofcg.types.SERIES };
   const filteredOptions = _.extend({ publishers: ["Dynamite"] }, options);
-  const sortedOptions = _.extend({ sort: "desc" }, options);
+  const sortedOptions = _.extend({ sort: lofcg.sort.DESCENDING }, options);
 
   describe("get series list", function() {
     it("should provide no results for unknown search term", function(done) {

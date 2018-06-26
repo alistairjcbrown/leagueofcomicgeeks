@@ -2,6 +2,7 @@ const _ = require("lodash");
 const cheerio = require("cheerio");
 const moment = require("moment");
 const config = require("../../config");
+const sort = require("./sort");
 
 const convertToISO8601Date = function(dateString) {
   if (_.isEmpty(dateString)) return "";
@@ -10,9 +11,18 @@ const convertToISO8601Date = function(dateString) {
   return date.format("YYYY-MM-DD");
 };
 
-const sortList = function(list, sortBy = "asc") {
-  if (sortBy === "asc" || sortBy === "desc") {
+const sortList = function(list, sortBy = sort.ASCENDING) {
+  if (sortBy === sort.ASCENDING || sortBy === sort.DESCENDING) {
     return _.orderBy(list, "name", sortBy);
+  }
+  if (sortBy === sort.MOST_PULLED) {
+    return _.orderBy(list, "userMetrics.pulled", "desc");
+  }
+  if (sortBy === sort.PICK_OF_THE_WEEK) {
+    return _.orderBy(list, "userMetrics.pickOfTheWeekRating", "desc");
+  }
+  if (sortBy === sort.CONSENSUS_RATING) {
+    return _.orderBy(list, "userMetrics.consensusRating", "desc");
   }
   return list;
 };
@@ -90,13 +100,15 @@ const getVotes = function($el) {
     function(votes, piece) {
       if (piece.includes(consensus))
         return _.extend({}, votes, {
-          consensusVote: getVote(piece, consensus)
+          consensusRating: getVote(piece, consensus)
         });
       if (piece.includes(potw))
-        return _.extend({}, votes, { pickOfTheWeekVote: getVote(piece, potw) });
+        return _.extend({}, votes, {
+          pickOfTheWeekRating: getVote(piece, potw)
+        });
       return votes;
     },
-    { consensusVote: null, pickOfTheWeekVote: null }
+    { consensusRating: null, pickOfTheWeekRating: null }
   );
 };
 
@@ -151,7 +163,7 @@ const issueExtractor = function(response, options) {
         .find(".comic-diamond-sku")
         .text()
         .trim() || null;
-    const { consensusVote, pickOfTheWeekVote } = getVotes($el);
+    const { consensusRating, pickOfTheWeekRating } = getVotes($el);
     const { pulled, added } = getCollectionStats($, $el);
 
     const comicDetails = $el
@@ -180,8 +192,8 @@ const issueExtractor = function(response, options) {
       userMetrics: {
         pulled,
         added,
-        consensusVote,
-        pickOfTheWeekVote
+        consensusRating,
+        pickOfTheWeekRating
       }
     };
   };

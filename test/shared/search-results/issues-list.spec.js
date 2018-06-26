@@ -43,7 +43,7 @@ module.exports = function(lofcg, searchTerm) {
     it("should provide a sorted list of search results", function(done) {
       lofcg.searchResults.get(
         searchTerm,
-        { sort: "desc" },
+        { sort: lofcg.sort.DESCENDING },
         (err, searchResults) => {
           expect(err).toBeNull();
           expect(searchResults).toMatchJsonSnapshot(

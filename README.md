@@ -47,18 +47,26 @@ Where the `identifier` can be an issue id, series id, search term, pull list dat
 The `options` parameter is optional, but is used to specify the type returned (eg. "series" or "issue") and for any sorting or filtering.
 
 Options support:
- - `type` - "series" or "issue". Defaults to "issue".
-   - Use the `lofcg.types` helper for getting type values, eg. `lofcg.types.ISSUE`
+ - `type` - Defaults to issue (`lofcg.types.ISSUE`).
+   - Use the `lofcg.types` helper for getting type values
+     - `lofcg.types.ISSUE` - Single commic issues
+     - `lofcg.types.SERIES` - Comic series
  - `publishers` - an array of publisher names to filter on. Defaults to no filtering.
- - `sort` - "asc" (ascending) or "desc" (descending). Defaults to "asc".
-   - **Note:** Sorting is performed within the module on the response from the server (ie. not by the server itself) due to sorting bugs in the endpoints. However, the server provides additional sorting options depending on the list. Passing a value which is not one of the two supported will be delegated to the server (eg. providing "pulls" for Most Pulled on Pull List will have that order provided by the server).
+ - `sort` - Defaults to ascending (`lofcg.sort.ASCENDING`).
+   - Use the `lofcg.sort` helper for getting sort values
+     - `lofcg.sort.ASCENDING` - Ascending alphabetically
+     - `lofcg.sort.DESCENDING` - Descending alphabetically
+     - `lofcg.sort.MOST_PULLED` - Descending by how many members have this in their pull list
+     - `lofcg.sort.PICK_OF_THE_WEEK` - Descending by pick of the week rating
+     - `lofcg.sort.CONSENSUS_RATING` - Descending by community consensis rating
+   - **Note:** Sorting is performed within the module on the response from the server (ie. not by the server itself) due to sorting bugs in the endpoints. However, the server may provide additional sorting options, depending on the list. Passing a value which is not one of the two supported will be delegated to the server. The server equivalents of the above are `alpha-asc`, `alpha-desc`, `pulls`, `potw` and `community`
 
 ```js
 const lofcg = require('leagueofcomicgeeks');
 const options = {
   type: lofcg.types.SERIES,
   publishers: ['Marvel Comics', 'DC Comics', 'Other'],
-  sort: 'desc'
+  sort: lofcg.sort.DESCENDING
 }
 lofcg.searchResults.get('detective', options, function (err, results) {
    // ...
