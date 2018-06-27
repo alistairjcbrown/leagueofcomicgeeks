@@ -60,8 +60,9 @@ module.exports = function(lofcg, pullListDate) {
         { sort: lofcg.sort.MOST_PULLED },
         (err, pullList) => {
           expect(err).toBeNull();
-          // Custom sorting is the same order as descending
-          expect(pullList).toMatchJsonSnapshot("sorted-issues-pull-list");
+          expect(pullList).toMatchJsonSnapshot(
+            "custom-sorted-issues-pull-list"
+          );
           _.each(pullList, comic => {
             expect(comic).toBeAComicIssue();
           });
