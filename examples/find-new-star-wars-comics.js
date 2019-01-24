@@ -12,14 +12,19 @@ const data = [];
 const filterUnwanted = function(list) {
   const tradePaperback = " tp";
   const hardCover = " hc";
+  const graphicNovel = " gn";
+  const boxSet = " box set";
   const variant = " variant";
-  return _.filter(list, function({ name = "" }) {
+  return _.filter(list, function({ name = "", variantId }) {
     const matches = name.match(/#\d+\w?(.*)?/i);
     return (
       !name.toLowerCase().endsWith(tradePaperback) &&
       !name.toLowerCase().endsWith(hardCover) &&
+      !name.toLowerCase().endsWith(graphicNovel) &&
+      !name.toLowerCase().endsWith(boxSet) &&
       !name.toLowerCase().endsWith(variant) &&
-      (_.isNull(matches) || _.isUndefined(matches[1]))
+      (_.isNull(matches) || _.isUndefined(matches[1])) &&
+      _.isNull(variantId)
     );
   });
 };
@@ -37,7 +42,10 @@ const outputresults = function(list) {
     ["asc", "asc"]
   );
 
-  console.log(JSON.stringify(mainIssues, null, 4));
+  // console.log(JSON.stringify(mainIssues, null, 4));
+  _.each(mainIssues, function({ releaseDate, name, url }) {
+    console.log(`[${releaseDate}] ${_.padEnd(name, 50)} --   ${url}`);
+  });
 };
 
 range.forEach(function(count) {
